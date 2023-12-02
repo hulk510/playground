@@ -6,9 +6,9 @@ This Turborepo includes the following packages/apps:
 
 - `docs`: a [Next.js](https://nextjs.org/) app
 - `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+- ` /ui`: a stub React component library shared by both `web` and `docs` applications
+- ` /eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
+- ` /typescript-config`: `tsconfig.json`s used throughout the monorepo
 
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
@@ -67,4 +67,16 @@ Learn more about the power of Turborepo:
 - [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
 - [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
 - [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+
+Prettier:
+
 - [Prettier Options](https://prettier.io/docs/en/options)
+
+Renovate:
+
+- [Reading List](https://docs.renovatebot.com/reading-list/)
+
+## Memo
+
+monorepo使うのにpackage.jsonの仕様ちゃんと読んだ方が良さそう。
+は何か決まってるの？変えるとエラーになる。

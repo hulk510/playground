@@ -1,6 +1,6 @@
-import { Card } from '@repo/ui/card';
-import { Code } from '@repo/ui/code';
 import Image from 'next/image';
+import { Card } from 'ui/card';
+import { Code } from 'ui/code';
 import styles from './page.module.css';
 
 function Gradient({
