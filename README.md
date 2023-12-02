@@ -68,3 +68,15 @@ Learn more about the power of Turborepo:
 - [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
 - [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
 - [Prettier Options](https://prettier.io/docs/en/options)
+
+Prettier:
+
+- [Prettier Options](https://prettier.io/docs/en/options)
+
+Renovate:
+
+- [Reading List](https://docs.renovatebot.com/reading-list/)
+
+## Memo
+
+monorepo使うのにpackage.jsonの仕様ちゃんと読んだ方が良さそう。
