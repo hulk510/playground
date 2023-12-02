@@ -16,5 +16,17 @@
   "automergeStrategy": "squash",
   "assigneesFromCodeOwners": true,
   "prConcurrentLimit": 3,
-  "dependencyDashboardAutoclose": true
+  "dependencyDashboardAutoclose": true,
+  "packageRules": [
+    {
+      "extends": "monorepo:turbo",
+      "groupName": "turbo monorepo",
+      "matchUpdateTypes": [
+        "digest",
+        "patch",
+        "minor",
+        "major"
+      ]
+    }
+  ]
 }
