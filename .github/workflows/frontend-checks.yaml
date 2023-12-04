@@ -21,4 +21,4 @@ jobs:
       - name: Install dependencies
         run: bun install
       - name: Deploy
-        run: bun deploy
+        run: bun run deploy
