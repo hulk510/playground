@@ -10,8 +10,8 @@
     "lint": {
       "dependsOn": ["^lint"]
     },
-    "deploy": {
-      "dependsOn": ["build", "test", "lint"]
+    "check": {
+      "dependsOn": ["test", "lint"]
     },
     "dev": {
       "cache": false,
