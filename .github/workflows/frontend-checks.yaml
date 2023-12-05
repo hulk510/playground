@@ -21,4 +21,4 @@ jobs:
       - name: Install dependencies
         run: bun install
       - name: checks lint and test
-        run: bun run check
+        run: bunx turbo check
