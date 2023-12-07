@@ -67,4 +67,4 @@ jobs:
         uses: chromaui/action@2f12dc37555ffc9ed980d883e96b6d03724a2d6a # v10
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-          workingDir: ./apps/storybook
+          workingDir: apps/storybook
