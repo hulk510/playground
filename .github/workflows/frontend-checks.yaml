@@ -43,6 +43,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+        with:
+          fetch-depth: 0
       - uses: pnpm/action-setup@v2
         name: Install pnpm
         with:
@@ -67,4 +69,4 @@ jobs:
         uses: chromaui/action@2f12dc37555ffc9ed980d883e96b6d03724a2d6a # v10
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-          workingDir: ./apps/storybook
+          workingDir: apps/storybook
