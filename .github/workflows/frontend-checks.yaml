@@ -36,7 +36,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: checks lint and test
-        run: pnpm dlx turbo run check
+        run: pnpm dlx turbo run lint test
 
   run-chromatic:
     runs-on: ubuntu-latest
