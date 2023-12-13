@@ -9,11 +9,12 @@
     "build": "storybook build"
   },
   "dependencies": {
+    "@repo/ui": "workspace:*",
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "@repo/ui": "workspace:*"
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@kuma-ui/vite": "^1.2.0",
     "@storybook/addon-essentials": "7.6.4",
     "@storybook/addon-interactions": "7.6.4",
     "@storybook/addon-links": "7.6.4",

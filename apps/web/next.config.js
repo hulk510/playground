@@ -1,4 +1,9 @@
+const { withKumaUI } = require('@kuma-ui/next-plugin');
+
 /** @type {import('next').NextConfig} */
-module.exports = {
+const nextConfig = {
+  reactStrictMode: true,
   transpilePackages: ['@repo/ui'],
 };
+
+module.exports = withKumaUI(nextConfig);

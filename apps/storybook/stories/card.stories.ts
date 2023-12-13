@@ -1,4 +1,4 @@
-import { Card } from '@repo/ui/card';
+import { Card } from '@repo/ui';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta = {
