@@ -26,7 +26,7 @@ To build all apps and packages, run the following command:
 
 ```sh
 cd my-turborepo
-bun run build
+pnpm run build
 ```
 
 ### Develop
@@ -35,7 +35,7 @@ To develop all apps and packages, run the following command:
 
 ```sh
 cd my-turborepo
-bun dev
+pnpm dev
 ```
 
 ### Remote Caching
@@ -46,7 +46,7 @@ By default, Turborepo will cache locally. To enable Remote Caching you will need
 
 ```sh
 cd my-turborepo
-bunx turbo login
+pnpm dlx turbo login
 ```
 
 This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
@@ -54,7 +54,7 @@ This will authenticate the Turborepo CLI with your [Vercel account](https://verc
 Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
 
 ```sh
-bunx turbo link
+pnpm dlx turbo link
 ```
 
 ## Useful Links
@@ -67,6 +67,7 @@ Learn more about the power of Turborepo:
 - [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
 - [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
 - [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+- [Monorepo Handbook](https://turbo.build/repo/docs/handbook)
 
 Prettier:
 
@@ -75,7 +76,3 @@ Prettier:
 Renovate:
 
 - [Reading List](https://docs.renovatebot.com/reading-list/)
-
-## Memo
-
-monorepo使うのにpackage.jsonの仕様ちゃんと読んだ方が良さそう。
