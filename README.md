@@ -76,3 +76,7 @@ Prettier:
 Renovate:
 
 - [Reading List](https://docs.renovatebot.com/reading-list/)
+
+Kuma UI:
+
+- [Docs](https://www.kuma-ui.com/docs)
