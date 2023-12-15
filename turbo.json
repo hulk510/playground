@@ -8,10 +8,7 @@
     },
     "test": {},
     "lint": {
-      "dependsOn": ["^lint"]
-    },
-    "check": {
-      "dependsOn": ["test", "lint"]
+      "outputMode": "errors-only"
     },
     "dev": {
       "cache": false,

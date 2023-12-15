@@ -36,7 +36,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: checks lint and test
-        run: pnpm dlx turbo run check
+        run: pnpm dlx turbo run lint test
 
   run-chromatic:
     runs-on: ubuntu-latest
@@ -71,3 +71,5 @@ jobs:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           workingDir: apps/storybook
           autoAcceptChanges: 'main'
+          buildScriptName: 'build'
+          onlyChanged: true
