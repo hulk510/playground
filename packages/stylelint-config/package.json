@@ -4,9 +4,9 @@
   "private": true,
   "files": [],
   "devDependencies": {
-    "postcss-styled-syntax": "^0.5.0",
-    "stylelint": "^16.0.2",
-    "stylelint-config-recess-order": "^4.4.0",
-    "stylelint-config-standard": "^35.0.0"
+    "postcss-styled-syntax": "0.5.0",
+    "stylelint": "16.0.2",
+    "stylelint-config-recess-order": "4.4.0",
+    "stylelint-config-standard": "35.0.0"
   }
 }
