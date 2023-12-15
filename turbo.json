@@ -7,7 +7,9 @@
       "outputs": [".next/**", "!.next/cache/**", "storybook-static/**"]
     },
     "test": {},
-    "lint": {},
+    "lint": {
+      "outputMode": "errors-only"
+    },
     "dev": {
       "cache": false,
       "persistent": true
