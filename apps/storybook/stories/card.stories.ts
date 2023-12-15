@@ -8,9 +8,9 @@ const meta = {
   tags: ['autodocs'],
   parameters: {
     // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout
-    layout: 'fullscreen',
+    layout: 'centered',
   },
-} as Meta<typeof Card>;
+} satisfies Meta<typeof Card>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
