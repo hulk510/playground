@@ -1,3 +1,4 @@
+'use client';
 import { Box, Button, css } from '@kuma-ui/core';
 import { useReducer } from 'react';
 
