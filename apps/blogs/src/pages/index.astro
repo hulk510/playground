@@ -1,20 +1,28 @@
 ---
-import { getCollection } from "astro:content";
-import Layout from "@layouts/Layout.astro";
-import Header from "@components/Header.astro";
-import Footer from "@components/Footer.astro";
-import LinkButton from "@components/LinkButton.astro";
-import Hr from "@components/Hr.astro";
 import Card from "@components/Card";
+import Footer from "@components/Footer.astro";
+import Header from "@components/Header.astro";
+import Hr from "@components/Hr.astro";
+import LinkButton from "@components/LinkButton.astro";
 import Socials from "@components/Socials.astro";
-import getSortedPosts from "@utils/getSortedPosts";
-import slugify from "@utils/slugify";
 import { SOCIALS } from "@config";
+import Layout from "@layouts/Layout.astro";
+import slugify from "@utils/slugify";
+import { getCollection } from "astro:content";
+import { getPayloadCollection } from "../services/api";
+import type { Blog } from "../services/api/types";
+import getSortedPosts from "../utils/getSortedPosts";
 
 const posts = await getCollection("blog");
 
 const sortedPosts = getSortedPosts(posts);
 const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
+
+// const res = await fetch("http://localhost:8888/api/blogs");
+// const blogs = await res.json();
+const blogs = await getPayloadCollection<Blog>(
+  "http://localhost:8888/api/blogs"
+);
 
 const socialCount = SOCIALS.filter(social => social.active).length;
 ---
@@ -49,7 +57,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       <p>
         Read the blog posts or check
         <LinkButton
-          className="hover:text-skin-accent underline underline-offset-4 decoration-dashed"
+          className="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
           href="https://github.com/satnaing/astro-paper#readme"
         >
           README
@@ -68,7 +76,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 
     <Hr />
 
-    {
+    <!-- {
       featuredPosts.length > 0 && (
         <>
           <section id="featured">
@@ -86,24 +94,22 @@ const socialCount = SOCIALS.filter(social => social.active).length;
           <Hr />
         </>
       )
-    }
+    } -->
 
     <section id="recent-posts">
       <h2>Recent Posts</h2>
       <ul>
         {
-          sortedPosts
-            .filter(({ data }) => !data.featured)
-            .map(
-              ({ data }, index) =>
-                index < 4 && (
-                  <Card
-                    href={`/posts/${slugify(data)}`}
-                    frontmatter={data}
-                    secHeading={false}
-                  />
-                )
-            )
+          blogs.docs.map(
+            (data, index) =>
+              index < 4 && (
+                <Card
+                  href={`/posts/${slugify(data)}`}
+                  frontmatter={data}
+                  secHeading={false}
+                />
+              )
+          )
         }
       </ul>
       <div class="all-posts-btn-wrapper">

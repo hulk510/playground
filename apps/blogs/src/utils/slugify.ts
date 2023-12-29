@@ -1,10 +1,13 @@
 import { slug as slugger } from "github-slugger";
-import type { CollectionEntry } from "astro:content";
+import type { Blog } from "../services/api/types";
 
 export const slugifyStr = (str: string) => slugger(str);
 
-const slugify = (post: CollectionEntry<"blog">["data"]) =>
-  post.postSlug ? slugger(post.postSlug) : slugger(post.title);
+// CollectionEntryってAPIの取得の型として使えない？
+// astro内で使えるってだけなのかな？
+
+const slugify = (blog: Blog) =>
+  blog.slug ? slugger(blog.slug) : slugger(blog.title);
 
 export const slugifyAll = (arr: string[]) => arr.map(str => slugifyStr(str));
 
