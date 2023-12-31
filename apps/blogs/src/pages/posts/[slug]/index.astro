@@ -1,25 +1,28 @@
 ---
-import { type CollectionEntry, getCollection } from "astro:content";
-import Posts from "@layouts/Posts.astro";
-import PostDetails from "@layouts/PostDetails.astro";
-import getSortedPosts from "@utils/getSortedPosts";
+import { getPayloadCollection } from "@services/api";
+import type { Blog } from "@services/api/types";
 import getPageNumbers from "@utils/getPageNumbers";
 import slugify from "@utils/slugify";
-import { SITE } from "@config";
+import PostDetails from "../../../layouts/PostDetails.astro";
+import Posts from "../../../layouts/Posts.astro";
 
 export interface Props {
-  post: CollectionEntry<"blog">;
+  post: Blog;
 }
 
 export async function getStaticPaths() {
-  const posts = await getCollection("blog", ({ data }) => !data.draft);
+  // TODO: draftは弾く
+  const posts = await getPayloadCollection<Blog>(
+    "http://localhost:8888/api/blogs"
+  );
 
-  const postResult = posts.map(post => ({
-    params: { slug: slugify(post.data) },
+  const postResult = posts.docs.map(post => ({
+    params: { slug: slugify(post) },
     props: { post },
   }));
 
-  const pagePaths = getPageNumbers(posts.length).map(pageNum => ({
+  const pagePaths = getPageNumbers(posts.totalDocs).map(pageNum => ({
+    // これでpropsにpostを渡してないからこの時はPostsを表示するみたいなイメージなのかな？
     params: { slug: String(pageNum) },
   }));
 
@@ -28,31 +31,24 @@ export async function getStaticPaths() {
 
 const { slug } = Astro.params;
 const { post } = Astro.props;
-
-const posts = await getCollection("blog");
-
-const sortedPosts = getSortedPosts(posts);
-
-const totalPages = getPageNumbers(sortedPosts.length);
-
+const posts = await getPayloadCollection<Blog>(
+  "http://localhost:8888/api/blogs"
+);
+const totalPages = getPageNumbers(posts.totalDocs);
 const currentPage =
   slug && !isNaN(Number(slug)) && totalPages.includes(Number(slug))
     ? Number(slug)
     : 0;
-const lastPost = currentPage * SITE.postPerPage;
-const startPost = lastPost - SITE.postPerPage;
 
-const paginatedPosts = sortedPosts.slice(startPost, lastPost);
+console.log(totalPages);
+
+const aaa = await getPayloadCollection<Blog>(
+  "http://localhost:8888/api/blogs",
+  {
+    page: currentPage,
+  }
+);
+// console.log(aaa, "なんぼ？");
 ---
 
-{
-  post ? (
-    <PostDetails post={post} />
-  ) : (
-    <Posts
-      posts={paginatedPosts}
-      pageNum={currentPage}
-      totalPages={totalPages.length}
-    />
-  )
-}
+{post ? <PostDetails post={post} /> : <Posts posts={aaa} />}

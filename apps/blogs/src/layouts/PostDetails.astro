@@ -2,36 +2,36 @@
 import Layout from "@layouts/Layout.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
-import Tag from "@components/Tag.astro";
+// import Tag from "@components/Tag.astro";
 import Datetime from "@components/Datetime";
-import type { CollectionEntry } from "astro:content";
 import { slugifyStr } from "@utils/slugify";
+import type { Blog } from "../services/api/types";
 
 export interface Props {
-  post: CollectionEntry<"blog">;
+  post: Blog;
 }
 
 const { post } = Astro.props;
 
-const { title, author, description, ogImage, canonicalURL, pubDatetime, tags } =
-  post.data;
+// const { title, author, description, ogImage, canonicalURL, pubDatetime, tags } =
+const { title, description, content } = post;
+const pubDatetime = new Date();
 
-const { Content } = await post.render();
-
-const ogImageUrl = typeof ogImage === "string" ? ogImage : ogImage?.src;
-const ogUrl = new URL(
-  ogImageUrl ?? `/posts/${slugifyStr(title)}.png`,
-  Astro.url.origin
-).href;
+// const ogImageUrl = typeof ogImage === "string" ? ogImage : ogImage?.src;
+// const ogUrl = new URL(
+//   ogImageUrl ?? `/posts/${slugifyStr(title)}.png`,
+//   Astro.url.origin
+// ).href;
 ---
 
-<Layout
+<!-- <Layout
   title={title}
   author={author}
   description={description}
   ogImage={ogUrl}
   canonicalURL={canonicalURL}
->
+> -->
+<Layout title={title} description={description}>
   <Header />
   <div class="mx-auto flex w-full max-w-3xl justify-start px-2">
     <button
@@ -49,12 +49,13 @@ const ogUrl = new URL(
     <h1 transition:name={slugifyStr(title)} class="post-title">{title}</h1>
     <Datetime datetime={pubDatetime} size="lg" className="my-2" />
     <article id="article" role="article" class="prose mx-auto mt-8 max-w-3xl">
-      <Content />
+      {content}
     </article>
 
-    <ul class="my-8">
+    <!-- tag -->
+    <!-- <ul class="my-8">
       {tags.map(tag => <Tag name={slugifyStr(tag)} />)}
-    </ul>
+    </ul> -->
     <div class="flex justify-end">
       <button
         id="back-to-top"

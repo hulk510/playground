@@ -1,18 +1,12 @@
 ---
-import { SITE } from "@config";
 import Posts from "@layouts/Posts.astro";
-import getSortedPosts from "@utils/getSortedPosts";
-import getPageNumbers from "@utils/getPageNumbers";
 
-import { getCollection } from "astro:content";
+import { getPayloadCollection } from "../../services/api";
+import type { Blog } from "../../services/api/types";
 
-const posts = await getCollection("blog");
-
-const sortedPosts = getSortedPosts(posts);
-
-const totalPages = getPageNumbers(sortedPosts.length);
-
-const paginatedPosts = sortedPosts.slice(0, SITE.postPerPage);
+const blogs = await getPayloadCollection<Blog>(
+  "http://localhost:8888/api/blogs"
+);
 ---
 
-<Posts posts={paginatedPosts} pageNum={1} totalPages={totalPages.length} />
+<Posts posts={blogs} />
