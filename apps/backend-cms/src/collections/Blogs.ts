@@ -1,3 +1,4 @@
+import { lexicalEditor } from '@payloadcms/richtext-lexical';
 import { CollectionConfig } from 'payload/types';
 
 const Blogs: CollectionConfig = {
@@ -22,7 +23,8 @@ const Blogs: CollectionConfig = {
     },
     {
       name: 'content',
-      type: 'text',
+      type: 'richText',
+      editor: lexicalEditor({}),
       required: true,
     },
     {
