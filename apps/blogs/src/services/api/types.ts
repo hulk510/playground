@@ -17,4 +17,5 @@ export type Blog = {
   content: string;
   description: string;
   pubDatetime: Date;
+  content_html: string;
 };
