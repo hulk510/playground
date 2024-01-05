@@ -25,3 +25,6 @@ const start = async () => {
 };
 
 start();
+app.use(express.static('build'));
+
+module.exports = app;
