@@ -5,7 +5,7 @@ require('dotenv').config();
 const app = express();
 
 // Redirect root to Admin panel
-app.get('/', (_, res) => {
+app.get('/api', (_, res) => {
   res.redirect('/admin');
 });
 
@@ -25,6 +25,5 @@ const start = async () => {
 };
 
 start();
-app.use(express.static('build'));
 
 module.exports = app;
