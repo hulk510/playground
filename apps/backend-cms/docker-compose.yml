@@ -16,7 +16,7 @@ services:
       - .env
 
   mongo:
-    image: mongo:latest
+    image: mongo:latest@sha256:58a18ecc0f86f3848f399e8d6318150192c61ce267f5d3ce21d28fc1e76368c5
     ports:
       - '27017:27017'
     command:
