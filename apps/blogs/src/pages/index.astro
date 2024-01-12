@@ -8,8 +8,7 @@ import Socials from "@components/Socials.astro";
 import { SOCIALS } from "@config";
 import Layout from "@layouts/Layout.astro";
 import slugify from "@utils/slugify";
-import { getPayloadCollection } from "../services/api";
-import type { Blog } from "../services/api/types";
+import { getBlogs } from "../services/api/blogs";
 
 // const posts = await getCollection("blog");
 
@@ -18,9 +17,7 @@ import type { Blog } from "../services/api/types";
 
 // const res = await fetch("http://localhost:8888/api/blogs");
 // const blogs = await res.json();
-const blogs = await getPayloadCollection<Blog>(
-  "http://localhost:8888/api/blogs"
-);
+const blogs = await getBlogs();
 
 const socialCount = SOCIALS.filter(social => social.active).length;
 ---

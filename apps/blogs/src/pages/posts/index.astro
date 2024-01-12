@@ -1,12 +1,9 @@
 ---
 import Posts from "@layouts/Posts.astro";
 
-import { getPayloadCollection } from "../../services/api";
-import type { Blog } from "../../services/api/types";
+import { getBlogs } from "../../services/api/blogs";
 
-const blogs = await getPayloadCollection<Blog>(
-  "http://localhost:8888/api/blogs"
-);
+const blogs = await getBlogs();
 ---
 
 <Posts posts={blogs} />
