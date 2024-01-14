@@ -5,7 +5,8 @@
   "files": [
     "library.js",
     "next.js",
-    "react-internal.js"
+    "react-internal.js",
+    "astro.js"
   ],
   "devDependencies": {
     "@typescript-eslint/parser": "6.15.0",

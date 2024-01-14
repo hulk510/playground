@@ -1,7 +1,7 @@
 import qs from "qs";
 import type { PayloadCollection } from "./types";
 
-export async function apiFetch<T = any>(
+export async function apiFetch<T = unknown>(
   url: string | URL,
   options: RequestInit = {}
 ) {
@@ -20,7 +20,7 @@ export async function apiFetch<T = any>(
 
 export async function getPayloadCollection<CollectionType>(
   url: string | URL,
-  query: any = null
+  query: unknown = null
 ) {
   const stringifiedQuery = qs.stringify(query, { addQueryPrefix: true });
   return apiFetch<PayloadCollection<CollectionType>>(url + stringifiedQuery);
