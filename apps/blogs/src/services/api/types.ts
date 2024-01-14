@@ -1,4 +1,4 @@
-export type PayloadCollection<CollectionType = any> = {
+export type PayloadCollection<CollectionType = unknown> = {
   totalDocs: number;
   limit: number;
   totalPages: number;
