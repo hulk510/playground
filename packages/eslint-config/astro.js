@@ -18,7 +18,7 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
-    '@typescript-eslint/triple-slash-reference': 'warn',
+    '@typescript-eslint/triple-slash-reference': 'off',
   },
   overrides: [
     {
