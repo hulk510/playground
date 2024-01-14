@@ -2,7 +2,7 @@
   "name": "playground",
   "private": true,
   "scripts": {
-    "build": "turbo build",
+    "build": "dotenv -- turbo build",
     "dev": "dotenv -- turbo dev",
     "lint": "turbo lint",
     "test": "dotenv -- turbo test",
