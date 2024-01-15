@@ -72,4 +72,3 @@ jobs:
           workingDir: apps/storybook
           autoAcceptChanges: 'main'
           buildScriptName: 'build'
-          onlyChanged: true
