@@ -7,6 +7,6 @@
     "postcss-styled-syntax": "0.5.0",
     "stylelint": "16.1.0",
     "stylelint-config-recess-order": "4.4.0",
-    "stylelint-config-standard": "35.0.0"
+    "stylelint-config-standard": "36.0.0"
   }
 }
