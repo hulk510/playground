@@ -27,7 +27,7 @@
     "typescript": "5.3.3"
   },
   "devDependencies": {
-    "@astrojs/react": "3.0.8",
+    "@astrojs/react": "3.0.9",
     "@astrojs/sitemap": "3.0.3",
     "@astrojs/tailwind": "5.0.4",
     "@divriots/jampack": "0.20.2",
