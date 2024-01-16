@@ -16,7 +16,7 @@
     "payload": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts payload"
   },
   "dependencies": {
-    "@payloadcms/bundler-webpack": "1.0.5",
+    "@payloadcms/bundler-webpack": "1.0.6",
     "@payloadcms/db-mongodb": "1.1.1",
     "@payloadcms/plugin-cloud": "2.2.6",
     "@payloadcms/richtext-lexical": "0.5.0",
