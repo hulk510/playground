@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@astrojs/check": "0.4.1",
-    "@astrojs/rss": "3.0.0",
+    "@astrojs/rss": "4.0.2",
     "@resvg/resvg-js": "2.6.0",
     "astro": "3.6.4",
     "fuse.js": "6.6.2",
