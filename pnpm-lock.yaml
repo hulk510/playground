@@ -131,8 +131,8 @@ importers:
         specifier: 3.5.0
         version: 3.5.0(vite@5.0.11)
       chromatic:
-        specifier: 10.3.0
-        version: 10.3.0
+        specifier: 10.3.1
+        version: 10.3.1
       eslint:
         specifier: 8.56.0
         version: 8.56.0
@@ -6167,8 +6167,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /chromatic@10.3.0:
-    resolution: {integrity: sha512-NhNMrpGOn8clK6SpLiFe3HjrabUv6T0W548/qwKKj6rpMcRBWv16gVDERwKQ1uLiCiXHZM/gapytVazAkDhvPA==}
+  /chromatic@10.3.1:
+    resolution: {integrity: sha512-IHczKH3K3vVeZGE3XyCy/T8EQH2mGUEyQ9QUuULrWlYCfo760cnzehdTjrpuIUetkHtv7noA5Hmn6joQlz3Ufw==}
     hasBin: true
     dev: true
 
