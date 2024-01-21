@@ -89,8 +89,8 @@ importers:
         version: 18.2.0(react@18.2.0)
     devDependencies:
       '@kuma-ui/vite':
-        specifier: 1.2.1
-        version: 1.2.1(@types/react@18.2.48)(react@18.2.0)(vite@5.0.11)
+        specifier: 1.2.2
+        version: 1.2.2(@types/react@18.2.48)(react@18.2.0)(vite@5.0.11)
       '@storybook/addon-essentials':
         specifier: 7.6.9
         version: 7.6.9(@types/react-dom@18.2.18)(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0)
@@ -2367,7 +2367,22 @@ packages:
       '@kuma-ui/compiler': 1.2.5(@types/react@18.2.48)(next@14.0.4)(react@18.2.0)
       '@kuma-ui/core': 1.5.6(@types/react@18.2.48)(next@14.0.4)(react@18.2.0)
       '@kuma-ui/sheet': 1.3.0
-      '@kuma-ui/system': 1.7.2
+      '@kuma-ui/system': 1.7.3
+    transitivePeerDependencies:
+      - '@types/react'
+      - next
+      - react
+      - supports-color
+    dev: true
+
+  /@kuma-ui/babel-plugin@1.1.15(@types/react@18.2.48)(react@18.2.0):
+    resolution: {integrity: sha512-H+hiyFI8BOwjvdI0VHPqpIuslh2vZu1lYX9SyUiKVrha/nDDd3LdL4ykukIkLmvekGMYpO5R9+teTkuhxTk+wA==}
+    dependencies:
+      '@babel/core': 7.23.6
+      '@kuma-ui/compiler': 1.2.6(@types/react@18.2.48)(react@18.2.0)
+      '@kuma-ui/core': 1.5.6(@types/react@18.2.48)(next@14.0.4)(react@18.2.0)
+      '@kuma-ui/sheet': 1.3.0
+      '@kuma-ui/system': 1.7.3
     transitivePeerDependencies:
       - '@types/react'
       - next
@@ -2380,7 +2395,20 @@ packages:
     dependencies:
       '@kuma-ui/core': 1.5.6(@types/react@18.2.48)(next@14.0.4)(react@18.2.0)
       '@kuma-ui/sheet': 1.3.0
-      '@kuma-ui/system': 1.7.2
+      '@kuma-ui/system': 1.7.3
+      ts-morph: 19.0.0
+    transitivePeerDependencies:
+      - '@types/react'
+      - next
+      - react
+    dev: true
+
+  /@kuma-ui/compiler@1.2.6(@types/react@18.2.48)(react@18.2.0):
+    resolution: {integrity: sha512-6cNbEJxkk4OO4QS9HeU6yKNkcvqAnYME7eeUBqXR8G8XTGTDlJgB2PauQmGlii2ZOlKxC9vQ5skE0jboYXVFzg==}
+    dependencies:
+      '@kuma-ui/core': 1.5.6(@types/react@18.2.48)(next@14.0.4)(react@18.2.0)
+      '@kuma-ui/sheet': 1.3.0
+      '@kuma-ui/system': 1.7.3
       ts-morph: 19.0.0
     transitivePeerDependencies:
       - '@types/react'
@@ -2474,14 +2502,14 @@ packages:
       '@kuma-ui/sheet': 1.3.0
       csstype: 3.1.3
 
-  /@kuma-ui/vite@1.2.1(@types/react@18.2.48)(react@18.2.0)(vite@5.0.11):
-    resolution: {integrity: sha512-vQaWpyi4ys3DKtr2bq2iSVl0rLFQKaPrWJ7NKOXyh24NW9Ry8VskBuc5L6Ae0LMayoFwaX5sjk1i9uwug/6H9g==}
+  /@kuma-ui/vite@1.2.2(@types/react@18.2.48)(react@18.2.0)(vite@5.0.11):
+    resolution: {integrity: sha512-/KpXc0qZvJpGjKntcDcrt9UwZPCeeq6AMenkVmm94jVX37Sckt0RvvaHFBOyrNRah12d17zmlgiylZquDT6rNA==}
     peerDependencies:
       vite: ^4 || ^5
     dependencies:
-      '@kuma-ui/babel-plugin': 1.1.14(@types/react@18.2.48)(next@14.0.4)(react@18.2.0)
+      '@kuma-ui/babel-plugin': 1.1.15(@types/react@18.2.48)(react@18.2.0)
       '@kuma-ui/sheet': 1.3.0
-      '@kuma-ui/system': 1.7.2
+      '@kuma-ui/system': 1.7.3
       esbuild: 0.18.20
       eval: 0.1.8
       vite: 5.0.11
@@ -2499,7 +2527,7 @@ packages:
     dependencies:
       '@kuma-ui/babel-plugin': 1.1.14(@types/react@18.2.48)(next@14.0.4)(react@18.2.0)
       '@kuma-ui/sheet': 1.3.0
-      '@kuma-ui/system': 1.7.2
+      '@kuma-ui/system': 1.7.3
       esbuild: 0.18.20
       eval: 0.1.8
       webpack: 5.89.0
