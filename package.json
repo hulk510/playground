@@ -13,7 +13,7 @@
     "@repo/stylelint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "dotenv-cli": "7.3.0",
-    "prettier": "3.2.4",
+    "prettier": "3.2.5",
     "turbo": "1.12.2"
   },
   "engines": {
