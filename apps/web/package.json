@@ -15,7 +15,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@kuma-ui/next-plugin": "1.2.0",
+    "@kuma-ui/next-plugin": "1.2.1",
     "@next/eslint-plugin-next": "14.1.0",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
