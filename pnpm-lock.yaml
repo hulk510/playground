@@ -131,8 +131,8 @@ importers:
         specifier: 3.6.0
         version: 3.6.0(vite@5.1.5)
       chromatic:
-        specifier: 10.9.6
-        version: 10.9.6
+        specifier: 11.0.6
+        version: 11.0.6
       eslint:
         specifier: 8.56.0
         version: 8.56.0
@@ -6202,8 +6202,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /chromatic@10.9.6:
-    resolution: {integrity: sha512-1MoT+/U+vQwEiq2GuehPyStbqhxqHmM1B9pdpVU1dKh26userQg1FyOFYifkTgy+9reo2w2p7sAbc0JRd2kzlA==}
+  /chromatic@11.0.6:
+    resolution: {integrity: sha512-wwJEHlml552yYGVFQuHXTR8TsZCGOhh3Q3F5IsoHFuGh04of12Xc5XyLF3bScD8lh7XKkbEYl3+Zc2j34C2q9w==}
     hasBin: true
     peerDependencies:
       '@chromatic-com/cypress': ^0.5.2 || ^1.0.0
