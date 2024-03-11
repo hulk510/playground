@@ -2,8 +2,12 @@
 
 Hello, world!
 
-import { Client } from '@repo/ui'
+import { Client, ShowCase } from '@repo/ui';
 
-<Client>
-  Hello, world!
-</Client>
+<ShowCase
+  title='僕が作った渾身の作品'
+  description='頑張って作った説明'
+  tags={[{ id: 0, name: 'react' }]}
+>
+  <Client>Hello, world!</Client>
+</ShowCase>
