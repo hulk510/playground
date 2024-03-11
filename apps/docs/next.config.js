@@ -1,3 +1,5 @@
+const { withKumaUI } = require('@kuma-ui/next-plugin');
+
 const withNextra = require('nextra')({
   theme: 'nextra-theme-docs',
   themeConfig: './theme.config.tsx',
@@ -9,4 +11,4 @@ const nextConfig = {
   transpilePackages: ['@repo/ui'],
 };
 
-module.exports = withNextra(nextConfig);
+module.exports = withKumaUI(withNextra(nextConfig));
