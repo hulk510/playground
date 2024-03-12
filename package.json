@@ -12,12 +12,12 @@
     "@repo/eslint-config": "workspace:*",
     "@repo/stylelint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
-    "dotenv-cli": "7.3.0",
+    "dotenv-cli": "7.4.0",
     "prettier": "3.2.5",
-    "turbo": "1.12.3"
+    "turbo": "1.12.5"
   },
   "engines": {
     "node": ">=18"
   },
-  "packageManager": "pnpm@8.15.1"
+  "packageManager": "pnpm@8.15.4"
 }
