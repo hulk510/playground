@@ -66,7 +66,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Publish to Chromatic
-        uses: chromaui/action@306092d42c0743800aadf544ee263cbc56598b1b # v11
+        uses: chromaui/action@e2b5af608187ed824d61d54c2f01688b2dc1d7d2 # v11
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           workingDir: apps/storybook
