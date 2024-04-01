@@ -7,6 +7,11 @@ const LINKS = [
     href: '/kuma-ui',
     description: '🐻',
   },
+  {
+    title: 'React Hook Form and Material UI',
+    href: '/hook-form-and-material',
+    description: 'react hook formとmaterial ui',
+  },
 ];
 
 export default function Page(): JSX.Element {
