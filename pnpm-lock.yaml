@@ -237,16 +237,16 @@ importers:
   packages/playground:
     dependencies:
       '@emotion/react':
-        specifier: ^11.11.4
+        specifier: 11.11.4
         version: 11.11.4(@types/react@18.2.73)(react@18.2.0)
       '@emotion/styled':
-        specifier: ^11.11.5
+        specifier: 11.11.5
         version: 11.11.5(@emotion/react@11.11.4)(@types/react@18.2.73)(react@18.2.0)
       '@mui/material':
-        specifier: ^5.15.14
+        specifier: 5.15.14
         version: 5.15.14(@emotion/react@11.11.4)(@emotion/styled@11.11.5)(@types/react@18.2.73)(react-dom@18.2.0)(react@18.2.0)
       react-hook-form:
-        specifier: ^7.51.2
+        specifier: 7.51.2
         version: 7.51.2(react@18.2.0)
     devDependencies:
       '@repo/eslint-config':
