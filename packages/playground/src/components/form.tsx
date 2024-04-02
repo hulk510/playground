@@ -1,10 +1,14 @@
 'use client';
 import { TextField } from '@mui/material';
-import { useController, useForm } from 'react-hook-form';
+import { SubmitHandler, useController, useForm } from 'react-hook-form';
+
+type FormData = {
+  name: string;
+};
 
 export function NativeForm() {
-  const { register, handleSubmit, formState } = useForm();
-  const onSubmit = (data: any) => console.log(data);
+  const { register, handleSubmit, formState } = useForm<FormData>();
+  const onSubmit: SubmitHandler<FormData> = (data) => console.log(data);
   return (
     <div style={{ color: 'white' }}>
       Formだよ
@@ -30,13 +34,13 @@ export function NativeForm() {
 
 // submit時にエラーになってもfocusされない。
 export function ControllerForm() {
-  const { handleSubmit, formState, control } = useForm();
+  const { handleSubmit, formState, control } = useForm<FormData>();
   const { field } = useController({
     name: 'name',
     control,
     rules: { required: '必須項目です' },
   });
-  const onSubmit = (data: any) => console.log(data);
+  const onSubmit: SubmitHandler<FormData> = (data) => console.log(data);
   return (
     <div style={{ color: 'white' }}>
       Formだよ
