@@ -35,7 +35,9 @@ export function NativeForm() {
 // submit時にエラーになってもfocusされない。
 export function ControllerForm() {
   const { handleSubmit, formState, control } = useForm<FormData>();
-  const { field } = useController({
+  const {
+    field: { ref, ...field },
+  } = useController({
     name: 'name',
     control,
     rules: { required: '必須項目です' },
@@ -54,7 +56,7 @@ export function ControllerForm() {
         <TextField
           type='text'
           {...field}
-          // inputRef={field.ref}
+          inputRef={ref}
           style={{ marginBottom: '2000px' }}
           sx={{ backgroundColor: 'white', color: 'black' }}
         />
