@@ -1,4 +1,4 @@
-import { ControllerForm, NativeForm } from '@repo/playground';
+import { ControllerForm, HiddenSubmitForm, NativeForm } from '@repo/playground';
 import styles from './page.module.css';
 
 export default function Page(): JSX.Element {
@@ -11,6 +11,10 @@ export default function Page(): JSX.Element {
       <div>
         <h2> this is controller form</h2>
         <ControllerForm />
+      </div>
+      <div>
+        <h2>途中で非表示にした時のフォーム</h2>
+        <HiddenSubmitForm />
       </div>
     </div>
   );
