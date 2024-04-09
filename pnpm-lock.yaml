@@ -21,7 +21,7 @@ importers:
         specifier: 7.4.1
         version: 7.4.1
       husky:
-        specifier: ^9.0.11
+        specifier: 9.0.11
         version: 9.0.11
       prettier:
         specifier: 3.2.5
@@ -213,95 +213,95 @@ importers:
   apps/web:
     dependencies:
       '@astrojs/check':
-        specifier: ^0.5.10
+        specifier: 0.5.10
         version: 0.5.10(prettier-plugin-astro@0.13.0)(prettier@3.2.5)(typescript@5.4.4)
       '@astrojs/rss':
-        specifier: ^4.0.5
+        specifier: 4.0.5
         version: 4.0.5
       '@resvg/resvg-js':
-        specifier: ^2.6.2
+        specifier: 2.6.2
         version: 2.6.2
       astro:
-        specifier: ^4.5.17
+        specifier: 4.5.17
         version: 4.5.17(@types/node@20.12.5)(typescript@5.4.4)
       fuse.js:
-        specifier: ^7.0.0
+        specifier: 7.0.0
         version: 7.0.0
       github-slugger:
-        specifier: ^2.0.0
+        specifier: 2.0.0
         version: 2.0.0
       remark-collapse:
-        specifier: ^0.1.2
+        specifier: 0.1.2
         version: 0.1.2
       remark-toc:
         specifier: ^9.0.0
         version: 9.0.0
       satori:
-        specifier: ^0.10.13
+        specifier: 0.10.13
         version: 0.10.13
       tailwindcss:
-        specifier: ^3.4.3
+        specifier: 3.4.3
         version: 3.4.3
       typescript:
-        specifier: ^5.4.4
+        specifier: 5.4.4
         version: 5.4.4
     devDependencies:
       '@astrojs/react':
-        specifier: ^3.2.0
+        specifier: 3.2.0
         version: 3.2.0(@types/react-dom@18.2.24)(@types/react@18.2.75)(react-dom@18.2.0)(react@18.2.0)(vite@5.2.8)
       '@astrojs/sitemap':
-        specifier: ^3.1.2
+        specifier: 3.1.2
         version: 3.1.2
       '@astrojs/tailwind':
-        specifier: ^5.1.0
+        specifier: 5.1.0
         version: 5.1.0(astro@4.5.17)(tailwindcss@3.4.3)
       '@divriots/jampack':
-        specifier: ^0.23.4
+        specifier: 0.23.4
         version: 0.23.4(react-dom@18.2.0)(react@18.2.0)
       '@tailwindcss/typography':
-        specifier: ^0.5.12
+        specifier: 0.5.12
         version: 0.5.12(tailwindcss@3.4.3)
       '@types/github-slugger':
-        specifier: ^2.0.0
+        specifier: 2.0.0
         version: 2.0.0
       '@types/react':
         specifier: ^18.2.75
         version: 18.2.75
       '@typescript-eslint/parser':
-        specifier: ^7.6.0
+        specifier: 7.6.0
         version: 7.6.0(eslint@8.57.0)(typescript@5.4.4)
       astro-eslint-parser:
-        specifier: ^0.17.0
+        specifier: 0.17.0
         version: 0.17.0(typescript@5.4.4)
       commitizen:
-        specifier: ^4.3.0
+        specifier: 4.3.0
         version: 4.3.0(@types/node@20.12.5)(typescript@5.4.4)
       cz-conventional-changelog:
-        specifier: ^3.3.0
+        specifier: 3.3.0
         version: 3.3.0(@types/node@20.12.5)(typescript@5.4.4)
       eslint:
-        specifier: ^8.57.0
+        specifier: 8.57.0
         version: 8.57.0
       eslint-plugin-astro:
-        specifier: ^0.34.0
+        specifier: 0.34.0
         version: 0.34.0(eslint@8.57.0)(typescript@5.4.4)
       lint-staged:
-        specifier: ^15.2.2
+        specifier: 15.2.2
         version: 15.2.2
       prettier:
-        specifier: ^3.2.5
+        specifier: 3.2.5
         version: 3.2.5
       prettier-plugin-astro:
-        specifier: ^0.13.0
+        specifier: 0.13.0
         version: 0.13.0
       prettier-plugin-tailwindcss:
-        specifier: ^0.5.13
+        specifier: 0.5.13
         version: 0.5.13(prettier-plugin-astro@0.13.0)(prettier@3.2.5)
       react:
-        specifier: ^18.2.0
+        specifier: 18.2.0
         version: 18.2.0
       react-dom:
-        specifier: ^18.2.0
+        specifier: 18.2.0
         version: 18.2.0(react@18.2.0)
 
   packages/eslint-config:
@@ -7208,6 +7208,7 @@ packages:
 
   /chownr@1.1.4:
     resolution: {integrity: sha512-jJ0bqzaylmJtVnNgzTeSOs8DPavpbYgEr/b0YL8/2GO3xJEhInFmhKMUnEJQjZumK7KXGFhUy89PrsJWlakBVg==}
+    requiresBuild: true
 
   /chownr@2.0.0:
     resolution: {integrity: sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==}
@@ -8146,6 +8147,7 @@ packages:
   /deep-extend@0.6.0:
     resolution: {integrity: sha512-LOHxIOaPYdHlJRtCQfDIVZtfw/ufM8+rVj649RIHzcm/vGwQRXFt6OPqIFWsm2XEMrNIEtWR64sY1LEKD2vAOA==}
     engines: {node: '>=4.0.0'}
+    requiresBuild: true
 
   /deep-is@0.1.4:
     resolution: {integrity: sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==}
@@ -9740,6 +9742,7 @@ packages:
 
   /fs-constants@1.0.0:
     resolution: {integrity: sha512-y6OAwoSIf7FyjMIv94u+b5rdheZEjzR63GTyZJm5qh4Bi+2YgwLCcI/fPFZkL5PSixOt6ZNKm+w+Hfp/Bciwow==}
+    requiresBuild: true
 
   /fs-extra@10.1.0:
     resolution: {integrity: sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==}
@@ -12817,6 +12820,7 @@ packages:
 
   /mkdirp-classic@0.5.3:
     resolution: {integrity: sha512-gKLcREMhtuZRwRAfqP3RFW+TK4JqApVBtOIftVgjuABpAtpxhPGaDcfvbhNvD0B8iD1oUr/txX35NjcaY6Ns/A==}
+    requiresBuild: true
 
   /mkdirp@0.5.6:
     resolution: {integrity: sha512-FP+p8RB8OWpF3YZBCrP5gtADmtXApB5AMLn+vdyA+PyxCjrCs00mjyUozssO33cwDeT3wNGdLxJ5M//YqtHAJw==}
@@ -15530,6 +15534,7 @@ packages:
   /strip-json-comments@2.0.1:
     resolution: {integrity: sha512-4gB8na07fecVVkOI6Rs4e7T6NOTki5EmL7TUduTs6bu3EdnSycntVJ4re8kgZA+wx9IueI2Y11bfbgwtzuE0KQ==}
     engines: {node: '>=0.10.0'}
+    requiresBuild: true
 
   /strip-json-comments@3.1.1:
     resolution: {integrity: sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==}
@@ -15823,6 +15828,7 @@ packages:
   /tar-stream@2.2.0:
     resolution: {integrity: sha512-ujeqbceABgwMZxEJnk2HDY2DlnUZ+9oEcb1KzTVfYHio0UE6dG71n60d8D2I4qNvleWrrXpmjpt7vZeF1LnMZQ==}
     engines: {node: '>=6'}
+    requiresBuild: true
     dependencies:
       bl: 4.1.0
       end-of-stream: 1.4.4

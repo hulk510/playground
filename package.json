@@ -15,7 +15,7 @@
     "@repo/stylelint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "dotenv-cli": "7.4.1",
-    "husky": "^9.0.11",
+    "husky": "9.0.11",
     "prettier": "3.2.5",
     "turbo": "1.13.2"
   },
