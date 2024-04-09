@@ -1,14 +1,10 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "extends": [
-    "//"
-  ],
+  "extends": ["//"],
   "pipeline": {
     "lint:styles": {},
     "lint": {
-      "dependsOn": [
-        "lint:styles"
-      ]
+      "dependsOn": ["lint:styles"]
     }
   }
 }
