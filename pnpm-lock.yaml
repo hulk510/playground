@@ -79,6 +79,55 @@ importers:
         specifier: 5.4.4
         version: 5.4.4
 
+  apps/playground:
+    dependencies:
+      '@repo/playground':
+        specifier: workspace:*
+        version: link:../../packages/playground
+      '@repo/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
+      next:
+        specifier: 14.1.4
+        version: 14.1.4(@babel/core@7.24.4)(react-dom@18.2.0)(react@18.2.0)
+      react:
+        specifier: 18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: 18.2.0
+        version: 18.2.0(react@18.2.0)
+    devDependencies:
+      '@kuma-ui/next-plugin':
+        specifier: 1.2.1
+        version: 1.2.1(@babel/core@7.24.4)(@types/react@18.2.74)(next@14.1.4)(react@18.2.0)(webpack@5.91.0)
+      '@next/eslint-plugin-next':
+        specifier: 14.1.4
+        version: 14.1.4
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../../packages/eslint-config
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../../packages/typescript-config
+      '@types/eslint':
+        specifier: 8.56.7
+        version: 8.56.7
+      '@types/node':
+        specifier: 20.12.5
+        version: 20.12.5
+      '@types/react':
+        specifier: 18.2.74
+        version: 18.2.74
+      '@types/react-dom':
+        specifier: 18.2.24
+        version: 18.2.24
+      eslint:
+        specifier: 8.57.0
+        version: 8.57.0
+      typescript:
+        specifier: 5.4.4
+        version: 5.4.4
+
   apps/storybook:
     dependencies:
       '@repo/ui':
@@ -157,55 +206,6 @@ importers:
       vite:
         specifier: 5.2.8
         version: 5.2.8
-
-  apps/web:
-    dependencies:
-      '@repo/playground':
-        specifier: workspace:*
-        version: link:../../packages/playground
-      '@repo/ui':
-        specifier: workspace:*
-        version: link:../../packages/ui
-      next:
-        specifier: 14.1.4
-        version: 14.1.4(@babel/core@7.24.4)(react-dom@18.2.0)(react@18.2.0)
-      react:
-        specifier: 18.2.0
-        version: 18.2.0
-      react-dom:
-        specifier: 18.2.0
-        version: 18.2.0(react@18.2.0)
-    devDependencies:
-      '@kuma-ui/next-plugin':
-        specifier: 1.2.1
-        version: 1.2.1(@babel/core@7.24.4)(@types/react@18.2.74)(next@14.1.4)(react@18.2.0)(webpack@5.91.0)
-      '@next/eslint-plugin-next':
-        specifier: 14.1.4
-        version: 14.1.4
-      '@repo/eslint-config':
-        specifier: workspace:*
-        version: link:../../packages/eslint-config
-      '@repo/typescript-config':
-        specifier: workspace:*
-        version: link:../../packages/typescript-config
-      '@types/eslint':
-        specifier: 8.56.7
-        version: 8.56.7
-      '@types/node':
-        specifier: 20.12.5
-        version: 20.12.5
-      '@types/react':
-        specifier: 18.2.74
-        version: 18.2.74
-      '@types/react-dom':
-        specifier: 18.2.24
-        version: 18.2.24
-      eslint:
-        specifier: 8.57.0
-        version: 8.57.0
-      typescript:
-        specifier: 5.4.4
-        version: 5.4.4
 
   packages/eslint-config:
     devDependencies:
