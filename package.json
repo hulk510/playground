@@ -7,7 +7,7 @@
     "lint": "turbo lint",
     "test": "dotenv -- turbo test",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,json}\"",
-    "prepare": "husky && husky install",
+    "prepare": "husky",
     "clean": "rm -rf .turbo **/.turbo** node_modules **/node_modules**"
   },
   "devDependencies": {
@@ -15,7 +15,6 @@
     "@repo/stylelint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "dotenv-cli": "7.4.1",
-    "husky": "9.0.11",
     "prettier": "3.2.5",
     "turbo": "1.13.2"
   },
@@ -23,7 +22,7 @@
     "node": ">=18"
   },
   "packageManager": "pnpm@8.15.6",
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx,md,json}": "prettier --write"
+  "dependencies": {
+    "husky": "^9.0.11"
   }
 }
