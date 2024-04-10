@@ -5,9 +5,9 @@ export const SITE: Site = {
   author: "Haruka Goto",
   desc: "Haruka Daddy's Blog",
   title: "Haruka Daddy",
-  ogImage: "astropaper-og.jpg",
+  ogImage: "og-image.jpg",
   lightAndDarkMode: true,
-  postPerPage: 3,
+  postPerPage: 6,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
 };
 
