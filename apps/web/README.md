@@ -1,6 +1,6 @@
 # AstroPaper 📄
 
-Created By [Astro Paper](https://github.com/satnaing/astro-paper)
+Created By [AstroPaper](https://github.com/satnaing/astro-paper)
 
 ## 🚀 Project Structure
 
