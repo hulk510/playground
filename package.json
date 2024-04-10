@@ -7,7 +7,7 @@
     "lint": "turbo lint",
     "test": "dotenv -- turbo test",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,json}\"",
-    "prepare": "husky",
+    "prepare": "husky && husky install",
     "clean": "rm -rf .turbo **/.turbo** node_modules **/node_modules**"
   },
   "devDependencies": {
@@ -22,5 +22,8 @@
   "engines": {
     "node": ">=18"
   },
-  "packageManager": "pnpm@8.15.6"
+  "packageManager": "pnpm@8.15.6",
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,md,json}": "prettier --write"
+  }
 }
