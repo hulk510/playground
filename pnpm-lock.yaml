@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      husky:
+        specifier: ^9.0.11
+        version: 9.0.11
     devDependencies:
       '@repo/eslint-config':
         specifier: workspace:*
@@ -20,9 +24,6 @@ importers:
       dotenv-cli:
         specifier: 7.4.1
         version: 7.4.1
-      husky:
-        specifier: 9.0.11
-        version: 9.0.11
       prettier:
         specifier: 3.2.5
         version: 3.2.5
@@ -213,37 +214,37 @@ importers:
   apps/web:
     dependencies:
       '@astrojs/check':
-        specifier: 0.5.10
+        specifier: ^0.5.10
         version: 0.5.10(prettier-plugin-astro@0.13.0)(prettier@3.2.5)(typescript@5.4.4)
       '@astrojs/rss':
-        specifier: 4.0.5
+        specifier: ^4.0.2
         version: 4.0.5
       '@resvg/resvg-js':
-        specifier: 2.6.2
+        specifier: ^2.6.0
         version: 2.6.2
       astro:
-        specifier: 4.5.17
+        specifier: ^4.2.1
         version: 4.5.17(typescript@5.4.4)
       fuse.js:
-        specifier: 7.0.0
+        specifier: ^7.0.0
         version: 7.0.0
       github-slugger:
-        specifier: 2.0.0
+        specifier: ^2.0.0
         version: 2.0.0
       remark-collapse:
-        specifier: 0.1.2
+        specifier: ^0.1.2
         version: 0.1.2
       remark-toc:
-        specifier: 9.0.0
+        specifier: ^9.0.0
         version: 9.0.0
       satori:
-        specifier: 0.10.13
+        specifier: ^0.10.11
         version: 0.10.13
       tailwindcss:
-        specifier: 3.4.3
+        specifier: ^3.4.1
         version: 3.4.3
       typescript:
-        specifier: 5.4.4
+        specifier: ^5.4.4
         version: 5.4.4
     devDependencies:
       '@astrojs/react':
@@ -6807,7 +6808,6 @@ packages:
 
   /buffer@5.7.1:
     resolution: {integrity: sha512-EHcyIPBQ4BSGlvjB16k5KgAJ27CIsHY/2JBmCRReo48y9rQ3MaUzWX3KVlBa4U7MyX02HdVj0K7C3WaB3ju7FQ==}
-    requiresBuild: true
     dependencies:
       base64-js: 1.5.1
       ieee754: 1.2.1
@@ -10149,7 +10149,7 @@ packages:
     resolution: {integrity: sha512-AB6lFlbwwyIqMdHYhwPe+kjOC3Oc5P3nThEoW/AaO2BX3vJDjWPFxYLxokUZOo6RNX20He3AaT8sESs9NJcmEw==}
     engines: {node: '>=18'}
     hasBin: true
-    dev: true
+    dev: false
 
   /iconv-lite@0.4.24:
     resolution: {integrity: sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==}

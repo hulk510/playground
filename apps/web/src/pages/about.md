@@ -3,12 +3,26 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-AstroPaper is a minimal, responsive and SEO-friendly Astro blog theme. I designed and crafted this based on [my personal blog](https://satnaing.dev/blog).
+このサイトは私ことHarukaが適当に思ったことや、技術に関して書く場所です。
 
-This theme is aimed to be accessible out of the box. Light and dark mode are supported by
-default and additional color schemes can also be configured.
+最初に言っておきますが適当な性格なため、
 
-This theme is self-documented \_ which means articles/posts in this theme can also be considered as documentations. So, see the documentation for more info.
+## 🚨サイトの情報に関して一切の正当性を担保しません
+
+厳格さを求められるプログラミングの分野において良くないことだとは認識しているつもりです。
+しかし、私も人間です。めんどくさいことには抗うことができません。正しい文章の使い方や正しい用語の使用、正しい情報を引用することなど守られているほうがいいとは思いますが、私が書く内容が一切の間違いがないと認めることができません。また、そこまでの注意を払うほどのやる気もありません。読んで参考にして失敗しようが知りません。
+
+正式な文書でも無ければ、多くの人に正しい情報を発信しようとして書いているわけでもないのでそこは注意してください。
+
+---
+
+ということで、このサイトに関してですが最近いろんな技術を試したりするPlaygroundの環境を作っているのですが、そのリポジトリの中でせっかくならブログを作り作ったものをポートフォリオページ作ったり、やったことをまとめたり色々試行錯誤していくために適当にやっていこうかなと思ったのが作った経緯ですね。
+
+最終的にはそこらへんのサイトにもアクセスできるポータルサイトみたいな感じになればええなと思っています。こちらが、その[リポジトリ](https://github.com/hulk510/playground)です。Monorepoで作成しててもっといろんな試したい技術を追加して遊んでいこうかなとか妄想してます。
+
+まだ特に何かできてるわけではないですが、最近はMDNのドキュメントとか読み漁りたいなーとかTypeScript基礎からやり直したいと思っているのでそこらへんの実行環境や書いたコードとかをただ消すんじゃなくて残していくためにやっていくのが主になりそうかなって思います。あとはその試行錯誤をブログとしてまとめたり。
+
+まぁそんなこんなで参考にはしてほしくないですが、私という人間を知ってはもらいたいので私を存分に発揮できるサイトにアップグレードしていきたい所存です。
 
 <div>
   <img src="/assets/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
@@ -16,21 +30,27 @@ This theme is self-documented \_ which means articles/posts in this theme can al
 
 ## Tech Stack
 
-This theme is written in vanilla JavaScript (+ TypeScript for type checking) and a little bit of ReactJS for some interactions. TailwindCSS is used for styling; and Markdown is used for blog contents.
+Next, Reactあたりがメインです。バックエンドとかもちょろっとやったことありますが、最近はフロントエンドで個人でやる分はある程度何とかなるのでもっぱらフロントエンドメインで生きています。フロントエンドはいろんな技術あってやってて飽きないのが楽しいですが最近同じ領域で違うライブラリみたいなのをずっといったりきたりしているので新しいのもどんどん取り入れてやっていきたい。そのためのPlaygroundである。
+
+興味があるのは、テスト周りですかね。いいコードを書いたり綺麗なコードを書くということに興味を持ちつつありますが、デザインや洒落たサイトを作るってところもやりたいところではある。（誰かデザイン上達のコツ教えて）
+
+Editorは主にVSCodeですが、Neovimを触ってみていて自分だけのエディターを育成していく感じが楽しいのと編集爆速になりそうなので楽しく徐々に機能追加している最中です。
 
 ## Features
 
-Here are certain features of this site.
+Here are certain features of Haruka.
 
-- fully responsive and accessible
-- SEO-friendly
-- light & dark mode
-- fuzzy search
-- super fast performance
-- draft posts
-- pagination
-- sitemap & rss feed
-- highly customizable
-
-If you like this theme, you can star/contribute to the [repo](https://github.com/satnaing/astro-paper).  
-Or you can even give any feedback via my [email](mailto:contact@satnaing.dev).
+- お父さん
+- アラサー
+- 家族で散歩に出てボーッと生きるのがマイブーム
+- エンジニア
+- 転職しようとしたが稼ぐ必要があったので、とりあえずフリーランスになった
+- カツ丼好き
+- デブ
+- 痩せたい
+- ゲーム好き（noita, baltro, ドラゴンズドグマ2あたりを今やってる）
+- 将来は働かず作りたいものだけ作って適当に生きていたい
+- 人の目を気にするわりに気にしてないとか言う系
+- 数学学び直したい
+- 奨学金、車のローン払い終えたい
+- 外でできる趣味が欲しい
