@@ -8,9 +8,16 @@
     "test": "dotenv -- turbo test",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,json}\"",
     "prepare": "husky",
-    "clean": "rm -rf .turbo **/.turbo** node_modules **/node_modules**"
+    "clean": "rm -rf .turbo **/.turbo** node_modules **/node_modules**",
+    "postinstall": "manypkg check",
+    "package:fix": "manypkg fix"
   },
-  "devDependencies": {
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "pnpm@8.15.6",
+  "dependencies": {
+    "@manypkg/cli": "^0.21.3",
     "@repo/eslint-config": "workspace:*",
     "@repo/stylelint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
@@ -18,9 +25,5 @@
     "husky": "9.0.11",
     "prettier": "3.2.5",
     "turbo": "1.13.2"
-  },
-  "engines": {
-    "node": ">=18"
-  },
-  "packageManager": "pnpm@8.15.6"
+  }
 }
