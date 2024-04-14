@@ -112,6 +112,9 @@ importers:
       '@repo/eslint-config':
         specifier: workspace:*
         version: link:../../packages/eslint-config
+      '@repo/tailwindcss-config':
+        specifier: workspace:*
+        version: link:../../packages/tailwindcss-config
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
@@ -127,9 +130,18 @@ importers:
       '@types/react-dom':
         specifier: 18.2.24
         version: 18.2.24
+      autoprefixer:
+        specifier: ^10.4.19
+        version: 10.4.19(postcss@8.4.38)
       eslint:
         specifier: 8.57.0
         version: 8.57.0
+      postcss:
+        specifier: ^8.4.38
+        version: 8.4.38
+      tailwindcss:
+        specifier: 3.4.3
+        version: 3.4.3
       typescript:
         specifier: 5.4.4
         version: 5.4.4
@@ -385,6 +397,18 @@ importers:
       stylelint-config-standard:
         specifier: 36.0.0
         version: 36.0.0(stylelint@16.3.1)
+
+  packages/tailwindcss-config:
+    devDependencies:
+      autoprefixer:
+        specifier: ^10.4.19
+        version: 10.4.19(postcss@8.4.38)
+      postcss:
+        specifier: ^8.4.38
+        version: 8.4.38
+      tailwindcss:
+        specifier: 3.4.3
+        version: 3.4.3
 
   packages/typescript-config: {}
 

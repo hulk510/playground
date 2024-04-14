@@ -1,3 +1,4 @@
+export { Home } from './components/atoms/test';
 export { Client } from './components/button';
 export { Card } from './components/card';
 export { Code } from './components/code';
