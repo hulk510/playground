@@ -65,8 +65,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/typescript-config
       '@types/eslint':
-        specifier: 8.56.7
-        version: 8.56.7
+        specifier: 8.56.8
+        version: 8.56.8
       '@types/node':
         specifier: 20.12.6
         version: 20.12.6
@@ -114,8 +114,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/typescript-config
       '@types/eslint':
-        specifier: 8.56.7
-        version: 8.56.7
+        specifier: 8.56.8
+        version: 8.56.8
       '@types/node':
         specifier: 20.12.6
         version: 20.12.6
@@ -348,8 +348,8 @@ importers:
         specifier: workspace:*
         version: link:../typescript-config
       '@types/eslint':
-        specifier: 8.56.7
-        version: 8.56.7
+        specifier: 8.56.8
+        version: 8.56.8
       '@types/node':
         specifier: 20.12.6
         version: 20.12.6
@@ -405,8 +405,8 @@ importers:
         specifier: 1.13.2
         version: 1.13.2(@types/node@20.12.6)(typescript@5.4.4)
       '@types/eslint':
-        specifier: 8.56.7
-        version: 8.56.7
+        specifier: 8.56.8
+        version: 8.56.8
       '@types/node':
         specifier: 20.12.6
         version: 20.12.6
@@ -5194,12 +5194,12 @@ packages:
   /@types/eslint-scope@3.7.7:
     resolution: {integrity: sha512-MzMFlSLBqNF2gcHWO0G1vP/YQyfvrxZ0bF+u7mzUdZ1/xK4A4sru+nraZz5i3iEIk1l1uyicaDVTB4QbbEkAYg==}
     dependencies:
-      '@types/eslint': 8.56.7
+      '@types/eslint': 8.56.8
       '@types/estree': 1.0.5
     dev: true
 
-  /@types/eslint@8.56.7:
-    resolution: {integrity: sha512-SjDvI/x3zsZnOkYZ3lCt9lOZWZLB2jIlNKz+LBgCtDurK0JZcwucxYHn1w2BJkD34dgX9Tjnak0txtq4WTggEA==}
+  /@types/eslint@8.56.8:
+    resolution: {integrity: sha512-LdDdQVDzDXf3ijhhMnE27C5vc0QEknD8GiMR/Hi+fVbdZNfAfCy2j69m0LjUd2MAy0+kIgnOtd5ndTmDk/VWCA==}
     dependencies:
       '@types/estree': 1.0.5
       '@types/json-schema': 7.0.15
