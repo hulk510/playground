@@ -9,7 +9,7 @@
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,json}\"",
     "prepare": "husky",
     "clean": "rm -rf .turbo **/.turbo** node_modules **/node_modules**",
-    "postinstall": "manypkg check",
+    "postinstall": "manypkg check && manypkg fix",
     "package:fix": "manypkg fix"
   },
   "engines": {
