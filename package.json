@@ -9,23 +9,36 @@
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,json,astro}\"",
     "prepare": "husky",
     "clean": "rm -rf .turbo **/*/.turbo** node_modules **/*/node_modules**",
-    "postinstall": "manypkg check && manypkg fix",
-    "package:fix": "manypkg fix"
+    "_postinstall": "manypkg check",
+    "package:fix": "manypkg fix",
+    "inspector": "eslint --inspect-config"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "packageManager": "pnpm@8.15.6",
   "dependencies": {
-    "@manypkg/cli": "^0.21.3",
+    "@eslint/eslintrc": "^3.0.2",
+    "@eslint/js": "^9.0.0",
+    "@manypkg/cli": "^0.21.4",
     "@repo/eslint-config": "workspace:*",
     "@repo/stylelint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
+    "@types/eslint": "8.56.9",
+    "@types/eslint-config-prettier": "^6.11.3",
+    "@types/eslint__eslintrc": "^2.1.1",
+    "@types/eslint__js": "^8.42.3",
+    "@vercel/style-guide": "^6.0.0",
     "dotenv-cli": "7.4.1",
-    "eslint": "8.57.0",
+    "eslint": "9.0.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "globals": "^15.0.0",
     "husky": "9.0.11",
     "lint-staged": "^15.2.2",
     "prettier": "3.2.5",
-    "turbo": "1.13.2"
+    "turbo": "1.13.2",
+    "typescript": "5.4.5",
+    "typescript-eslint": "^7.7.0"
   }
 }

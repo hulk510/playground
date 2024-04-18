@@ -6,11 +6,16 @@ import Document, {
   Main,
   NextScript,
 } from 'next/document';
-
+import { useState } from 'react';
+useState();
 export default class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
     const registry = createStyleRegistry();
     const originalRenderPage = ctx.renderPage;
+
+    const help = '';
+
+    console.log('hello');
 
     try {
       ctx.renderPage = () =>

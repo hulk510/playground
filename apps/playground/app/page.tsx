@@ -1,4 +1,5 @@
 import { Card, Home, Title } from '@repo/ui';
+import { useEffect, useState } from 'react';
 import styles from './page.module.css';
 
 const LINKS = [
@@ -15,6 +16,11 @@ const LINKS = [
 ];
 
 export default function Page(): JSX.Element {
+  const [value, setValue] = useState(0);
+  useEffect(() => {
+    console.log('hello');
+    setValue(1);
+  });
   return (
     <main className={styles.main}>
       <Title />

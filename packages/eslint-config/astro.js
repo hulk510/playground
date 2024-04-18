@@ -6,13 +6,7 @@ module.exports = {
     es2022: true,
     browser: true,
   },
-  extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:astro/recommended',
-    'prettier',
-    'eslint-config-turbo',
-  ],
+  extends: ['plugin:astro/recommended', 'eslint-config-turbo'],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
@@ -20,6 +14,7 @@ module.exports = {
   rules: {
     '@typescript-eslint/triple-slash-reference': 'off',
   },
+  // ここら辺のoverridesはどうなるんやろ？
   overrides: [
     {
       files: ['*.astro'],
