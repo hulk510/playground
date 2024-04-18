@@ -378,8 +378,8 @@ importers:
         specifier: 16.3.1
         version: 16.3.1(typescript@5.4.5)
       stylelint-config-recess-order:
-        specifier: 5.0.0
-        version: 5.0.0(stylelint@16.3.1)
+        specifier: 5.0.1
+        version: 5.0.1(stylelint@16.3.1)
       stylelint-config-standard:
         specifier: 36.0.0
         version: 36.0.0(stylelint@16.3.1)
@@ -14982,8 +14982,8 @@ packages:
       client-only: 0.0.1
       react: 18.2.0
 
-  /stylelint-config-recess-order@5.0.0(stylelint@16.3.1):
-    resolution: {integrity: sha512-D+/Got844O96No2mj/H2NhLjj555iKAy/Mea+JCerfKB9TBKQW3/IudSVkTCxE4QiRDLldfH15x6FH1D1Anjhw==}
+  /stylelint-config-recess-order@5.0.1(stylelint@16.3.1):
+    resolution: {integrity: sha512-rKbGkoa3h0rINrGln9TFVowvSCLgPJC5O0EuPiqlqWcJMb1lImEtXktcjFCVz+hwtSUiHD3ijJc3vP9muFOgJg==}
     peerDependencies:
       stylelint: '>=16'
     dependencies:
