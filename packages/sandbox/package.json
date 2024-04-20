@@ -1,5 +1,5 @@
 {
-  "name": "@repo/playground",
+  "name": "@repo/sandbox",
   "version": "0.0.0",
   "private": true,
   "main": "./src/index.tsx",

@@ -99,9 +99,9 @@ importers:
 
   apps/playground:
     dependencies:
-      '@repo/playground':
+      '@repo/sandbox':
         specifier: workspace:*
-        version: link:../../packages/playground
+        version: link:../../packages/sandbox
       '@repo/ui':
         specifier: workspace:*
         version: link:../../packages/ui
@@ -349,7 +349,7 @@ importers:
         specifier: 5.4.5
         version: 5.4.5
 
-  packages/playground:
+  packages/sandbox:
     dependencies:
       '@emotion/react':
         specifier: 11.11.4
