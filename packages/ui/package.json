@@ -27,6 +27,7 @@
     "typescript": "5.4.5"
   },
   "dependencies": {
-    "@kuma-ui/core": "1.5.6"
+    "@kuma-ui/core": "1.5.6",
+    "framer-motion": "^11.1.7"
   }
 }

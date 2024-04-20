@@ -12,6 +12,11 @@ const LINKS = [
     href: '/hook-form-and-material',
     description: 'react hook formとmaterial ui',
   },
+  {
+    title: 'Framer Motion',
+    href: '/framer-motion',
+    description: 'Interactive animations for the web',
+  },
 ];
 
 export default function Page(): JSX.Element {
