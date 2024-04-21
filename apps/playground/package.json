@@ -11,13 +11,13 @@
   "dependencies": {
     "@repo/ui": "workspace:*",
     "@repo/playground": "workspace:*",
-    "next": "14.2.1",
+    "next": "14.2.2",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@kuma-ui/next-plugin": "1.2.1",
-    "@next/eslint-plugin-next": "14.2.1",
+    "@next/eslint-plugin-next": "14.2.2",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@types/eslint": "8.56.9",
