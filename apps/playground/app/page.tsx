@@ -1,4 +1,5 @@
-import { Card, Home, Title } from '@repo/ui';
+'use client';
+import { Card, Onboarding } from '@repo/ui';
 import styles from './page.module.css';
 
 const LINKS = [
@@ -22,9 +23,7 @@ const LINKS = [
 export default function Page(): JSX.Element {
   return (
     <main className={styles.main}>
-      <Title />
-      <Home />
-      <h1 className='bg-blue-500 font-bold'>Playground</h1>
+      <Onboarding />
       <div className={styles.grid}>
         {LINKS.map(({ title, href, description }) => (
           <Card className={styles.card} href={href} key={title} title={title}>
