@@ -160,6 +160,9 @@ importers:
 
   apps/storybooks:
     dependencies:
+      '@repo/sandbox':
+        specifier: workspace:*
+        version: link:../../packages/sandbox
       '@repo/ui':
         specifier: workspace:*
         version: link:../../packages/ui
