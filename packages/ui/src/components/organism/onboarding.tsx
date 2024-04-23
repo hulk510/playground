@@ -1,10 +1,11 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import checkIcon from '../../../public/assets/check.svg';
+import searchIcon from '../../../public/assets/search.svg';
 
 export function Onboarding() {
   return (
-    <div className='flex items-center justify-center h-[100vh] flex-col gap-4'>
+    <div className='flex items-center justify-center flex-col gap-3'>
       <div className='flex items-center gap-2'>
         <motion.div
           animate={{
@@ -38,7 +39,29 @@ export function Onboarding() {
           <h1 className='text-[6rem] font-bold drop-shadow-md'>Playground</h1>
         </motion.div>
       </div>
-      {/* <p>Hello My New Playground!!</p> */}
+      <motion.div
+        initial={{ y: 30, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{
+          duration: 0.3,
+          delay: 2,
+          ease: 'easeInOut',
+        }}
+        className='flex items-center gap-2 p-4 border border-gray-300 rounded-xl w-full h-14 bg-white shadow-md'
+      >
+        <Image
+          src={searchIcon}
+          priority
+          alt='check icon.'
+          width={16}
+          height={16}
+        />
+        <input
+          type='text'
+          className='w-full h-full outline-none'
+          placeholder='Please type something...'
+        />
+      </motion.div>
     </div>
   );
 }
