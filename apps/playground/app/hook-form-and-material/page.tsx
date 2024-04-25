@@ -1,4 +1,4 @@
-import { ControllerForm, HiddenSubmitForm, NativeForm } from '@repo/playground';
+import { ControllerForm, HiddenSubmitForm, NativeForm } from '@repo/sandbox';
 import styles from './page.module.css';
 
 export default function Page(): JSX.Element {

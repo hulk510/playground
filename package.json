@@ -6,23 +6,28 @@
     "dev": "dotenv -- turbo dev",
     "lint": "turbo lint",
     "test": "dotenv -- turbo test",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,json}\"",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,json,astro}\"",
     "prepare": "husky",
-    "clean": "rm -rf .turbo **/.turbo** node_modules **/node_modules**"
-  },
-  "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
-    "@repo/stylelint-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
-    "dotenv-cli": "7.4.1",
-    "prettier": "3.2.5",
-    "turbo": "1.13.2"
+    "clean": "rm -rf .turbo **/*/.turbo** node_modules **/*/node_modules**",
+    "postinstall": "manypkg check",
+    "package:fix": "manypkg fix"
   },
   "engines": {
     "node": ">=18"
   },
-  "packageManager": "pnpm@8.15.7",
+  "packageManager": "pnpm@9.0.4",
   "dependencies": {
-    "husky": "9.0.11"
+    "@commitlint/cli": "^19.2.2",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@manypkg/cli": "^0.21.3",
+    "@repo/eslint-config": "workspace:*",
+    "@repo/stylelint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "dotenv-cli": "7.4.1",
+    "eslint": "8.57.0",
+    "husky": "9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier": "3.2.5",
+    "turbo": "1.13.2"
   }
 }
