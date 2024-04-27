@@ -9,7 +9,7 @@
     "lint": "eslint . --max-warnings 0"
   },
   "dependencies": {
-    "next": "14.2.2",
+    "next": "14.2.3",
     "@repo/sandbox": "workspace:*",
     "@repo/ui": "workspace:*",
     "react": "18.2.0",
@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@kuma-ui/next-plugin": "1.2.1",
-    "@next/eslint-plugin-next": "14.2.2",
+    "@next/eslint-plugin-next": "14.2.3",
     "@repo/eslint-config": "workspace:*",
     "@repo/tailwindcss-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
