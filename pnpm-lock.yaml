@@ -307,8 +307,8 @@ importers:
         specifier: 8.57.0
         version: 8.57.0
       eslint-plugin-astro:
-        specifier: 1.0.2
-        version: 1.0.2(eslint@8.57.0)(typescript@5.4.5)
+        specifier: 1.0.3
+        version: 1.0.3(eslint@8.57.0)(typescript@5.4.5)
       prettier:
         specifier: 3.2.5
         version: 3.2.5
@@ -4691,8 +4691,8 @@ packages:
       eslint-import-resolver-webpack:
         optional: true
 
-  eslint-plugin-astro@1.0.2:
-    resolution: {integrity: sha512-zrhiL6spQqG6814TTb6i82nJtEAOb8fSn3Is7HB1L09AA5Uff7rgFefuw7B9ZvgUBgVdZ55QJMiv3nSJsP4YDQ==}
+  eslint-plugin-astro@1.0.3:
+    resolution: {integrity: sha512-+Nna5I9ypbYftyhmF6I9QbyK3o6m3PGfjgcgRzSF1TbHEXG5VI8z+nzsLywcvyVtGhcwmOpnB71iE7XDKnB94Q==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: '>=8.57.0'
@@ -14230,7 +14230,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-astro@1.0.2(eslint@8.57.0)(typescript@5.4.5):
+  eslint-plugin-astro@1.0.3(eslint@8.57.0)(typescript@5.4.5):
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@8.57.0)
       '@jridgewell/sourcemap-codec': 1.4.15
