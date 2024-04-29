@@ -12,8 +12,8 @@
     "next": "14.2.3",
     "@repo/sandbox": "workspace:*",
     "@repo/ui": "workspace:*",
-    "react": "18.3.0",
-    "react-dom": "18.3.0"
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   },
   "devDependencies": {
     "@kuma-ui/next-plugin": "1.2.1",
