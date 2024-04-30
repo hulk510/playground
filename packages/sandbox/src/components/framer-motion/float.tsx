@@ -8,9 +8,9 @@ export function FloatAnimation() {
     <div className='flex w-120 h-[300px] flex-col'>
       {/* transitionでduration入れてるとwhileTapとかもそれに合わさるみたい。 */}
       <motion.div
-        className='w-40 h-40'
-        initial={{ y: -50 }}
-        whileInView={{ y: [-150, -50, -150] }}
+        className='w-32 h-32'
+        initial={{ y: 0 }}
+        whileInView={{ y: [100, 0, 100] }}
         transition={{
           repeat: Infinity,
           repeatType: 'reverse',
@@ -20,7 +20,7 @@ export function FloatAnimation() {
         }}
       >
         <motion.div
-          whileInView={{ scale: [0.9, 1, 0.95], rotate: [5, -3, -10] }}
+          whileInView={{ scale: [0.89, 1, 0.95], rotate: [10, -5, 10] }}
           transition={{
             duration: 6,
             repeat: Infinity,
@@ -28,14 +28,13 @@ export function FloatAnimation() {
             ease: 'easeInOut',
           }}
         >
-          <Image src={sticker} priority alt='sticker' className='w-40 h-40' />
+          <Image src={sticker} priority alt='sticker' className='w-32 h-32' />
         </motion.div>
       </motion.div>
       {/* 影を作成 */}
       <motion.div
-        className='bg-gray-400 w-16 h-1 rounded-full shadow-lg opacity-80 blur-sm m-auto'
-        initial={{ y: -100 }}
-        whileInView={{ scaleX: [0.5, 1.4, 0.5], scaleY: [0.5, 1, 0.5] }}
+        className='bg-gray-400 w-16 h-1 rounded-full shadow-lg opacity-80 blur-sm m-auto mt-28'
+        whileInView={{ scaleX: [1.2, 0.7, 1.2], scaleY: [1, 0.6, 1] }}
         transition={{
           repeat: Infinity,
           repeatType: 'reverse',
