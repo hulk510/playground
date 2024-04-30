@@ -1,5 +1,10 @@
 'use client';
-import { MotionExample, MotionExample2, MotionExample3 } from '@repo/sandbox';
+import {
+  FloatAnimation,
+  MotionExample,
+  MotionExample2,
+  MotionExample3,
+} from '@repo/sandbox';
 
 export default function Page(): JSX.Element {
   return (
@@ -8,6 +13,7 @@ export default function Page(): JSX.Element {
       <MotionExample />
       <MotionExample2 />
       <MotionExample3 />
+      <FloatAnimation />
     </div>
   );
 }

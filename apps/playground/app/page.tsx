@@ -1,4 +1,5 @@
 'use client';
+import { FloatAnimation } from '@repo/sandbox';
 import { Card, Onboarding } from '@repo/ui';
 import styles from './page.module.css';
 
@@ -24,6 +25,7 @@ export default function Page(): JSX.Element {
   return (
     <main className={styles.main}>
       <Onboarding />
+      <FloatAnimation />
       <div className={styles.grid}>
         {LINKS.map(({ title, href, description }) => (
           <Card className={styles.card} href={href} key={title} title={title}>

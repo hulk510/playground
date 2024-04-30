@@ -9,6 +9,7 @@
     "lint": "eslint . --max-warnings 0"
   },
   "dependencies": {
+    "@repo/sandbox": "workspace:*",
     "@repo/ui": "workspace:*",
     "next": "14.2.3",
     "nextra": "2.13.4",
