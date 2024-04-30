@@ -1,0 +1,10 @@
+{
+  "*": {
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "index": {
+    "title": "Home"
+  }
+}
