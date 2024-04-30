@@ -3,6 +3,7 @@ import { LOGO_IMAGE, SITE } from "@config";
 import Hr from "./Hr.astro";
 import LinkButton from "./LinkButton.astro";
 
+// TODO: Portfolio and Playgroundは折りたたみのメニューに入れたい
 export interface Props {
   activeNav?: "posts" | "tags" | "about" | "search";
 }
@@ -55,6 +56,12 @@ const { activeNav } = Astro.props;
           </svg>
         </button>
         <ul id="menu-items" class="display-none sm:flex">
+          <li>
+            <a href="https://portfolio.haruka.dad">Portfolio</a>
+          </li>
+          <li>
+            <a href="https://playground.haruka.dad">Playground</a>
+          </li>
           <li>
             <a href="/posts/" class={activeNav === "posts" ? "active" : ""}>
               Posts
