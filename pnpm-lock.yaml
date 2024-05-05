@@ -267,8 +267,8 @@ importers:
         specifier: 2.6.2
         version: 2.6.2
       astro:
-        specifier: 4.7.0
-        version: 4.7.0(@types/node@20.12.8)(lightningcss@1.24.1)(terser@5.31.0)(typescript@5.4.5)
+        specifier: 4.7.1
+        version: 4.7.1(@types/node@20.12.8)(lightningcss@1.24.1)(terser@5.31.0)(typescript@5.4.5)
       fuse.js:
         specifier: 7.0.0
         version: 7.0.0
@@ -292,14 +292,14 @@ importers:
         version: 5.4.5
     devDependencies:
       '@astrojs/react':
-        specifier: 3.3.1
-        version: 3.3.1(@types/react-dom@18.3.0)(@types/react@18.3.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@5.2.11(@types/node@20.12.8)(lightningcss@1.24.1)(terser@5.31.0))
+        specifier: 3.3.2
+        version: 3.3.2(@types/react-dom@18.3.0)(@types/react@18.3.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@5.2.11(@types/node@20.12.8)(lightningcss@1.24.1)(terser@5.31.0))
       '@astrojs/sitemap':
         specifier: 3.1.4
         version: 3.1.4
       '@astrojs/tailwind':
         specifier: 5.1.0
-        version: 5.1.0(astro@4.7.0(@types/node@20.12.8)(lightningcss@1.24.1)(terser@5.31.0)(typescript@5.4.5))(tailwindcss@3.4.3(ts-node@10.9.2(@swc/core@1.4.17(@swc/helpers@0.5.5))(@types/node@20.12.8)(typescript@5.4.5)))(ts-node@10.9.2(@swc/core@1.4.17(@swc/helpers@0.5.5))(@types/node@20.12.8)(typescript@5.4.5))
+        version: 5.1.0(astro@4.7.1(@types/node@20.12.8)(lightningcss@1.24.1)(terser@5.31.0)(typescript@5.4.5))(tailwindcss@3.4.3(ts-node@10.9.2(@swc/core@1.4.17(@swc/helpers@0.5.5))(@types/node@20.12.8)(typescript@5.4.5)))(ts-node@10.9.2(@swc/core@1.4.17(@swc/helpers@0.5.5))(@types/node@20.12.8)(typescript@5.4.5))
       '@divriots/jampack':
         specifier: 0.24.0
         version: 0.24.0(@swc/helpers@0.5.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -556,8 +556,8 @@ packages:
     resolution: {integrity: sha512-Z9IYjuXSArkAUx3N6xj6+Bnvx8OdUSHA8YoOgyepp3+zJmtVYJIl/I18GozdJVW1p5u/CNpl3Km7/gwTJK85cw==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0}
 
-  '@astrojs/react@3.3.1':
-    resolution: {integrity: sha512-dwN6B+C0hQ1jpeQ5EckICpqv76t6RxEslldCP0UQ/ospolNk8GjqL11X/xQSbftiQvGWRMT0Tj5f0Xk17k5qJQ==}
+  '@astrojs/react@3.3.2':
+    resolution: {integrity: sha512-UNdOZ+qFjTZkfz5A8PauMpRh+qD1NPFdHB0GT4ksBbY4fghcbgU1p8Ugy696glL3/nwwIdq44I/KS2vMFxZzTA==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0}
     peerDependencies:
       '@types/react': ^17.0.50 || ^18.0.21
@@ -3516,8 +3516,8 @@ packages:
     resolution: {integrity: sha512-8hJaCuqxObShWl2wEsnASqh/DbQ2O+S66m0Q3ctJlzBPEQ4pfGwwama3FCjZO3GDLQsjvn1T0v93Vxyu/+5fGw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  astro@4.7.0:
-    resolution: {integrity: sha512-YC24nK6/UNelVob+4RoJPDgZJdpaJarIU85D/UxCrlsYJlLqrW8hXq7A9T6BXNs+puF9pJrYlqaJNCRO+928XA==}
+  astro@4.7.1:
+    resolution: {integrity: sha512-3o+VmnIPBiCm0QVyyTC/F8humNXny5YpI+MKvBTksviRtKxhnztEA3+GAR2XWLUSOx1+/GVjz7mExq3hJGOeqQ==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -9170,7 +9170,7 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/react@3.3.1(@types/react-dom@18.3.0)(@types/react@18.3.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@5.2.11(@types/node@20.12.8)(lightningcss@1.24.1)(terser@5.31.0))':
+  '@astrojs/react@3.3.2(@types/react-dom@18.3.0)(@types/react@18.3.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@5.2.11(@types/node@20.12.8)(lightningcss@1.24.1)(terser@5.31.0))':
     dependencies:
       '@types/react': 18.3.1
       '@types/react-dom': 18.3.0
@@ -9193,9 +9193,9 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 3.23.6
 
-  '@astrojs/tailwind@5.1.0(astro@4.7.0(@types/node@20.12.8)(lightningcss@1.24.1)(terser@5.31.0)(typescript@5.4.5))(tailwindcss@3.4.3(ts-node@10.9.2(@swc/core@1.4.17(@swc/helpers@0.5.5))(@types/node@20.12.8)(typescript@5.4.5)))(ts-node@10.9.2(@swc/core@1.4.17(@swc/helpers@0.5.5))(@types/node@20.12.8)(typescript@5.4.5))':
+  '@astrojs/tailwind@5.1.0(astro@4.7.1(@types/node@20.12.8)(lightningcss@1.24.1)(terser@5.31.0)(typescript@5.4.5))(tailwindcss@3.4.3(ts-node@10.9.2(@swc/core@1.4.17(@swc/helpers@0.5.5))(@types/node@20.12.8)(typescript@5.4.5)))(ts-node@10.9.2(@swc/core@1.4.17(@swc/helpers@0.5.5))(@types/node@20.12.8)(typescript@5.4.5))':
     dependencies:
-      astro: 4.7.0(@types/node@20.12.8)(lightningcss@1.24.1)(terser@5.31.0)(typescript@5.4.5)
+      astro: 4.7.1(@types/node@20.12.8)(lightningcss@1.24.1)(terser@5.31.0)(typescript@5.4.5)
       autoprefixer: 10.4.19(postcss@8.4.38)
       postcss: 8.4.38
       postcss-load-config: 4.0.2(postcss@8.4.38)(ts-node@10.9.2(@swc/core@1.4.17(@swc/helpers@0.5.5))(@types/node@20.12.8)(typescript@5.4.5))
@@ -12787,7 +12787,7 @@ snapshots:
       - supports-color
       - typescript
 
-  astro@4.7.0(@types/node@20.12.8)(lightningcss@1.24.1)(terser@5.31.0)(typescript@5.4.5):
+  astro@4.7.1(@types/node@20.12.8)(lightningcss@1.24.1)(terser@5.31.0)(typescript@5.4.5):
     dependencies:
       '@astrojs/compiler': 2.8.0
       '@astrojs/internal-helpers': 0.4.0
