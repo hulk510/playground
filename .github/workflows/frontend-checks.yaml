@@ -69,6 +69,6 @@ jobs:
         uses: chromaui/action@d208304630e76d960a80b9db40a838eb8babcebe # v11
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-          workingDir: apps/storybooks
+          # workingDir: apps/storybooks
           autoAcceptChanges: 'main'
           buildScriptName: 'build'
