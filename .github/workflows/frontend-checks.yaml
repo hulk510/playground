@@ -70,6 +70,6 @@ jobs:
           workingDir: apps/storybooks
           autoAcceptChanges: 'main'
           buildScriptName: 'build'
-          onlyChanged: true
-          exitZeroOnChanges: true
-          exitOnceUploaded: true
+          onlyChanged: false
+          exitZeroOnChanges: false
+          exitOnceUploaded: false
