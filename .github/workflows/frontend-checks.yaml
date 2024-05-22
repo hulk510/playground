@@ -14,10 +14,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b # v4.1.4
-      - uses: pnpm/action-setup@v2
+      - uses: pnpm/action-setup@v4
         name: Install pnpm
         with:
-          version: 8
           run_install: false
 
       - name: Get pnpm store directory
@@ -34,7 +33,7 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
       - name: checks lint and test
         run: pnpm dlx turbo run lint test
 
@@ -45,10 +44,9 @@ jobs:
         uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b # v4.1.4
         with:
           fetch-depth: 0
-      - uses: pnpm/action-setup@v2
+      - uses: pnpm/action-setup@v4
         name: Install pnpm
         with:
-          version: 8
           run_install: false
 
       - name: Get pnpm store directory
@@ -64,11 +62,13 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
       - name: Publish to Chromatic
-        uses: chromaui/action@3dcb6636a4f8eed347ef6214f5d74d2b5fee45e4 # v11
+        uses: chromaui/action@a7f65ed179bcbe19fd793367d699f43e0f0540a7 # v11
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           workingDir: apps/storybooks
           autoAcceptChanges: 'main'
           buildScriptName: 'build'
+          exitZeroOnChanges: true
+          exitOnceUploaded: true

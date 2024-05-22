@@ -1,0 +1,23 @@
+name: cleanup caches by a branch
+on:
+  pull_request_target:
+    types:
+      - closed
+  delete:
+  workflow_dispatch:
+    inputs:
+      branchNames:
+        description: "削除対象とするキャッシュのあるbranch(ref)のリスト"
+        required: false
+        type: string
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+    steps:
+      - name: Cleanup
+        uses: 4m-mazi/souji-action@7b968d0f5b22b33600ca69829fc08914f8bcccd9 # v1.3.0
+        with:
+          branch-names: ${{ inputs.branchNames }}
