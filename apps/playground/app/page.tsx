@@ -3,7 +3,6 @@ import { FloatAnimation } from '@repo/sandbox';
 import { Card, Onboarding, SearchInput } from '@repo/ui';
 import { Link } from '@repo/ui/src/components/molecules/searchInput';
 import { useState } from 'react';
-import styles from './page.module.css';
 
 const LINKS: Link[] = [
   {
@@ -16,7 +15,8 @@ const LINKS: Link[] = [
     id: 2,
     title: 'React Hook Form and Material UI',
     href: '/hook-form-and-material',
-    description: 'react hook formとmaterial ui',
+    description:
+      'react hook formとmaterial uireact hook formとmaterial uireact hook formとmaterial uireact hook formとmaterial uireact hook formとmaterial uireact hook formとmaterial uireact hook formとmaterial uireact hook formとmaterial uireact hook formとmaterial uireact hook formとmaterial uireact hook formとmaterial uireact hook formとmaterial ui',
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ export default function Page(): JSX.Element {
 
   const handleSelectLink = (link: Link) => {
     setSelectedLink(link);
-    // setQuery('');
+    setQuery('');
   };
 
   const filteredLinks = LINKS.filter(
@@ -41,7 +41,7 @@ export default function Page(): JSX.Element {
       link.description.toLowerCase().includes(query.toLowerCase()),
   );
   return (
-    <main className={styles.main}>
+    <main className='container mx-auto flex flex-col justify-between items-center p-24 min-h-screen'>
       <div className='flex items-center justify-center flex-col gap-3'>
         <Onboarding />
         <SearchInput
@@ -53,19 +53,20 @@ export default function Page(): JSX.Element {
             handleSelectLink(lists);
           }}
         />
+        {selectedLink && (
+          <div className='flex mt-8 max-w-md w-full'>
+            <Card
+              href={selectedLink.href}
+              key={selectedLink.title}
+              title={selectedLink.title}
+            >
+              {selectedLink.description}
+            </Card>
+          </div>
+        )}
       </div>
-      {query.length === 0 && <FloatAnimation />}
+      {query.length === 0 && !selectedLink && <FloatAnimation />}
       {/* 検索で選択された */}
-      {selectedLink && (
-        <Card
-          className={styles.card}
-          href={selectedLink.href}
-          key={selectedLink.title}
-          title={selectedLink.title}
-        >
-          {selectedLink.description}
-        </Card>
-      )}
     </main>
   );
 }
