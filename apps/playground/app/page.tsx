@@ -54,7 +54,14 @@ export default function Page(): JSX.Element {
           }}
         />
         {selectedLink && (
-          <div className='flex mt-8 max-w-md w-full'>
+          <div className='flex flex-col mt-8 max-w-md w-full gap-4'>
+            <button
+              type='button'
+              onClick={() => setSelectedLink(null)}
+              className='bg-red-500 items-start text-white rounded-md p-2 hover:bg-red-600 w-24'
+            >
+              やり直す
+            </button>
             <Card
               href={selectedLink.href}
               key={selectedLink.title}
