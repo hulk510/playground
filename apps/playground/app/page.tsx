@@ -2,6 +2,7 @@
 import { FloatAnimation } from '@repo/sandbox';
 import { Card, Onboarding, SearchInput } from '@repo/ui';
 import { Link } from '@repo/ui/src/components/molecules/searchInput';
+import { motion } from 'framer-motion';
 import { useState } from 'react';
 
 const LINKS: Link[] = [
@@ -40,9 +41,10 @@ export default function Page(): JSX.Element {
       link.title.toLowerCase().includes(query.toLowerCase()) ||
       link.description.toLowerCase().includes(query.toLowerCase()),
   );
+
   return (
-    <main className='container mx-auto flex flex-col justify-between items-center p-24 min-h-screen'>
-      <div className='flex items-center justify-center flex-col gap-3'>
+    <main className='container mx-auto flex flex-col justify-start items-center p-24 min-h-screen'>
+      <div className='flex items-center justify-center flex-col'>
         <Onboarding />
         <SearchInput
           value={query}
@@ -53,27 +55,46 @@ export default function Page(): JSX.Element {
             handleSelectLink(lists);
           }}
         />
-        {selectedLink && (
-          <div className='flex flex-col mt-8 max-w-md w-full gap-4'>
-            <button
-              type='button'
-              onClick={() => setSelectedLink(null)}
-              className='bg-red-500 items-start text-white rounded-md p-2 hover:bg-red-600 w-24'
-            >
-              やり直す
-            </button>
-            <Card
-              href={selectedLink.href}
-              key={selectedLink.title}
-              title={selectedLink.title}
-            >
-              {selectedLink.description}
-            </Card>
-          </div>
-        )}
       </div>
+      {selectedLink ? (
+        <div className='flex flex-col mt-8 max-w-md w-full gap-4'>
+          <button
+            type='button'
+            onClick={() => setSelectedLink(null)}
+            className='bg-red-500 items-start text-white rounded-md p-2 hover:bg-red-600 w-24'
+          >
+            やり直す
+          </button>
+          <Card
+            href={selectedLink.href}
+            key={selectedLink.title}
+            title={selectedLink.title}
+          >
+            {selectedLink.description}
+          </Card>
+        </div>
+      ) : (
+        <motion.div
+          className='flex mt-16 w-full gap-4'
+          animate={{ x: ['200%', '-200%'] }}
+          transition={{
+            x: {
+              duration: 50,
+              repeat: Infinity,
+              repeatType: 'loop',
+              ease: 'linear',
+              repeatDelay: 1,
+            },
+          }}
+        >
+          {LINKS.map((link) => (
+            <Card href={link.href} key={link.title} title={link.title}>
+              {link.description}
+            </Card>
+          ))}
+        </motion.div>
+      )}
       {query.length === 0 && !selectedLink && <FloatAnimation />}
-      {/* 検索で選択された */}
     </main>
   );
 }
