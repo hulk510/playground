@@ -43,7 +43,7 @@ export default function Page(): JSX.Element {
   );
 
   return (
-    <main className='container mx-auto flex flex-col justify-start items-center p-24 min-h-screen'>
+    <main className='container mx-auto flex flex-col justify-start items-center p-24 min-h-screen gap-8'>
       <div className='flex items-center justify-center flex-col'>
         <Onboarding />
         <SearchInput
@@ -75,7 +75,7 @@ export default function Page(): JSX.Element {
         </div>
       ) : (
         <motion.div
-          className='flex mt-16 w-full gap-4'
+          className='flex mt-16 w-full gap-4 overflow-hidden'
           animate={{ x: ['200%', '-200%'] }}
           transition={{
             x: {
@@ -83,7 +83,6 @@ export default function Page(): JSX.Element {
               repeat: Infinity,
               repeatType: 'loop',
               ease: 'linear',
-              repeatDelay: 1,
             },
           }}
         >
@@ -94,7 +93,7 @@ export default function Page(): JSX.Element {
           ))}
         </motion.div>
       )}
-      {query.length === 0 && !selectedLink && <FloatAnimation />}
+      <FloatAnimation />
     </main>
   );
 }
