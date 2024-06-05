@@ -1,3 +1,4 @@
+'use client';
 import { ControllerForm, HiddenSubmitForm, NativeForm } from '@repo/sandbox';
 import styles from './page.module.css';
 

@@ -11,15 +11,13 @@ export function NativeForm() {
   const { register, handleSubmit, formState } = useForm<FormData>();
   const onSubmit: SubmitHandler<FormData> = (data) => console.log(data);
   return (
-    <div style={{ color: 'white' }}>
+    <div>
       Formだよ
       <form
         onSubmit={handleSubmit(onSubmit)}
         style={{ display: 'flex', flexDirection: 'column' }}
       >
-        {formState.errors.name ? (
-          <span style={{ color: 'white' }}>This field is required</span>
-        ) : null}
+        {formState.errors.name ? <span>This field is required</span> : null}
         <input
           type='text'
           {...register('name', {
@@ -45,15 +43,13 @@ export function ControllerForm() {
   });
   const onSubmit: SubmitHandler<FormData> = (data) => console.log(data);
   return (
-    <div style={{ color: 'white' }}>
+    <div>
       Formだよ
       <form
         onSubmit={handleSubmit(onSubmit)}
         style={{ display: 'flex', flexDirection: 'column' }}
       >
-        {formState.errors.name ? (
-          <span style={{ color: 'white' }}>This field is required</span>
-        ) : null}
+        {formState.errors.name ? <span>This field is required</span> : null}
         <TextField
           type='text'
           {...field}
@@ -81,7 +77,7 @@ export function HiddenSubmitForm() {
   });
   const onSubmit: SubmitHandler<FormData> = (data) => console.log(data);
   return (
-    <div style={{ color: 'white' }}>
+    <div>
       Formだよ
       <form
         onSubmit={handleSubmit(onSubmit)}

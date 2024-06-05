@@ -1,9 +1,5 @@
 interface CardProps {
   /**
-   * 説明
-   */
-  className?: string;
-  /**
    * タイトルの説明
    */
   title: string;
@@ -17,21 +13,11 @@ interface CardProps {
   href: string;
 }
 
-/**
- * hello world
- */
-export function Card({
-  className,
-  title,
-  children,
-  href,
-}: CardProps): JSX.Element {
+export function Card({ title, children, href }: CardProps): JSX.Element {
   return (
-    <a className={className} href={href}>
-      <h2>
-        {title} <span>-&gt;</span>
-      </h2>
-      <p>{children}</p>
+    <a className='border rounded-xl p-8 hover:bg-gray-100 w-full' href={href}>
+      <h2 className='text-lg'>{title}</h2>
+      <p className='text-sm text-gray-500'>{children}</p>
     </a>
   );
 }
