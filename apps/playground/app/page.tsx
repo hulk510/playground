@@ -25,6 +25,12 @@ const LINKS: Link[] = [
     href: '/framer-motion',
     description: 'Interactive animations for the web',
   },
+  {
+    id: 4,
+    title: 'Prisma',
+    href: '/todo',
+    description: 'sample prisma client',
+  },
 ];
 
 export default function Page(): JSX.Element {

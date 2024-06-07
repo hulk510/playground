@@ -1,0 +1,26 @@
+{
+  "name": "@repo/db",
+  "version": "0.0.0",
+  "exports": {
+    ".": "./src/client.ts"
+  },
+  "scripts": {
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push --skip-generate",
+    "db:seed": "tsx src/seed.ts",
+    "db:studio": "prisma studio",
+    "format": "prisma format",
+    "lint": "eslint . --max-warnings 0"
+  },
+  "dependencies": {
+    "@prisma/client": "latest"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "eslint": "8.57.0",
+    "prisma": "latest",
+    "tsx": "^4.7.1",
+    "typescript": "5.4.5"
+  }
+}
