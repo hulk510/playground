@@ -1,8 +1,6 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "globalDependencies": ["**/.env.*local"],
-  "globalDotEnv": [".env"],
-  "pipeline": {
+  "tasks": {
     "build": {
       "dependsOn": ["^build"],
       "outputs": [
@@ -10,29 +8,15 @@
         "!.next/cache/**",
         "storybook-static/**",
         "dist/**"
-      ],
-      "dotEnv": [
-        ".env.production.local",
-        ".env.local",
-        ".env.production",
-        ".env"
       ]
     },
-    "test": {
-      "dotEnv": [".env.test.local", ".env.test", ".env"]
-    },
+    "test": {},
     "lint": {
-      "outputMode": "errors-only"
+      "outputLogs": "errors-only"
     },
     "dev": {
       "cache": false,
-      "persistent": true,
-      "dotEnv": [
-        ".env.development.local",
-        ".env.local",
-        ".env.development",
-        ".env"
-      ]
+      "persistent": true
     }
   }
 }
