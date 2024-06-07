@@ -1,7 +1,7 @@
-import Fuse from "fuse.js";
-import { useEffect, useRef, useState, useMemo } from "react";
 import Card from "@components/Card";
 import type { CollectionEntry } from "astro:content";
+import Fuse from "fuse.js";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 export type SearchItem = {
   title: string;
@@ -58,7 +58,7 @@ export default function SearchBar({ searchList }: Props) {
   useEffect(() => {
     // Add search result only if
     // input value is more than one character
-    let inputResult = inputVal.length > 1 ? fuse.search(inputVal) : [];
+    const inputResult = inputVal.length > 1 ? fuse.search(inputVal) : [];
     setSearchResults(inputResult);
 
     // Update search string in URL
@@ -83,10 +83,7 @@ export default function SearchBar({ searchList }: Props) {
           <span className="sr-only">Search</span>
         </span>
         <input
-          className="block w-full rounded border border-skin-fill 
-        border-opacity-40 bg-skin-fill py-3 pl-10
-        pr-3 placeholder:italic placeholder:text-opacity-75 
-        focus:border-skin-accent focus:outline-none"
+          className="block w-full rounded border border-skin-fill border-opacity-40 bg-skin-fill py-3 pl-10 pr-3 placeholder:italic placeholder:text-opacity-75 focus:border-skin-accent focus:outline-none"
           placeholder="Search for anything..."
           type="text"
           name="search"
