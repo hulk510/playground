@@ -2,7 +2,8 @@
   "extends": ["//"],
   "tasks": {
     "db:generate": {
-      "cache": false
+      "cache": false,
+      "env": ["DATABASE_PRISMA_URL"]
     },
     "db:push": {
       "cache": false
