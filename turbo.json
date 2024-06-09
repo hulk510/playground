@@ -8,7 +8,8 @@
         "!.next/cache/**",
         "storybook-static/**",
         "dist/**"
-      ]
+      ],
+      "env": ["DATABASE_PRISMA_URL"]
     },
     "test": {},
     "lint": {
