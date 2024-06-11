@@ -1,3 +1,5 @@
+import sharedConfig from "@repo/tailwind-config";
+
 function withOpacity(variableName) {
   return ({ opacityValue }) => {
     if (opacityValue !== undefined) {
@@ -8,7 +10,7 @@ function withOpacity(variableName) {
 }
 
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+const config = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     // Remove the following screen breakpoint or add other breakpoints
@@ -72,4 +74,7 @@ module.exports = {
     },
   },
   plugins: [require("@tailwindcss/typography")],
+  presets: [sharedConfig],
 };
+
+export default config;
