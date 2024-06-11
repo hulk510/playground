@@ -8,6 +8,8 @@
       "cache": false
     },
     "db:seed": {},
-    "db:studio": {}
+    "db:studio": {},
+    "db:migrate:dev": {},
+    "db:migrate:deploy": {}
   }
 }
