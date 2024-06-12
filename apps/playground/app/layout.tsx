@@ -1,5 +1,5 @@
 import { KumaRegistry } from '@kuma-ui/next-plugin/registry';
-import '@repo/ui/styles.css';
+import '@repo/ui/globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
