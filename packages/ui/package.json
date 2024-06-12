@@ -10,6 +10,7 @@
   "exports": {
     ".": "./src/index.tsx",
     "./*": "./src/components/ui/*.tsx",
+    "./types": "./src/types/index.ts",
     "./globals.css": "./dist/index.css"
   },
   "scripts": {

@@ -1,13 +1,7 @@
+import { Link } from '@/types';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import searchIcon from '../../../public/assets/search.svg';
-
-export interface Link {
-  id: number;
-  title: string;
-  href: string;
-  description: string;
-}
 
 type SearchInputProps = {
   value: string;

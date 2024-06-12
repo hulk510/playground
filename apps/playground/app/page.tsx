@@ -7,7 +7,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@repo/ui/accordion';
-import { Link } from '@repo/ui/components/molecules/searchInput';
+import type { Link } from '@repo/ui/types';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 const LINKS: Link[] = [
