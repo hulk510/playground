@@ -22,6 +22,9 @@
     },
     "db:generate": {
       "cache": false
+    },
+    "db:migrate:deploy": {
+      "cache": false
     }
   }
 }
