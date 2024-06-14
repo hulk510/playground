@@ -1,4 +1,4 @@
-import '@repo/ui/global.css';
+import '@repo/ui/globals.css';
 
 import type { AppProps } from 'next/app';
 
