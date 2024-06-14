@@ -1,19 +1,13 @@
 'use client';
 import { FloatAnimation } from '@repo/sandbox';
 import { Card, Onboarding, SearchInput } from '@repo/ui';
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from '@repo/ui/components/ui/accordion';
 import type { Link } from '@repo/ui/types';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 const LINKS: Link[] = [
   {
     id: 1,
-    title: 'Kuma UI',
+    title: 'Hello World, Kuma UI',
     href: '/kuma-ui',
     description: '🐻',
   },
@@ -22,7 +16,7 @@ const LINKS: Link[] = [
     title: 'React Hook Form and Material UI',
     href: '/hook-form-and-material',
     description:
-      'react hook formとmaterial uireact hook formとmaterial uireact hook formとmaterial uireact hook formとmaterial uireact hook formとmaterial uireact hook formとmaterial uireact hook formとmaterial uireact hook formとmaterial uireact hook formとmaterial uireact hook formとmaterial uireact hook formとmaterial uireact hook formとmaterial ui',
+      'A simple form with validation using react-hook-form and material-ui',
   },
   {
     id: 3,
@@ -32,7 +26,7 @@ const LINKS: Link[] = [
   },
   {
     id: 4,
-    title: 'Prisma',
+    title: 'Prisma Todo App',
     href: '/todo',
     description: 'sample prisma client',
   },
@@ -104,14 +98,6 @@ export default function Page(): JSX.Element {
           ))}
         </motion.div>
       )}
-      <Accordion type='single' collapsible>
-        <AccordionItem value='item-1'>
-          <AccordionTrigger>Is it accessible?</AccordionTrigger>
-          <AccordionContent>
-            Yes. It adheres to the WAI-ARIA design pattern.
-          </AccordionContent>
-        </AccordionItem>
-      </Accordion>
       <FloatAnimation />
     </main>
   );
