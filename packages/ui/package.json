@@ -14,7 +14,8 @@
     "./globals.css": "./dist/index.css"
   },
   "imports": {
-    "#deps/lib/*": "./src/lib/*.ts"
+    "#deps/lib/*": "./src/lib/*.ts",
+    "#types": "./src/types/index.ts"
   },
   "scripts": {
     "build": "tailwindcss -i ./src/globals.css -o ./dist/index.css",
