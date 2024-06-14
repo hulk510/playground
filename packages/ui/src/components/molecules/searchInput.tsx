@@ -1,4 +1,4 @@
-import { Link } from '@/types';
+import { Link } from '#types';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import searchIcon from '../../../public/assets/search.svg';

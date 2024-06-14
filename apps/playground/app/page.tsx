@@ -6,7 +6,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from '@repo/ui/accordion';
+} from '@repo/ui/components/ui/accordion';
 import type { Link } from '@repo/ui/types';
 import { motion } from 'framer-motion';
 import { useState } from 'react';

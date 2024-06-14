@@ -9,17 +9,20 @@
   ],
   "exports": {
     ".": "./src/index.tsx",
-    "./*": "./src/components/ui/*.tsx",
-    "./lib/*": "./src/lib/*.ts",
+    "./components/*": "./src/components/*.tsx",
     "./types": "./src/types/index.ts",
     "./globals.css": "./dist/index.css"
+  },
+  "imports": {
+    "#deps/lib/*": "./src/lib/*.ts"
   },
   "scripts": {
     "build": "tailwindcss -i ./src/globals.css -o ./dist/index.css",
     "lint": "eslint . --max-warnings 0",
     "dev": "tailwindcss -i ./src/globals.css -o ./dist/index.css --watch",
     "lint:styles": "stylelint ./src/**/*.tsx",
-    "generate:component": "turbo gen react-component"
+    "generate:component": "turbo gen react-component",
+    "ui:add": "pnpm dlx shadcn-ui@latest add"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
@@ -42,6 +45,7 @@
   "dependencies": {
     "@kuma-ui/core": "1.5.7",
     "@radix-ui/react-accordion": "^1.1.2",
+    "@radix-ui/react-avatar": "^1.0.4",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "framer-motion": "11.2.10",
