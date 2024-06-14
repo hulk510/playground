@@ -10,7 +10,8 @@
     "prepare": "husky",
     "clean": "rm -rf .turbo **/*/.turbo** node_modules **/*/node_modules**",
     "postinstall": "manypkg check",
-    "package:fix": "manypkg fix"
+    "package:fix": "manypkg fix",
+    "ui:add": "pnpm --filter @repo/ui ui:add"
   },
   "engines": {
     "node": ">=18"
