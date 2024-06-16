@@ -9,3 +9,7 @@
 ## 何で動いてるか？
 
 - nextjsのapp router
+
+## メモ
+
+`pnpm dev --filter playground`だとpackages/uiでdist/index.cssが生成されないため動かない
