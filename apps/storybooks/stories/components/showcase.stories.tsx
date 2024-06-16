@@ -1,4 +1,4 @@
-import { ShowCase } from '@repo/ui';
+import { ShowCase } from '@repo/ui/showcase';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta = {
