@@ -1,6 +1,9 @@
 'use client';
 import { FloatAnimation } from '@repo/sandbox';
-import { Card, Onboarding, SearchInput } from '@repo/ui';
+import { Card } from '@repo/ui/card';
+import { SearchInput } from '@repo/ui/molecules/searchInput';
+import { Onboarding } from '@repo/ui/organism/onboarding';
+
 import type { Link } from '@repo/ui/types';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
