@@ -1,5 +1,7 @@
 export function Home() {
   return (
-    <h1 className='text-3xl font-bold underline bg-red-500'>Hello world!</h1>
+    <h1 className='ui-text-3xl ui-font-bold ui-underline ui-bg-red-500'>
+      Hello world!
+    </h1>
   );
 }

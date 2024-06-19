@@ -1,4 +1,4 @@
-import { Client } from '@repo/ui';
+import { Client } from '@repo/ui/button';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta = {

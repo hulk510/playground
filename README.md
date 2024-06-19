@@ -13,7 +13,7 @@ This Repo includes the following packages/apps:
 - `@repo/sandbox`: とりあえず適当に試したり適当にコンポーネントを作ったりとにかく適当
 - `@repo/ui`: UIように作成している共通のコンポーネントを入れるところ
 - `@repo/stylelint-config`: `stylelint`のconfig（@repo/configに統一したい）
-- `@repo/tailwindcss-config`: `tailwind css`のconfig（@repo/configに統一したい）
+- `@repo/tailwind-config`: `tailwind css`のconfig（@repo/configに統一したい）
 - `@repo/eslint-config`: `eslint`のconfig（@repo/configに統一したい）
 - `@repo/typescript-config`: `typescript`のconfig（@repo/configに統一したい）
 

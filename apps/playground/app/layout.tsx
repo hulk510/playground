@@ -1,7 +1,9 @@
 import { KumaRegistry } from '@kuma-ui/next-plugin/registry';
-import '@repo/ui/global.css';
+import '@repo/ui/styles.css';
 import type { Metadata } from 'next';
+import { ThemeProvider } from 'next-themes';
 import { Inter } from 'next/font/google';
+import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -18,7 +20,14 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={inter.className}>
-        <KumaRegistry>{children}</KumaRegistry>
+        <ThemeProvider
+          attribute='class' // MEMO: これはなに？
+          defaultTheme='light'
+          enableSystem
+          disableTransitionOnChange
+        >
+          <KumaRegistry>{children}</KumaRegistry>
+        </ThemeProvider>
       </body>
     </html>
   );

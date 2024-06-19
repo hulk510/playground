@@ -6,11 +6,13 @@
     "dev": "turbo dev",
     "lint": "turbo lint",
     "test": "turbo test",
+    "gen": "turbo generate",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,json,astro}\"",
     "prepare": "husky",
     "clean": "rm -rf .turbo **/*/.turbo** node_modules **/*/node_modules**",
     "postinstall": "manypkg check",
-    "package:fix": "manypkg fix"
+    "package:fix": "manypkg fix",
+    "ui:add": "pnpm --filter @repo/ui ui:add"
   },
   "engines": {
     "node": ">=18"
@@ -27,6 +29,6 @@
     "husky": "9.0.11",
     "lint-staged": "15.2.5",
     "prettier": "3.3.1",
-    "turbo": "2.0.3"
+    "turbo": "2.0.4"
   }
 }

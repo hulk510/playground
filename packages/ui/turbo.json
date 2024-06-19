@@ -5,6 +5,9 @@
     "lint:styles": {},
     "lint": {
       "dependsOn": ["lint:styles"]
+    },
+    "dev": {
+      "cache": false
     }
   }
 }

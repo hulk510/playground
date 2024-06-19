@@ -4,7 +4,7 @@ import checkIcon from '../../../public/assets/check.svg';
 
 export function Onboarding() {
   return (
-    <div className='flex items-center gap-2'>
+    <div className='ui-flex ui-items-center ui-gap-2'>
       <motion.div
         animate={{
           // x: [0, 0, 0, 50],
@@ -34,7 +34,9 @@ export function Onboarding() {
           ease: 'easeInOut',
         }}
       >
-        <h1 className='text-[6rem] font-bold drop-shadow-md'>Playground</h1>
+        <h1 className='ui-text-[6rem] ui-font-bold ui-drop-shadow-md'>
+          Playground
+        </h1>
       </motion.div>
     </div>
   );

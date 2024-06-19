@@ -1,4 +1,4 @@
-import { Title } from '@repo/ui';
+import { Title } from '@repo/ui/title';
 
 export default {
   component: Title,
