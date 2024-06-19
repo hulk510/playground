@@ -6,6 +6,7 @@
     "dev": "turbo dev",
     "lint": "turbo lint",
     "test": "turbo test",
+    "gen": "turbo generate",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,json,astro}\"",
     "prepare": "husky",
     "clean": "rm -rf .turbo **/*/.turbo** node_modules **/*/node_modules**",
