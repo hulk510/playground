@@ -2,7 +2,7 @@ version: "3"
 
 services:
   app:
-    image: node:20.14.0@sha256:02cd2205818f121c13612721876f28c18bd50148bb8af532ea121c96ffcb59bf
+    image: node:20.15.0@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
     ports:
       - 4321:4321
     working_dir: /app
