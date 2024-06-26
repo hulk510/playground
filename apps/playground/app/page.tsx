@@ -1,10 +1,18 @@
 'use client';
 import { FloatAnimation } from '@repo/sandbox';
-import { Card } from '@repo/ui/card';
+import { ModeToggle } from '@repo/ui/molecules/mode-toggle';
 import { SearchInput } from '@repo/ui/molecules/searchInput';
 import { Onboarding } from '@repo/ui/organism/onboarding';
+import {
+  Card,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from '@repo/ui/shadcn/card';
 
 import type { Link } from '@repo/ui/types';
+import { Button } from '@repo/ui/ui/button';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 const LINKS: Link[] = [
@@ -52,7 +60,8 @@ export default function Page(): JSX.Element {
 
   return (
     <main className='container mx-auto flex flex-col justify-start items-center p-24 min-h-screen gap-8'>
-      <div className='flex items-center justify-center flex-col'>
+      <div className='flex items-center justify-center flex-col gap-4'>
+        <ModeToggle />
         <Onboarding />
         <SearchInput
           value={query}
@@ -66,25 +75,37 @@ export default function Page(): JSX.Element {
       </div>
       {selectedLink ? (
         <div className='flex flex-col mt-8 max-w-md w-full gap-4'>
-          <button
+          <Button
             type='button'
             onClick={() => setSelectedLink(null)}
-            className='bg-red-500 items-start text-white rounded-md p-2 hover:bg-red-600 w-24'
+            variant='destructive'
+            className='w-24'
           >
             やり直す
-          </button>
+          </Button>
           <Card
-            href={selectedLink.href}
-            key={selectedLink.title}
             title={selectedLink.title}
+            className='w-full'
+            key={selectedLink.id}
           >
-            {selectedLink.description}
+            <CardHeader>
+              <CardTitle className='text-lg'>{selectedLink.title}</CardTitle>
+              <CardDescription className='line-clamp-4'>
+                {selectedLink.description}
+              </CardDescription>
+            </CardHeader>
+            <CardFooter>
+              <Button asChild>
+                <a href={selectedLink.href}>Go to Link</a>
+              </Button>
+            </CardFooter>
           </Card>
         </div>
       ) : (
         <motion.div
-          className='flex mt-16 w-full gap-4 overflow-hidden'
-          animate={{ x: ['200%', '-200%'] }}
+          className=' flex w-full mt-8'
+          initial={{ x: '150%' }}
+          animate={{ x: ['150%', '-150%'] }}
           transition={{
             x: {
               duration: 50,
@@ -94,14 +115,25 @@ export default function Page(): JSX.Element {
             },
           }}
         >
+          {/* TODO: feature flagを追加してfeatureのものだけ表示するようにする */}
           {LINKS.map((link) => (
-            <Card href={link.href} key={link.title} title={link.title}>
-              {link.description}
+            <Card
+              title={link.title}
+              className='flex-shrink-0 w-80 mx-4'
+              key={link.id}
+            >
+              <CardHeader>
+                <CardTitle className='text-lg'>{link.title}</CardTitle>
+                <CardDescription className='line-clamp-4'>
+                  {link.description}
+                </CardDescription>
+              </CardHeader>
             </Card>
           ))}
         </motion.div>
       )}
       <FloatAnimation />
+      {/* TODO: girdで全てリストアップして表示する */}
     </main>
   );
 }

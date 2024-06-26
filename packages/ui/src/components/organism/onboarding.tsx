@@ -1,6 +1,5 @@
+import { CheckCircledIcon } from '@radix-ui/react-icons';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
-import checkIcon from '../../../public/assets/check.svg';
 
 export function Onboarding() {
   return (
@@ -17,13 +16,7 @@ export function Onboarding() {
           times: [0, 0.1, 0.2, 0.6],
         }}
       >
-        <Image
-          src={checkIcon}
-          priority
-          alt='check icon.'
-          width={80}
-          height={80}
-        />
+        <CheckCircledIcon className='ui-w-8 ui-h-8 lg:ui-w-16 lg:ui-h-16 ui-text-primary' />
       </motion.div>
       <motion.div
         initial={{ x: -30, opacity: 0 }}
@@ -34,7 +27,7 @@ export function Onboarding() {
           ease: 'easeInOut',
         }}
       >
-        <h1 className='ui-text-[6rem] ui-font-bold ui-drop-shadow-md'>
+        <h1 className='ui-text-5xl ui-font-bold ui-drop-shadow-md lg:ui-text-[6rem]'>
           Playground
         </h1>
       </motion.div>

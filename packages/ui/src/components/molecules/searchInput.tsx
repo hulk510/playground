@@ -1,8 +1,6 @@
 import { Link } from '#types';
+import { MagnifyingGlassIcon } from '@radix-ui/react-icons';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
-import searchIcon from '../../../public/assets/search.svg';
-
 type SearchInputProps = {
   value: string;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
@@ -27,30 +25,24 @@ export function SearchInput({
         delay: 2,
         ease: 'easeInOut',
       }}
-      className='ui-flex ui-border ui-border-gray-300 ui-rounded-xl ui-w-full ui-bg-white ui-shadow-md ui-flex-col ui-bg-glow-conic'
+      className='ui-flex ui-border ui-border-gray-300 ui-rounded-xl ui-w-full ui-shadow-md ui-flex-col ui-bg-glow-conic'
     >
-      <div className='ui-flex ui-gap-2 ui-p-4'>
-        <Image
-          src={searchIcon}
-          priority
-          alt='check icon.'
-          width={16}
-          height={16}
-        />
+      <div className='ui-flex ui-gap-2 ui-p-2 lg:ui-p-4'>
+        <MagnifyingGlassIcon className='ui-w-6 ui-h-6' />
         <input
           type='text'
           value={value}
           onChange={onChange}
-          className='ui-w-full ui-h-full ui-outline-none'
+          className='ui-w-full ui-h-full ui-outline-none ui-bg-background'
           placeholder={placeholder}
         />
       </div>
       {value.length > 0 && lists.length > 0 && (
-        <ul className='ui-text-gray-800 ui-rounded-xl'>
+        <ul className='ui-rounded-xl'>
           {lists.map((link) => (
             <li
               key={link.title}
-              className='ui-text-md hover:ui-bg-gray-100 last:hover:ui-rounded-b-xl ui-cursor-pointer ui-px-6 ui-py-2'
+              className='ui-text-md hover:ui-bg-accent last:hover:ui-rounded-b-xl ui-cursor-pointer ui-px-6 ui-py-2'
             >
               <button type='button' onClick={() => onSelect(link)}>
                 {link.title}
