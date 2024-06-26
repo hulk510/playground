@@ -7,6 +7,8 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'prettier',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:react-hooks/recommended',
     require.resolve('@vercel/style-guide/eslint/next'),
     'turbo',
   ],
@@ -28,6 +30,7 @@ module.exports = {
   ignorePatterns: [
     // Ignore dotfiles
     '.*.js',
+    'next.config.js',
     'node_modules/',
   ],
   overrides: [{ files: ['*.js?(x)', '*.ts?(x)'] }],
