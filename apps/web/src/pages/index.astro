@@ -1,44 +1,44 @@
 ---
-import Card from "@components/Card";
-import Footer from "@components/Footer.astro";
-import Header from "@components/Header.astro";
-import Hr from "@components/Hr.astro";
-import LinkButton from "@components/LinkButton.astro";
-import Socials from "@components/Socials.astro";
-import { SOCIALS } from "@config";
-import Layout from "@layouts/Layout.astro";
-import getSortedPosts from "@utils/getSortedPosts";
-import { getCollection } from "astro:content";
+import Card from '@components/Card';
+import Footer from '@components/Footer.astro';
+import Header from '@components/Header.astro';
+import Hr from '@components/Hr.astro';
+import LinkButton from '@components/LinkButton.astro';
+import Socials from '@components/Socials.astro';
+import { SOCIALS } from '@config';
+import Layout from '@layouts/Layout.astro';
+import getSortedPosts from '@utils/getSortedPosts';
+import { getCollection } from 'astro:content';
 
-const posts = await getCollection("blog");
+const posts = await getCollection('blog');
 
 const sortedPosts = getSortedPosts(posts);
 const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
 const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
 
-const socialCount = SOCIALS.filter(social => social.active).length;
+const socialCount = SOCIALS.filter((social) => social.active).length;
 ---
 
 <Layout>
   <Header />
-  <main id="main-content">
-    <section id="hero">
+  <main id='main-content'>
+    <section id='hero'>
       <h1>WaiWai</h1>
       <a
-        target="_blank"
-        href="/rss.xml"
-        class="rss-link"
-        aria-label="rss feed"
-        title="RSS Feed"
+        target='_blank'
+        href='/rss.xml'
+        class='rss-link'
+        aria-label='rss feed'
+        title='RSS Feed'
       >
-        <svg xmlns="http://www.w3.org/2000/svg" class="rss-icon"
+        <svg xmlns='http://www.w3.org/2000/svg' class='rss-icon'
           ><path
-            d="M19 20.001C19 11.729 12.271 5 4 5v2c7.168 0 13 5.832 13 13.001h2z"
+            d='M19 20.001C19 11.729 12.271 5 4 5v2c7.168 0 13 5.832 13 13.001h2z'
           ></path><path
-            d="M12 20.001h2C14 14.486 9.514 10 4 10v2c4.411 0 8 3.589 8 8.001z"
-          ></path><circle cx="6" cy="18" r="2"></circle>
+            d='M12 20.001h2C14 14.486 9.514 10 4 10v2c4.411 0 8 3.589 8 8.001z'
+          ></path><circle cx='6' cy='18' r='2'></circle>
         </svg>
-        <span class="sr-only">RSS Feed</span>
+        <span class='sr-only'>RSS Feed</span>
       </a>
 
       <p>
@@ -51,8 +51,8 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       <p>
         Powered by
         <LinkButton
-          className="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
-          href="https://github.com/satnaing/astro-paper#readme"
+          className='hover:text-skin-accent underline decoration-dashed underline-offset-4'
+          href='https://github.com/satnaing/astro-paper#readme'
         >
           Astro Paper
         </LinkButton>
@@ -60,8 +60,8 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       {
         // only display if at least one social link is enabled
         socialCount > 0 && (
-          <div class="social-wrapper">
-            <div class="social-links">Social Links:</div>
+          <div class='social-wrapper'>
+            <div class='social-links'>Social Links:</div>
             <Socials />
           </div>
         )
@@ -73,7 +73,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     {
       featuredPosts.length > 0 && (
         <>
-          <section id="featured">
+          <section id='featured'>
             <h2>Featured</h2>
             <ul>
               {featuredPosts.map(({ data, slug }) => (
@@ -92,7 +92,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 
     {
       recentPosts.length > 0 && (
-        <section id="recent-posts">
+        <section id='recent-posts'>
           <h2>Recent Posts</h2>
           <ul>
             {recentPosts.map(
@@ -103,19 +103,19 @@ const socialCount = SOCIALS.filter(social => social.active).length;
                     frontmatter={data}
                     secHeading={false}
                   />
-                )
+                ),
             )}
           </ul>
         </section>
       )
     }
 
-    <div class="all-posts-btn-wrapper">
-      <LinkButton href="/posts/">
+    <div class='all-posts-btn-wrapper'>
+      <LinkButton href='/posts/'>
         All Posts
-        <svg xmlns="http://www.w3.org/2000/svg"
+        <svg xmlns='http://www.w3.org/2000/svg'
           ><path
-            d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"
+            d='m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z'
           ></path>
         </svg>
       </LinkButton>
@@ -137,7 +137,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     @apply mb-6;
   }
   #hero .rss-icon {
-    @apply mb-2 h-6 w-6 scale-110 fill-skin-accent sm:mb-3 sm:scale-125;
+    @apply fill-skin-accent mb-2 h-6 w-6 scale-110 sm:mb-3 sm:scale-125;
   }
   #hero p {
     @apply my-2;

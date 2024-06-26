@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       branchNames:
-        description: "削除対象とするキャッシュのあるbranch(ref)のリスト"
+        description: '削除対象とするキャッシュのあるbranch(ref)のリスト'
         required: false
         type: string
 

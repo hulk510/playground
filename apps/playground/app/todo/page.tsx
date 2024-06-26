@@ -7,7 +7,7 @@ export default async function Page() {
   const todos = await prisma.todo.findMany();
 
   return (
-    <div className='px-4 container mx-auto space-y-8'>
+    <div className='container mx-auto space-y-8 px-4'>
       <TodoForm />
       {todos.map((todo) => (
         <TodoItem key={todo.id} todo={todo} />

@@ -70,7 +70,7 @@ falsyだと条件式とかでは偽になるから、条件式とかでは実行
 
 ```js
 if (null) {
-  console.log("hello");
+  console.log('hello');
 }
 ```
 
@@ -100,16 +100,16 @@ true, falseが返ることもあるがとりあえずその値が返ると覚え
 整理するとこんな感じ。
 
 ```js
-true && "最高"; // output: '最高'
+true && '最高'; // output: '最高'
 true && 3150 && true; // output: true
-false || "32" || true; // output: "32"
+false || '32' || true; // output: "32"
 ```
 
 別にこれでも問題があるわけではないが、条件式で使う場合にboolean以外の値が混じってバグる可能性があるからそもそもBooleanになるようにすれば少なくとも意図しないバグは減らせる。
 配列に関しても、空がtruthyになるから、length > ０でbooleanにすればいいだけ。あとはBooleanとかで囲っちゃうことかな。
 
 ```js
-true && Boolean("最高"); // output: true
+true && Boolean('最高'); // output: true
 ```
 
 実際、`&&`や`||`で値を返せるというのは便利。値があればコンポーネントを表示するとか、値が無ければデフォルトの値を表示するとかに使える。達人ならもっといろんな便利なことに使えるんだろうけどわいの脳みそだとこのぐらいしか思いつかん。笑
