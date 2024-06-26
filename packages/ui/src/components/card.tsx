@@ -16,7 +16,7 @@ interface CardProps {
 export function Card({ title, children, href }: CardProps): JSX.Element {
   return (
     <a
-      className='ui-border ui-rounded-xl ui-p-8 hover:ui-bg-gray-100 ui-w-full'
+      className='ui-border ui-rounded-xl ui-p-8 hover:ui-bg-accent ui-w-full'
       href={href}
     >
       <h2 className='ui-text-lg'>{title}</h2>
