@@ -1,5 +1,6 @@
 import { KumaRegistry } from '@kuma-ui/next-plugin/registry';
 import '@repo/ui/styles.css';
+import { Toaster } from '@repo/ui/ui/toaster';
 import type { Metadata } from 'next';
 import { ThemeProvider } from 'next-themes';
 import { Inter } from 'next/font/google';
@@ -28,6 +29,7 @@ export default function RootLayout({
         >
           <KumaRegistry>{children}</KumaRegistry>
         </ThemeProvider>
+        <Toaster />
       </body>
     </html>
   );
