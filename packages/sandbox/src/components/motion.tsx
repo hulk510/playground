@@ -13,7 +13,7 @@ export function MotionExample() {
   return (
     <>
       <motion.div
-        className='bg-blue-500 font-bold text-white p-4 rounded-lg shadow-lg'
+        className='rounded-lg bg-blue-500 p-4 font-bold text-white shadow-lg'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         whileHover={{ scale: 3 }}
@@ -22,7 +22,7 @@ export function MotionExample() {
         <h1>Please Hover!!</h1>
       </motion.div>
       <motion.div
-        className='bg-red-500 font-bold text-white p-4 rounded-lg shadow-lg'
+        className='rounded-lg bg-red-500 p-4 font-bold text-white shadow-lg'
         whileTap={{ scale: 0.9 }}
         drag='x'
         dragConstraints={{ left: -100, right: 100 }}
@@ -39,7 +39,7 @@ export function MotionExample() {
       <motion.div drag='x' style={{ x, scale }}>
         Motion Values on Drag x Example
       </motion.div>
-      <div className='flex flex-col justify-center items-center mt-4'>
+      <div className='mt-4 flex flex-col items-center justify-center'>
         <button
           type='button'
           className='switch'
@@ -65,11 +65,11 @@ export function MotionExample2() {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 3 }}
       >
-        <p className='font-bold text-xl'>テスト</p>
+        <p className='text-xl font-bold'>テスト</p>
       </motion.div>
-      <div className='flex flex-col items-center gap-4 mt-6'>
+      <div className='mt-6 flex flex-col items-center gap-4'>
         <motion.div
-          className='w-20 h-20 bg-purple-500 rounded-full'
+          className='h-20 w-20 rounded-full bg-purple-500'
           animate={{
             scale: [1, 2, 2, 1, 1],
             rotate: [0, 0, 180, 180, 360],

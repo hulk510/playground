@@ -1,7 +1,11 @@
---- pubDatetime:
-{{date}}
-title:
-{{title}}
-featured: true draft: true tags: - description:
-{{description}}
+---
+pubDatetime: {{date}}
+title: {{title}}
+featured: true
+draft: true
+tags:
+{{#each tags}}
+- {{this}}
+{{/each}}
+description: {{description}}
 ---

@@ -8,7 +8,7 @@ import {
 
 export default function Page(): JSX.Element {
   return (
-    <div className='flex items-center justify-center h-[100vh] flex-col gap-4'>
+    <div className='flex h-[100vh] flex-col items-center justify-center gap-4'>
       <h1>Playground</h1>
       <MotionExample />
       <MotionExample2 />

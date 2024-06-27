@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/AboutLayout.astro
-title: "About"
+title: 'About'
 ---
 
 このサイトは私ことHarukaが適当に思ったことや、技術に関して書く場所です。

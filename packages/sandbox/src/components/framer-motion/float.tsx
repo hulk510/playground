@@ -5,10 +5,10 @@ import sticker from './sticker.png';
 // MEMO: なぜかうまく影が表示できないな。
 export function FloatAnimation() {
   return (
-    <div className='flex w-120 h-[300px] flex-col'>
+    <div className='w-120 flex h-[300px] flex-col'>
       {/* transitionでduration入れてるとwhileTapとかもそれに合わさるみたい。 */}
       <motion.div
-        className='w-32 h-32'
+        className='h-32 w-32'
         initial={{ y: 0 }}
         whileInView={{ y: [100, 0, 100] }}
         transition={{
@@ -28,12 +28,12 @@ export function FloatAnimation() {
             ease: 'easeInOut',
           }}
         >
-          <Image src={sticker} priority alt='sticker' className='w-32 h-32' />
+          <Image src={sticker} priority alt='sticker' className='h-32 w-32' />
         </motion.div>
       </motion.div>
       {/* 影を作成 */}
       <motion.div
-        className='bg-gray-400 w-16 h-1 rounded-full shadow-lg opacity-80 blur-sm m-auto mt-28'
+        className='m-auto mt-28 h-1 w-16 rounded-full bg-gray-400 opacity-80 shadow-lg blur-sm'
         whileInView={{ scaleX: [1.2, 0.7, 1.2], scaleY: [1, 0.6, 1] }}
         transition={{
           repeat: Infinity,

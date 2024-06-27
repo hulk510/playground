@@ -59,8 +59,8 @@ export default function Page(): JSX.Element {
   );
 
   return (
-    <main className='container mx-auto flex flex-col justify-start items-center p-24 min-h-screen gap-8'>
-      <div className='flex items-center justify-center flex-col gap-4'>
+    <main className='container mx-auto flex min-h-screen flex-col items-center justify-start gap-8 p-24'>
+      <div className='flex flex-col items-center justify-center gap-4'>
         <ModeToggle />
         <Onboarding />
         <SearchInput
@@ -74,7 +74,7 @@ export default function Page(): JSX.Element {
         />
       </div>
       {selectedLink ? (
-        <div className='flex flex-col mt-8 max-w-md w-full gap-4'>
+        <div className='mt-8 flex w-full max-w-md flex-col gap-4'>
           <Button
             type='button'
             onClick={() => setSelectedLink(null)}
@@ -103,7 +103,7 @@ export default function Page(): JSX.Element {
         </div>
       ) : (
         <motion.div
-          className=' flex w-full mt-8'
+          className='mt-8 flex w-full'
           initial={{ x: '150%' }}
           animate={{ x: ['150%', '-150%'] }}
           transition={{
@@ -119,7 +119,7 @@ export default function Page(): JSX.Element {
           {LINKS.map((link) => (
             <Card
               title={link.title}
-              className='flex-shrink-0 w-80 mx-4'
+              className='mx-4 w-80 flex-shrink-0'
               key={link.id}
             >
               <CardHeader>

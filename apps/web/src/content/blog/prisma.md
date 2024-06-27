@@ -60,8 +60,8 @@ model Todo {
 ```
 
 ```ts
-import { PrismaClient } from "./client";
-import type { Todo } from "@prisma/client";
+import { PrismaClient } from './client';
+import type { Todo } from '@prisma/client';
 
 const prisma = new PrismaClient();
 
