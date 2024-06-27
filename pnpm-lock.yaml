@@ -38,6 +38,12 @@ importers:
       prettier:
         specifier: 3.3.2
         version: 3.3.2
+      prettier-plugin-astro:
+        specifier: 0.14.0
+        version: 0.14.0
+      prettier-plugin-tailwindcss:
+        specifier: 0.6.5
+        version: 0.6.5(prettier-plugin-astro@0.14.0)(prettier@3.3.2)
       turbo:
         specifier: 2.0.4
         version: 2.0.4
@@ -333,15 +339,6 @@ importers:
       eslint-plugin-astro:
         specifier: 1.2.2
         version: 1.2.2(eslint@8.57.0)(typescript@5.5.2)
-      prettier:
-        specifier: 3.3.2
-        version: 3.3.2
-      prettier-plugin-astro:
-        specifier: 0.14.0
-        version: 0.14.0
-      prettier-plugin-tailwindcss:
-        specifier: 0.6.5
-        version: 0.6.5(prettier-plugin-astro@0.14.0)(prettier@3.3.2)
       react:
         specifier: 18.3.1
         version: 18.3.1
