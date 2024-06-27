@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }): JSX.Element {
   return (
-    <html lang='en'>
+    <html lang='ja' className='min-h-screen'>
       <body className={inter.className}>
         <ThemeProvider
           attribute='class' // MEMO: これはなに？

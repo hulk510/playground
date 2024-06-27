@@ -59,80 +59,87 @@ export default function Page(): JSX.Element {
   );
 
   return (
-    <main className='container mx-auto flex min-h-screen flex-col items-center justify-start gap-8 p-24'>
-      <div className='flex flex-col items-center justify-center gap-4'>
+    <main className='min-h-screen'>
+      <div className='container mx-auto flex w-8 flex-col items-center justify-start gap-4 p-24'>
         <ModeToggle />
-        <Onboarding />
-        <SearchInput
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          placeholder='Please Type Something...'
-          lists={filteredLinks}
-          onSelect={(lists) => {
-            handleSelectLink(lists);
-          }}
-        />
-      </div>
-      {selectedLink ? (
-        <div className='mt-8 flex w-full max-w-md flex-col gap-4'>
-          <Button
-            type='button'
-            onClick={() => setSelectedLink(null)}
-            variant='destructive'
-            className='w-24'
-          >
-            やり直す
-          </Button>
-          <Card
-            title={selectedLink.title}
-            className='w-full'
-            key={selectedLink.id}
-          >
-            <CardHeader>
-              <CardTitle className='text-lg'>{selectedLink.title}</CardTitle>
-              <CardDescription className='line-clamp-4'>
-                {selectedLink.description}
-              </CardDescription>
-            </CardHeader>
-            <CardFooter>
-              <Button asChild>
-                <a href={selectedLink.href}>Go to Link</a>
-              </Button>
-            </CardFooter>
-          </Card>
+        <div className='space-y-4'>
+          <Onboarding />
+          <SearchInput
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder='Please Type Something...'
+            lists={filteredLinks}
+            onSelect={(lists) => {
+              handleSelectLink(lists);
+            }}
+          />
         </div>
-      ) : (
-        <motion.div
-          className='mt-8 flex w-full'
-          initial={{ x: '150%' }}
-          animate={{ x: ['150%', '-150%'] }}
-          transition={{
-            x: {
-              duration: 50,
-              repeat: Infinity,
-              repeatType: 'loop',
-              ease: 'linear',
-            },
-          }}
-        >
-          {/* TODO: feature flagを追加してfeatureのものだけ表示するようにする */}
-          {LINKS.map((link) => (
+        {selectedLink !== null && (
+          <div className='mt-4 space-y-4'>
+            <Button
+              type='button'
+              onClick={() => setSelectedLink(null)}
+              variant='destructive'
+              className='w-24'
+            >
+              やり直す
+            </Button>
             <Card
-              title={link.title}
-              className='mx-4 w-80 flex-shrink-0'
-              key={link.id}
+              title={selectedLink.title}
+              className='w-full'
+              key={selectedLink.id}
             >
               <CardHeader>
-                <CardTitle className='text-lg'>{link.title}</CardTitle>
+                <CardTitle className='text-lg'>{selectedLink.title}</CardTitle>
                 <CardDescription className='line-clamp-4'>
-                  {link.description}
+                  {selectedLink.description}
                 </CardDescription>
               </CardHeader>
+              <CardFooter>
+                <Button asChild>
+                  <a href={selectedLink.href}>Go to Link</a>
+                </Button>
+              </CardFooter>
             </Card>
-          ))}
-        </motion.div>
+          </div>
+        )}
+      </div>
+      {selectedLink === null && (
+        <div className='w-full overflow-x-hidden'>
+          <motion.div
+            className='m-4 flex w-full'
+            initial={{ opacity: 0 }}
+            animate={{ x: ['150%', '-150%'], opacity: 1 }}
+            transition={{
+              x: {
+                duration: 50,
+                repeat: Infinity,
+                repeatType: 'loop',
+                ease: 'linear',
+              },
+            }}
+          >
+            {/* TODO: feature flagを追加してfeatureのものだけ表示するようにする */}
+            {LINKS.map((link) => (
+              <Card
+                title={link.title}
+                className='mx-4 w-80 flex-shrink-0 overflow-hidden'
+                key={link.id}
+              >
+                <CardHeader>
+                  <CardTitle className='text-lg'>{link.title}</CardTitle>
+                  <CardDescription className='line-clamp-4'>
+                    {link.description}
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+            ))}
+          </motion.div>
+        </div>
       )}
-      <FloatAnimation />
+      <div className='flex justify-center'>
+        <FloatAnimation />
+      </div>
       {/* TODO: girdで全てリストアップして表示する */}
     </main>
   );

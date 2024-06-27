@@ -25,7 +25,7 @@ export function SearchInput({
         delay: 2,
         ease: 'easeInOut',
       }}
-      className='ui-flex ui-border ui-border-gray-300 ui-rounded-xl ui-w-full ui-shadow-md ui-flex-col ui-bg-glow-conic'
+      className='ui-flex ui-border ui-rounded-xl ui-w-full ui-shadow-md ui-flex-col'
     >
       <div className='ui-flex ui-gap-2 ui-p-2 lg:ui-p-4'>
         <MagnifyingGlassIcon className='ui-w-6 ui-h-6' />
