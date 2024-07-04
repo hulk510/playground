@@ -5,8 +5,9 @@ const app = new Hono().get(
   '/ws',
   upgradeWebSocket(() => {
     return {
-      onMessage: (event) => {
+      onMessage: (event, ws) => {
         console.log(event.data);
+        ws.send(event.data);
       },
     };
   }),
