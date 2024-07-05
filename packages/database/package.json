@@ -23,6 +23,6 @@
     "eslint": "8.57.0",
     "prisma": "latest",
     "tsx": "4.16.0",
-    "typescript": "5.5.2"
+    "typescript": "5.5.3"
   }
 }
