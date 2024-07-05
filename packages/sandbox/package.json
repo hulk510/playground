@@ -27,6 +27,6 @@
     "@emotion/styled": "11.11.5",
     "@mui/material": "5.15.21",
     "framer-motion": "11.2.12",
-    "react-hook-form": "7.52.0"
+    "react-hook-form": "7.52.1"
   }
 }
