@@ -56,7 +56,7 @@ const config = {
         transparent: 'transparent',
       },
       fontFamily: {
-        mono: ['IBM Plex Mono', 'monospace'],
+        display: ['Inter', 'system-ui', 'sans-serif'],
       },
 
       typography: {
