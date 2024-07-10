@@ -29,7 +29,7 @@
     display: block;
   }
   body {
-    @apply bg-skin-fill text-skin-base selection:bg-skin-accent selection:text-skin-inverted flex min-h-[100svh] flex-col font-mono selection:bg-opacity-70;
+    @apply bg-skin-fill text-skin-base selection:bg-skin-accent selection:text-skin-inverted font-display flex min-h-[100svh] flex-col selection:bg-opacity-70;
   }
   section,
   footer {
