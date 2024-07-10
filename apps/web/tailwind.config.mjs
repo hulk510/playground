@@ -23,6 +23,7 @@ const config = {
       textColor: {
         skin: {
           base: withOpacity('--color-text-base'),
+          body: withOpacity('--color-text-body'),
           accent: withOpacity('--color-accent'),
           inverted: withOpacity('--color-fill'),
         },
