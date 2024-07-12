@@ -35,7 +35,7 @@
     "@typescript-eslint/parser": "7.16.0",
     "astro-eslint-parser": "1.0.2",
     "eslint": "8.57.0",
-    "eslint-plugin-astro": "1.2.2",
+    "eslint-plugin-astro": "1.2.3",
     "react": "18.3.1",
     "react-dom": "18.3.1"
   }
