@@ -70,6 +70,10 @@
     @apply hidden;
   }
 
+  .prose figure {
+    @apply text-center;
+  }
+
   /* ===== scrollbar ===== */
   html {
     overflow-y: scroll;
