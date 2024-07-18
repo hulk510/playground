@@ -3,7 +3,7 @@ import { Grid } from '../../_components/grid';
 async function getImages() {
   const res = await fetch('http://localhost:3000/api/images');
   const images = await res.json();
-  return images as { src: string; alt: string }[];
+  return images as { url: string; x: number; y: number }[];
 }
 
 export default async function Page() {
@@ -12,22 +12,23 @@ export default async function Page() {
   // 全てのセル数
   const totalCells = 12 * 12;
 
-  const images = Array.from({ length: totalCells }).map((_, i) => {
-    if (i < urls.length) {
-      return {
-        src: urls[i]?.src ?? '/assets/noimage.png', // 画像のURL
-        alt: `test${i}`,
-        x: i % 12, // x座標
-        y: Math.floor(i / 12), // y座標
-      };
-    } else {
-      return {
-        src: '/assets/noimage.png', // 空白のセル
-        alt: `empty${i}`,
-        x: i % 12,
-        y: Math.floor(i / 12),
-      };
-    }
+  // 空の画像グリッドを作成
+  const images = Array.from({ length: totalCells }).map((_, i) => ({
+    src: '/assets/noimage.png', // 空白のセル
+    alt: `empty${i}`,
+    x: i % 12,
+    y: Math.floor(i / 12),
+  }));
+
+  // 取得した画像を対応する位置にセット
+  urls.forEach((image) => {
+    const index = image.y * 12 + image.x; // x, yからインデックスを計算
+    images[index] = {
+      src: `/assets/${image.url}`,
+      alt: image.url,
+      x: image.x,
+      y: image.y,
+    };
   });
 
   return <Grid rows={12} cols={12} images={images} />;

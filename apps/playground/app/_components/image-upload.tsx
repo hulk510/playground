@@ -8,11 +8,15 @@ const socket = io(process.env.NEXT_PUBLIC_SOCKET_SERVER_URL ?? '', {
 });
 
 export default function ImageUploader({
-  srcUrl,
+  src,
+  x,
+  y,
 }: {
-  srcUrl: string;
+  src: string;
+  x: number;
+  y: number;
 }): JSX.Element {
-  const [image, setImage] = useState<string>(srcUrl);
+  const [image, setImage] = useState<string>(src);
 
   useEffect(() => {
     socket.on('connect', () => {
@@ -41,6 +45,8 @@ export default function ImageUploader({
     }
     const formData = new FormData();
     formData.append('image', file);
+    formData.append('x', String(x));
+    formData.append('y', String(y));
     await fetch('http://localhost:3000/api/images', {
       method: 'POST',
       body: formData,

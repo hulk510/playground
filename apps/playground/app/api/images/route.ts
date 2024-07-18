@@ -1,18 +1,12 @@
+import { PrismaClient } from '@repo/db';
 import { randomUUID } from 'crypto';
 import { promises as fs } from 'fs';
 import path from 'path';
 
+const prisma = new PrismaClient();
+
 export async function GET() {
-  // assetsにある画像の一覧を取得
-  const assetDir = path.join(process.cwd(), 'public', 'assets');
-  const files = await fs.readdir(assetDir);
-  const images = files.map((file) => {
-    return {
-      src: `/assets/${file}`,
-      alt: file,
-    };
-  });
-  console.log(images);
+  const images = await prisma.images.findMany();
   return new Response(JSON.stringify(images), {
     headers: {
       'Content-Type': 'application/json',
@@ -23,9 +17,14 @@ export async function GET() {
 // 送信でファイルを保存している。この時にAPIに保存して本来はAPIのURLを保持するべきか。
 // GETではそのx-yを元に保存するようにする。
 
+// これ別にroute handler使わずにserver actionで書けば楽だと思う？
+// わざわざAPIとして叩くよりも、リクエストするアクションとして作ってあげるべき？そうなるとAPIとしたい場合ってなんなの？
+// server actionにした場合でもs3とかに保存するリクエストはできるはず。APIにする場面がよくわからん。
 export async function POST(req: Request) {
   const fileName = randomUUID();
   const formData = await req.formData();
+  const x = formData.get('x');
+  const y = formData.get('y');
   const file = formData.get('image') as Blob | null;
   if (!file) {
     return new Response('file not found', {
@@ -48,6 +47,13 @@ export async function POST(req: Request) {
   try {
     // ファイルを保存
     await fs.writeFile(savePath, buffer);
+    await prisma.images.create({
+      data: {
+        x: Number(x),
+        y: Number(y),
+        url: `${fileName}.jpg`,
+      },
+    });
     console.log(`File saved to ${savePath}`);
   } catch (error) {
     console.error('Error saving file:', error);
