@@ -14,17 +14,21 @@ type Props = {
   images: Image[];
 };
 
-export function Grid({ rows, cols, images }: Props) {
+export function Grid({ images }: Props) {
   return (
-    <div className={`grid grid-rows-${rows} grid-cols-${cols}`}>
-      {images.map((image, index) => (
-        <div key={index} className='relative'>
-          <ImageUploader x={image.x} y={image.y} src={image.src} />
-          <div className='absolute left-0 top-0 bg-black bg-opacity-50 p-1 text-xs text-white'>
-            {`x: ${image.x}, y: ${image.y}`}
+    <div className='overflow-auto'>
+      <div className='grid w-[1200px] grid-cols-12'>
+        {images.map((image, index) => (
+          <div key={index} className='relative'>
+            <div className='relative h-0 w-full pb-[100%]'>
+              <ImageUploader x={image.x} y={image.y} src={image.src} />
+            </div>
+            <div className='absolute left-0 top-0 bg-black bg-opacity-50 p-1 text-xs text-white'>
+              {`x: ${image.x}, y: ${image.y}`}
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 }

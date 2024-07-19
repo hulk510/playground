@@ -5,6 +5,7 @@ import path from 'path';
 
 const prisma = new PrismaClient();
 
+// revalidateした方が良い？
 export async function GET() {
   const images = await prisma.images.findMany();
   return new Response(JSON.stringify(images), {
@@ -62,7 +63,5 @@ export async function POST(req: Request) {
     });
   }
 
-  return new Response('success', {
-    status: 200,
-  });
+  return Response.json({ url: `${fileName}.jpg`, x, y });
 }

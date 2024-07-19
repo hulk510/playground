@@ -29,15 +29,6 @@ io.on('connection', (socket) => {
 
     // Broadcast the image to all connected clients
     io.emit('image', image);
-
-    // imageを保存する
-    const fs = require('fs');
-    const base64Data = image.replace(/^data:image\/png;base64,/, '');
-    fs.writeFile('src/out.png', base64Data, 'base64', function (err: any) {
-      if (err) {
-        console.log(err);
-      }
-    });
   });
 
   // Handle disconnection

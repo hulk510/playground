@@ -1,7 +1,9 @@
 import { Grid } from '../../_components/grid';
 
 async function getImages() {
-  const res = await fetch('http://localhost:3000/api/images');
+  const res = await fetch(`${process.env.FRONTEND_URL}/api/images`, {
+    next: { revalidate: 1 },
+  });
   const images = await res.json();
   return images as { url: string; x: number; y: number }[];
 }

@@ -1,4 +1,5 @@
 'use client';
+import { useToast } from '@repo/ui/shadcn/hooks/use-toast';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import io from 'socket.io-client';
@@ -26,7 +27,10 @@ export default function ImageUploader({
       console.log('Socket.IO connection closed');
     });
     socket.on('image', (image) => {
-      setImage(image);
+      if (Number(image.x) !== x || Number(image.y) !== y) {
+        return;
+      }
+      setImage(`/assets/${image.url}`);
     });
 
     return () => {
@@ -34,8 +38,10 @@ export default function ImageUploader({
       socket.off('disconnect');
       socket.off('image');
     };
-  }, []);
+  }, [x, y]);
 
+  // server actionにできないかなー？
+  // そのままformData保存する方が楽な気がする。知らんけど
   const handleImageUpload = async (
     event: React.ChangeEvent<HTMLInputElement>,
   ) => {
@@ -47,19 +53,29 @@ export default function ImageUploader({
     formData.append('image', file);
     formData.append('x', String(x));
     formData.append('y', String(y));
-    await fetch('http://localhost:3000/api/images', {
-      method: 'POST',
-      body: formData,
-    });
+    try {
+      const res = await fetch('/api/images', {
+        method: 'POST',
+        body: formData,
+      });
+      const data = await res.json();
+      socket.emit('image', data);
+    } catch (error) {
+      toast({
+        title: `${error}`,
+      });
+    }
   };
 
+  const { toast } = useToast();
+
   return (
-    <div className='relative h-24 w-24'>
-      <div className='relative h-full w-full'>
+    <div className='absolute left-0 top-0 h-full w-full object-cover'>
+      <div className='relative h-full w-full bg-white'>
         <Image
           src={image}
           alt='Uploaded'
-          className='h-full w-full object-cover'
+          className='h-full w-full object-contain'
           width='100'
           height='100'
         />
