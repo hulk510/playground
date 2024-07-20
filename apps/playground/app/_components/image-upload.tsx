@@ -59,7 +59,7 @@ export default function ImageUploader({
         body: formData,
       });
       const data = await res.json();
-      socket.emit('image', data);
+      socket.emit('image', data); // MEMO: 先にもうwebsocketで送ってから、保存したらいいのでは？保存はあくまでも次見る時にできてたらいいだけだし。
     } catch (error) {
       toast({
         title: `${error}`,
@@ -71,7 +71,7 @@ export default function ImageUploader({
 
   return (
     <div className='absolute left-0 top-0 h-full w-full object-cover'>
-      <div className='relative h-full w-full bg-white'>
+      <div className='relative h-full w-full'>
         <Image
           src={image}
           alt='Uploaded'
@@ -80,7 +80,7 @@ export default function ImageUploader({
           height='100'
         />
         <div className='absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 transition-opacity hover:opacity-100'>
-          <label className='cursor-pointer rounded bg-white px-2 py-1'>
+          <label className='cursor-pointer rounded border px-1 py-1 text-xs text-white hover:bg-gray-500'>
             Upload
             <input
               type='file'
