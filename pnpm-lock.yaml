@@ -279,8 +279,8 @@ importers:
         specifier: 2.6.2
         version: 2.6.2
       astro:
-        specifier: 4.12.0
-        version: 4.12.0(@types/node@20.14.11)(lightningcss@1.25.1)(terser@5.31.2)(typescript@5.5.3)
+        specifier: 4.12.1
+        version: 4.12.1(@types/node@20.14.11)(lightningcss@1.25.1)(terser@5.31.2)(typescript@5.5.3)
       fuse.js:
         specifier: 7.0.0
         version: 7.0.0
@@ -311,7 +311,7 @@ importers:
         version: 3.1.6
       '@astrojs/tailwind':
         specifier: 5.1.0
-        version: 5.1.0(astro@4.12.0(@types/node@20.14.11)(lightningcss@1.25.1)(terser@5.31.2)(typescript@5.5.3))(tailwindcss@3.4.6(ts-node@10.9.2(@types/node@20.14.11)(typescript@5.5.3)))(ts-node@10.9.2(@types/node@20.14.11)(typescript@5.5.3))
+        version: 5.1.0(astro@4.12.1(@types/node@20.14.11)(lightningcss@1.25.1)(terser@5.31.2)(typescript@5.5.3))(tailwindcss@3.4.6(ts-node@10.9.2(@types/node@20.14.11)(typescript@5.5.3)))(ts-node@10.9.2(@types/node@20.14.11)(typescript@5.5.3))
       '@divriots/jampack':
         specifier: 0.24.4
         version: 0.24.4(@swc/helpers@0.5.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -4086,8 +4086,8 @@ packages:
     resolution: {integrity: sha512-8hJaCuqxObShWl2wEsnASqh/DbQ2O+S66m0Q3ctJlzBPEQ4pfGwwama3FCjZO3GDLQsjvn1T0v93Vxyu/+5fGw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  astro@4.12.0:
-    resolution: {integrity: sha512-JCfrJemDRgc87KVBQ9x4zIwadSuWdG1WjzR3b59nUY+mVeph8W5Y68DrYU5s1JMhQN3+yn2p3lexg4lJM41rsg==}
+  astro@4.12.1:
+    resolution: {integrity: sha512-KwBoXYL4L1XLTTjoj4z6q1g/tZfWDKR1pKSTAshVqt5FH2eu82pnGW737SxcT/Ssg/hLlb9KnWiclXmqWpcbCQ==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -9635,9 +9635,9 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 3.23.8
 
-  '@astrojs/tailwind@5.1.0(astro@4.12.0(@types/node@20.14.11)(lightningcss@1.25.1)(terser@5.31.2)(typescript@5.5.3))(tailwindcss@3.4.6(ts-node@10.9.2(@types/node@20.14.11)(typescript@5.5.3)))(ts-node@10.9.2(@types/node@20.14.11)(typescript@5.5.3))':
+  '@astrojs/tailwind@5.1.0(astro@4.12.1(@types/node@20.14.11)(lightningcss@1.25.1)(terser@5.31.2)(typescript@5.5.3))(tailwindcss@3.4.6(ts-node@10.9.2(@types/node@20.14.11)(typescript@5.5.3)))(ts-node@10.9.2(@types/node@20.14.11)(typescript@5.5.3))':
     dependencies:
-      astro: 4.12.0(@types/node@20.14.11)(lightningcss@1.25.1)(terser@5.31.2)(typescript@5.5.3)
+      astro: 4.12.1(@types/node@20.14.11)(lightningcss@1.25.1)(terser@5.31.2)(typescript@5.5.3)
       autoprefixer: 10.4.19(postcss@8.4.39)
       postcss: 8.4.39
       postcss-load-config: 4.0.2(postcss@8.4.39)(ts-node@10.9.2(@swc/core@1.6.13)(@types/node@20.14.11)(typescript@5.5.3))
@@ -10786,7 +10786,7 @@ snapshots:
       '@babel/helper-module-imports': 7.24.7
       '@babel/helper-plugin-utils': 7.24.8
       '@babel/plugin-syntax-jsx': 7.24.7(@babel/core@7.24.9)
-      '@babel/types': 7.24.8
+      '@babel/types': 7.24.9
     transitivePeerDependencies:
       - supports-color
 
@@ -11125,14 +11125,14 @@ snapshots:
     dependencies:
       '@babel/core': 7.24.8
       '@babel/helper-plugin-utils': 7.24.8
-      '@babel/types': 7.24.8
+      '@babel/types': 7.24.9
       esutils: 2.0.3
 
   '@babel/preset-modules@0.1.6-no-external-plugins(@babel/core@7.24.9)':
     dependencies:
       '@babel/core': 7.24.9
       '@babel/helper-plugin-utils': 7.24.8
-      '@babel/types': 7.24.8
+      '@babel/types': 7.24.9
       esutils: 2.0.3
 
   '@babel/preset-react@7.24.7(@babel/core@7.24.9)':
@@ -11905,7 +11905,7 @@ snapshots:
 
   '@kuma-ui/babel-plugin@1.2.1(@types/react@18.3.3)(next@14.2.5(@babel/core@7.24.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/core': 7.24.8
+      '@babel/core': 7.24.9
       '@kuma-ui/core': 1.5.7(@types/react@18.3.3)(next@14.2.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
       '@kuma-ui/sheet': 1.3.1
       '@kuma-ui/system': 1.7.4
@@ -11917,7 +11917,7 @@ snapshots:
 
   '@kuma-ui/babel-plugin@1.2.1(@types/react@18.3.3)(next@14.2.5(@babel/core@7.24.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/core': 7.24.8
+      '@babel/core': 7.24.9
       '@kuma-ui/core': 1.5.7(@types/react@18.3.3)(next@14.2.5(@babel/core@7.24.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
       '@kuma-ui/sheet': 1.3.1
       '@kuma-ui/system': 1.7.4
@@ -14120,7 +14120,7 @@ snapshots:
       - supports-color
       - typescript
 
-  astro@4.12.0(@types/node@20.14.11)(lightningcss@1.25.1)(terser@5.31.2)(typescript@5.5.3):
+  astro@4.12.1(@types/node@20.14.11)(lightningcss@1.25.1)(terser@5.31.2)(typescript@5.5.3):
     dependencies:
       '@astrojs/compiler': 2.9.2
       '@astrojs/internal-helpers': 0.4.1
@@ -16412,7 +16412,7 @@ snapshots:
       parse5: 7.1.2
       unist-util-position: 5.0.0
       unist-util-visit: 5.0.0
-      vfile: 6.0.1
+      vfile: 6.0.2
       web-namespaces: 2.0.1
       zwitch: 2.0.4
 
