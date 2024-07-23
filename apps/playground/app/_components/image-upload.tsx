@@ -1,45 +1,18 @@
-'use client';
 import { useToast } from '@repo/ui/shadcn/hooks/use-toast';
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
-import io from 'socket.io-client';
-
-const socket = io(process.env.NEXT_PUBLIC_SOCKET_SERVER_URL ?? '', {
-  transports: ['websocket'],
-});
+import { UploadImage } from './grid';
 
 export default function ImageUploader({
   src,
   x,
   y,
+  onImageUpload,
 }: {
   src: string;
   x: number;
   y: number;
+  onImageUpload: (image: UploadImage) => void;
 }): JSX.Element {
-  const [image, setImage] = useState<string>(src);
-
-  useEffect(() => {
-    socket.on('connect', () => {
-      console.log('Socket.IO connection opened');
-    });
-    socket.on('disconnect', () => {
-      console.log('Socket.IO connection closed');
-    });
-    socket.on('image', (image) => {
-      if (Number(image.x) !== x || Number(image.y) !== y) {
-        return;
-      }
-      setImage(`/assets/${image.url}`);
-    });
-
-    return () => {
-      socket.off('connect');
-      socket.off('disconnect');
-      socket.off('image');
-    };
-  }, [x, y]);
-
   // server actionにできないかなー？
   // そのままformData保存する方が楽な気がする。知らんけど
   const handleImageUpload = async (
@@ -59,7 +32,7 @@ export default function ImageUploader({
         body: formData,
       });
       const data = await res.json();
-      socket.emit('image', data); // MEMO: 先にもうwebsocketで送ってから、保存したらいいのでは？保存はあくまでも次見る時にできてたらいいだけだし。
+      onImageUpload(data);
     } catch (error) {
       toast({
         title: `${error}`,
@@ -73,7 +46,7 @@ export default function ImageUploader({
     <div className='absolute left-0 top-0 h-full w-full object-cover'>
       <div className='relative h-full w-full'>
         <Image
-          src={image}
+          src={src}
           alt='Uploaded'
           className='h-full w-full object-contain'
           width='100'
