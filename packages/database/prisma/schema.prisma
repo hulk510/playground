@@ -17,3 +17,10 @@ model Todo {
   id      String @id @default(cuid())
   content String
 }
+
+model Images {
+  id  String @id @default(cuid())
+  url String
+  x   Int
+  y   Int
+}

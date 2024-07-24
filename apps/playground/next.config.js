@@ -4,6 +4,9 @@ const { withKumaUI } = require('@kuma-ui/next-plugin');
 const nextConfig = {
   reactStrictMode: true,
   transpilePackages: ['@repo/ui'],
+  images: {
+    domains: ['localhost'],
+  },
 };
 
 module.exports = withKumaUI(nextConfig);

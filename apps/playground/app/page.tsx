@@ -41,6 +41,12 @@ const LINKS: Link[] = [
     href: '/todo',
     description: 'sample prisma client',
   },
+  {
+    id: 5,
+    title: 'Mosaic Uploader',
+    href: '/mosaic-uploader',
+    description: '画像をたくさん載せれる',
+  },
 ];
 
 export default function Page(): JSX.Element {
@@ -86,7 +92,7 @@ export default function Page(): JSX.Element {
             </Button>
             <Card
               title={selectedLink.title}
-              className='w-full'
+              className='w-80'
               key={selectedLink.id}
             >
               <CardHeader>

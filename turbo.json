@@ -9,7 +9,11 @@
         "storybook-static/**",
         "dist/**"
       ],
-      "env": ["DATABASE_PRISMA_URL"]
+      "env": [
+        "DATABASE_PRISMA_URL",
+        "NEXT_PUBLIC_SOCKET_SERVER_URL",
+        "FRONTEND_URL"
+      ]
     },
     "test": {},
     "lint": {
