@@ -4,7 +4,7 @@ version: '3.9'
 # The containers that compose the project
 services:
   db:
-    image: postgres:16@sha256:008cbc50538f82e3cad5e7c82ec726be197c4dddc64507d1d652ac8b18213d3b
+    image: postgres:16@sha256:ca34600b1f2f21c033b4761d88cf763a64201c3af16cffe22d26375c2b9956e3
     restart: always
     container_name: integration-tests-prisma
     ports:
