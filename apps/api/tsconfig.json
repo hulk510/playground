@@ -1,10 +1,7 @@
 {
+  "extends": "@repo/typescript-config/base.json",
   "compilerOptions": {
-    "sourceMap": true,
-    "outDir": "dist",
-    "strict": true,
-    "lib": ["esnext"],
-    "esModuleInterop": true
+    "outDir": "dist"
   },
   "include": ["src"]
 }
