@@ -18,7 +18,7 @@ ENV PATH="$PNPM_HOME:$PATH"
 WORKDIR /package
 COPY --link --from=fetch-pnpm /pnpm/ /pnpm/
 RUN pnpm config set store-dir /.pnpm-store
-COPY --link .npmrc ./
+COPY --link ../../.npmrc ./
 RUN --mount=type=cache,target=/.pnpm-store \
   --mount=type=bind,source=pnpm-lock.yaml,target=pnpm-lock.yaml \
   pnpm fetch
@@ -55,6 +55,6 @@ WORKDIR /app
 COPY --link --from=fetch-deps /pnpm/ /pnpm/
 COPY --link --from=builder /package/dist/ ./dist/
 COPY --from=prod-deps /package/node_modules/ ./node_modules/
-COPY --link .npmrc package.json ./
+COPY --link ../../.npmrc package.json ./
 ENTRYPOINT [ "pnpm", "--shell-emulator" ]
 CMD [ "start" ]
