@@ -1,15 +1,9 @@
+import { PrismaClient } from '@repo/db';
 import { Grid, UploadImage } from '../_components/grid';
 
-async function getImages() {
-  const res = await fetch(`${process.env.FRONTEND_URL}/api/images`, {
-    next: { revalidate: 1 },
-  });
-  const images = await res.json();
-  return images as { url: string; x: number; y: number }[];
-}
-
 export default async function Page() {
-  const urls = await getImages();
+  const prisma = new PrismaClient();
+  const imageUrls = await prisma.images.findMany();
 
   // 全てのセル数
   const totalCells = 24 * 24;
@@ -24,7 +18,7 @@ export default async function Page() {
   );
 
   // 取得した画像を対応する位置にセット
-  urls.forEach((image) => {
+  imageUrls.forEach((image) => {
     const index = image.y * 24 + image.x; // x, yからインデックスを計算
     images[index] = {
       url: `/assets/${image.url}`,
