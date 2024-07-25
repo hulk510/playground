@@ -9,6 +9,10 @@ const io = new Server(server);
 
 app.use(cors()); // Enable CORS for all routes
 
+app.get('/healthCheck', (req, res) => {
+  res.send('OK');
+});
+
 app.get('/api/image', (req, res) => {
   // out.pngを返す
   res.sendFile(__dirname + '/out.png');
