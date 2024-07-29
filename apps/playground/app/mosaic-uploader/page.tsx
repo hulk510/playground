@@ -11,7 +11,8 @@ export default async function Page() {
   // 空の画像グリッドを作成
   const images: UploadImage[] = Array.from({ length: totalCells }).map(
     (_, i) => ({
-      url: '/assets/noImage.png', // 空白のセル
+      // cspell: disable-next-line
+      url: '/assets/noimage.png', // 空白のセル
       x: i % 24,
       y: Math.floor(i / 24),
     }),
