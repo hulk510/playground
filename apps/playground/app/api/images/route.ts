@@ -5,16 +5,6 @@ import path from 'path';
 
 const prisma = new PrismaClient();
 
-// revalidateした方が良い？
-export async function GET() {
-  const images = await prisma.images.findMany();
-  return new Response(JSON.stringify(images), {
-    headers: {
-      'Content-Type': 'application/json',
-    },
-  });
-}
-
 // 送信でファイルを保存している。この時にAPIに保存して本来はAPIのURLを保持するべきか。
 // GETではそのx-yを元に保存するようにする。
 

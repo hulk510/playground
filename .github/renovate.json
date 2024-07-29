@@ -31,5 +31,6 @@
       "groupName": "turbo monorepo",
       "matchUpdateTypes": ["digest", "patch", "minor", "major"]
     }
-  ]
+  ],
+  "schedule": ["every weekend"]
 }
