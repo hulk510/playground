@@ -143,8 +143,8 @@ importers:
   apps/hono-api:
     dependencies:
       hono:
-        specifier: ^4.4.11
-        version: 4.4.11
+        specifier: ^4.5.2
+        version: 4.5.3
     devDependencies:
       '@cloudflare/workers-types':
         specifier: ^4.20240620.0
@@ -165,8 +165,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/ui
       hono:
-        specifier: ^4.4.11
-        version: 4.4.11
+        specifier: ^4.5.2
+        version: 4.5.3
       next:
         specifier: 14.2.5
         version: 14.2.5(@babel/core@7.24.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -6178,8 +6178,8 @@ packages:
   hoist-non-react-statics@3.3.2:
     resolution: {integrity: sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==}
 
-  hono@4.4.11:
-    resolution: {integrity: sha512-R5RADpjoRsR3/VsnFovpsYNLPnC1f+FgdfsePk3qIgjb4D41Sg7uW5QCj41kzEOwXCjBg0sVvOZMvUNZ0DKB7g==}
+  hono@4.5.3:
+    resolution: {integrity: sha512-r26WwwbKD3BAYdfB294knNnegNda7VfV1tVn66D9Kvl9WQTdrR+5eKdoeaQNHQcC3Gr0KBikzAtjd6VsRGVSaw==}
     engines: {node: '>=16.0.0'}
 
   hosted-git-info@2.8.9:
@@ -16289,7 +16289,7 @@ snapshots:
     dependencies:
       react-is: 16.13.1
 
-  hono@4.4.11: {}
+  hono@4.5.3: {}
 
   hosted-git-info@2.8.9: {}
 
