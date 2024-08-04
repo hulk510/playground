@@ -357,8 +357,8 @@ importers:
         specifier: 5.1.0
         version: 5.1.0(astro@4.12.3(@types/node@20.14.11)(lightningcss@1.25.1)(terser@5.31.3)(typescript@5.5.4))(tailwindcss@3.4.7(ts-node@10.9.2(@types/node@20.14.11)(typescript@5.5.4)))(ts-node@10.9.2(@types/node@20.14.11)(typescript@5.5.4))
       '@divriots/jampack':
-        specifier: 0.24.4
-        version: 0.24.4(@swc/helpers@0.5.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: 0.25.0
+        version: 0.25.0(@swc/helpers@0.5.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@repo/tailwind-config':
         specifier: workspace:*
         version: link:../../packages/tailwind-config
@@ -1425,6 +1425,11 @@ packages:
   '@cloudflare/workers-types@4.20240725.0':
     resolution: {integrity: sha512-L6T/Bg50zm9IIACQVQ0CdVcQL+2nLkRXdPz6BsXF3SlzgjyWR5ndVctAbfr/HLV7aKYxWnnEZsIORsTWb+FssA==}
 
+  '@commander-js/extra-typings@12.1.0':
+    resolution: {integrity: sha512-wf/lwQvWAA0goIghcb91dQYpkLBcyhOhQNqG/VgWhnKzgt+UOMvra7EX/2fv70arm5RW+PUHoQHHDa6/p77Eqg==}
+    peerDependencies:
+      commander: ~12.1.0
+
   '@commitlint/cli@19.3.0':
     resolution: {integrity: sha512-LgYWOwuDR7BSTQ9OLZ12m7F/qhNY+NpAyPBgo4YNMkACE7lGuUnuQq1yi9hz1KA4+3VqpOYl8H1rY/LYK43v7g==}
     engines: {node: '>=v18'}
@@ -1525,8 +1530,8 @@ packages:
     resolution: {integrity: sha512-kQUVEgMDj0yE7LOdrDhKOC8JkfUzUKsUqp8m9WQDiSxim8Bnga+80opjXaCtHLhO3/W3DIZMow8QXtXUqNS+zA==}
     engines: {node: '>= 6'}
 
-  '@divriots/jampack@0.24.4':
-    resolution: {integrity: sha512-VCkz6Kmb1j3wBzsbc9aNTEmyAqvKZDjtRf7LnDktXE3xkVswHKXzvSqItnDkKJfBC670EQDLMQQqOCYLYVCDhw==}
+  '@divriots/jampack@0.25.0':
+    resolution: {integrity: sha512-r6WMX8nDoVqNmb+Xlt0ML63ES6u+hb/qdyXzUMwQccmwh0D8AW+TWKUEZZAHE1jSic4sp+jxmQZiAq3IAS0xlg==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -10959,6 +10964,10 @@ snapshots:
 
   '@cloudflare/workers-types@4.20240725.0': {}
 
+  '@commander-js/extra-typings@12.1.0(commander@12.1.0)':
+    dependencies:
+      commander: 12.1.0
+
   '@commitlint/cli@19.3.0(@types/node@20.14.11)(typescript@5.5.4)':
     dependencies:
       '@commitlint/format': 19.3.0
@@ -11103,8 +11112,9 @@ snapshots:
       undici: 5.28.4
       whatwg-mimetype: 3.0.0
 
-  '@divriots/jampack@0.24.4(@swc/helpers@0.5.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@divriots/jampack@0.25.0(@swc/helpers@0.5.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
+      '@commander-js/extra-typings': 12.1.0(commander@12.1.0)
       '@divriots/cheerio': 1.0.0-rc.12
       '@proload/core': 0.3.3
       '@swc/core': 1.7.0(@swc/helpers@0.5.5)
