@@ -5,7 +5,7 @@
   "files": [],
   "devDependencies": {
     "postcss-styled-syntax": "0.6.4",
-    "stylelint": "16.7.0",
+    "stylelint": "16.8.1",
     "stylelint-config-recess-order": "5.0.1",
     "stylelint-config-standard": "36.0.1"
   }
