@@ -20,7 +20,7 @@
   },
   "packageManager": "pnpm@9.7.0",
   "dependencies": {
-    "@commitlint/cli": "19.3.0",
+    "@commitlint/cli": "19.4.0",
     "@commitlint/config-conventional": "19.2.2",
     "@manypkg/cli": "0.21.4",
     "@repo/eslint-config": "workspace:*",
