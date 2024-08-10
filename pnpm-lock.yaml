@@ -68,7 +68,7 @@ importers:
         version: 20.14.14
       ts-node:
         specifier: 10.9.2
-        version: 10.9.2(@swc/core@1.7.6)(@types/node@20.14.14)(typescript@5.5.4)
+        version: 10.9.2(@swc/core@1.7.6(@swc/helpers@0.5.5))(@types/node@20.14.14)(typescript@5.5.4)
       typescript:
         specifier: 5.5.4
         version: 5.5.4
@@ -99,7 +99,7 @@ importers:
     devDependencies:
       '@kuma-ui/next-plugin':
         specifier: 1.3.1
-        version: 1.3.1(@babel/core@7.25.2)(@types/react@18.3.3)(next@14.2.5(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)(webpack@5.93.0)
+        version: 1.3.1(@babel/core@7.25.2)(@types/react@18.3.3)(next@14.2.5(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)(webpack@5.93.0(@swc/core@1.7.6(@swc/helpers@0.5.5)))
       '@next/eslint-plugin-next':
         specifier: 14.2.5
         version: 14.2.5
@@ -135,7 +135,7 @@ importers:
         version: 8.4.41
       tailwindcss:
         specifier: 3.4.7
-        version: 3.4.7(ts-node@10.9.2(@swc/core@1.7.6)(@types/node@20.14.14)(typescript@5.5.4))
+        version: 3.4.7(ts-node@10.9.2(@swc/core@1.7.6(@swc/helpers@0.5.5))(@types/node@20.14.14)(typescript@5.5.4))
       typescript:
         specifier: 5.5.4
         version: 5.5.4
@@ -150,8 +150,8 @@ importers:
         specifier: 4.20240806.0
         version: 4.20240806.0
       wrangler:
-        specifier: 3.68.0
-        version: 3.68.0(@cloudflare/workers-types@4.20240806.0)
+        specifier: 3.69.1
+        version: 3.69.1(@cloudflare/workers-types@4.20240806.0)
 
   apps/playground:
     dependencies:
@@ -188,7 +188,7 @@ importers:
     devDependencies:
       '@kuma-ui/next-plugin':
         specifier: 1.3.1
-        version: 1.3.1(@babel/core@7.25.2)(@types/react@18.3.3)(next@14.2.5(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)(webpack@5.93.0)
+        version: 1.3.1(@babel/core@7.25.2)(@types/react@18.3.3)(next@14.2.5(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)(webpack@5.93.0(@swc/core@1.7.6(@swc/helpers@0.5.5)))
       '@next/eslint-plugin-next':
         specifier: 14.2.5
         version: 14.2.5
@@ -224,7 +224,7 @@ importers:
         version: 8.4.41
       tailwindcss:
         specifier: 3.4.7
-        version: 3.4.7(ts-node@10.9.2(@swc/core@1.7.6)(@types/node@20.14.14)(typescript@5.5.4))
+        version: 3.4.7(ts-node@10.9.2(@swc/core@1.7.6(@swc/helpers@0.5.5))(@types/node@20.14.14)(typescript@5.5.4))
       typescript:
         specifier: 5.5.4
         version: 5.5.4
@@ -342,7 +342,7 @@ importers:
         version: 0.10.14
       tailwindcss:
         specifier: 3.4.7
-        version: 3.4.7(ts-node@10.9.2(@swc/core@1.7.6)(@types/node@20.14.14)(typescript@5.5.4))
+        version: 3.4.7(ts-node@10.9.2(@swc/core@1.7.6(@swc/helpers@0.5.5))(@types/node@20.14.14)(typescript@5.5.4))
       typescript:
         specifier: 5.5.4
         version: 5.5.4
@@ -355,7 +355,7 @@ importers:
         version: 3.1.6
       '@astrojs/tailwind':
         specifier: 5.1.0
-        version: 5.1.0(astro@4.13.1(@types/node@20.14.14)(lightningcss@1.25.1)(terser@5.31.3)(typescript@5.5.4))(tailwindcss@3.4.7(ts-node@10.9.2(@types/node@20.14.14)(typescript@5.5.4)))(ts-node@10.9.2(@types/node@20.14.14)(typescript@5.5.4))
+        version: 5.1.0(astro@4.13.1(@types/node@20.14.14)(lightningcss@1.25.1)(terser@5.31.3)(typescript@5.5.4))(tailwindcss@3.4.7(ts-node@10.9.2(@swc/core@1.7.6(@swc/helpers@0.5.5))(@types/node@20.14.14)(typescript@5.5.4)))(ts-node@10.9.2(@swc/core@1.7.6(@swc/helpers@0.5.5))(@types/node@20.14.14)(typescript@5.5.4))
       '@divriots/jampack':
         specifier: 0.25.0
         version: 0.25.0(@swc/helpers@0.5.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -364,7 +364,7 @@ importers:
         version: link:../../packages/tailwind-config
       '@tailwindcss/typography':
         specifier: 0.5.13
-        version: 0.5.13(tailwindcss@3.4.7(ts-node@10.9.2(@types/node@20.14.14)(typescript@5.5.4)))
+        version: 0.5.13(tailwindcss@3.4.7(ts-node@10.9.2(@swc/core@1.7.6(@swc/helpers@0.5.5))(@types/node@20.14.14)(typescript@5.5.4)))
       '@types/github-slugger':
         specifier: 2.0.0
         version: 2.0.0
@@ -495,7 +495,7 @@ importers:
         version: 18.3.1
       tailwindcss:
         specifier: 3.4.7
-        version: 3.4.7(ts-node@10.9.2(@swc/core@1.7.6)(@types/node@20.14.14)(typescript@5.5.4))
+        version: 3.4.7(ts-node@10.9.2(@swc/core@1.7.6(@swc/helpers@0.5.5))(@types/node@20.14.14)(typescript@5.5.4))
       typescript:
         specifier: 5.5.4
         version: 5.5.4
@@ -519,14 +519,14 @@ importers:
     dependencies:
       '@tailwindcss/line-clamp':
         specifier: 0.4.4
-        version: 0.4.4(tailwindcss@3.4.7(ts-node@10.9.2(@types/node@20.14.14)(typescript@5.5.4)))
+        version: 0.4.4(tailwindcss@3.4.7(ts-node@10.9.2(@swc/core@1.7.6(@swc/helpers@0.5.5))(@types/node@20.14.14)(typescript@5.5.4)))
     devDependencies:
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       tailwindcss:
         specifier: 3.4.7
-        version: 3.4.7(ts-node@10.9.2(@swc/core@1.7.6)(@types/node@20.14.14)(typescript@5.5.4))
+        version: 3.4.7(ts-node@10.9.2(@swc/core@1.7.6(@swc/helpers@0.5.5))(@types/node@20.14.14)(typescript@5.5.4))
 
   packages/typescript-config: {}
 
@@ -579,7 +579,7 @@ importers:
         version: 2.4.0
       tailwindcss-animate:
         specifier: 1.0.7
-        version: 1.0.7(tailwindcss@3.4.7(ts-node@10.9.2(@swc/core@1.7.6)(@types/node@20.14.14)(typescript@5.5.4)))
+        version: 1.0.7(tailwindcss@3.4.7(ts-node@10.9.2(@swc/core@1.7.6(@swc/helpers@0.5.5))(@types/node@20.14.14)(typescript@5.5.4)))
       zod:
         specifier: 3.23.8
         version: 3.23.8
@@ -598,7 +598,7 @@ importers:
         version: link:../typescript-config
       '@turbo/gen':
         specifier: 2.0.12
-        version: 2.0.12(@swc/core@1.7.6)(@types/node@20.14.14)(typescript@5.5.4)
+        version: 2.0.12(@swc/core@1.7.6(@swc/helpers@0.5.5))(@types/node@20.14.14)(typescript@5.5.4)
       '@types/eslint':
         specifier: 9.6.0
         version: 9.6.0
@@ -628,7 +628,7 @@ importers:
         version: 16.8.1(typescript@5.5.4)
       tailwindcss:
         specifier: 3.4.7
-        version: 3.4.7(ts-node@10.9.2(@swc/core@1.7.6)(@types/node@20.14.14)(typescript@5.5.4))
+        version: 3.4.7(ts-node@10.9.2(@swc/core@1.7.6(@swc/helpers@0.5.5))(@types/node@20.14.14)(typescript@5.5.4))
       typescript:
         specifier: 5.5.4
         version: 5.5.4
@@ -1417,6 +1417,9 @@ packages:
     engines: {node: '>=16'}
     cpu: [x64]
     os: [win32]
+
+  '@cloudflare/workers-shared@0.1.0':
+    resolution: {integrity: sha512-SyD4iw6jM4anZaG+ujgVETV4fulF2KHBOW31eavbVN7TNpk2l4aJgwY1YSPK00IKSWsoQuH2TigR446KuT5lqQ==}
 
   '@cloudflare/workers-types@4.20240806.0':
     resolution: {integrity: sha512-8lvgrwXGTZEBsUQJ8YUnMk72Anh9omwr6fqWLw/EwVgcw1nQxs/bfdadBEbdP48l9fWXjE4E5XERLUrrFuEpsg==}
@@ -9804,8 +9807,8 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
 
-  wrangler@3.68.0:
-    resolution: {integrity: sha512-gsIeglkh5nOn1mHJs0bf1pOq/DvIt+umjO/5a867IYYXaN4j/ar5cRR1+F5ue3S7uEjYCLIZZjs8ESiPTSEt+Q==}
+  wrangler@3.69.1:
+    resolution: {integrity: sha512-lqgPsaxIP564OJE6f7RIS/iLy+WaY0EN89p2g83nkrPN6PjuC6vB3eC7jgeVZO1ntWjD0X+mEU5ggbERHr899w==}
     engines: {node: '>=16.17.0'}
     hasBin: true
     peerDependencies:
@@ -10034,13 +10037,13 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 3.23.8
 
-  '@astrojs/tailwind@5.1.0(astro@4.13.1(@types/node@20.14.14)(lightningcss@1.25.1)(terser@5.31.3)(typescript@5.5.4))(tailwindcss@3.4.7(ts-node@10.9.2(@types/node@20.14.14)(typescript@5.5.4)))(ts-node@10.9.2(@types/node@20.14.14)(typescript@5.5.4))':
+  '@astrojs/tailwind@5.1.0(astro@4.13.1(@types/node@20.14.14)(lightningcss@1.25.1)(terser@5.31.3)(typescript@5.5.4))(tailwindcss@3.4.7(ts-node@10.9.2(@swc/core@1.7.6(@swc/helpers@0.5.5))(@types/node@20.14.14)(typescript@5.5.4)))(ts-node@10.9.2(@swc/core@1.7.6(@swc/helpers@0.5.5))(@types/node@20.14.14)(typescript@5.5.4))':
     dependencies:
       astro: 4.13.1(@types/node@20.14.14)(lightningcss@1.25.1)(terser@5.31.3)(typescript@5.5.4)
       autoprefixer: 10.4.20(postcss@8.4.41)
       postcss: 8.4.41
-      postcss-load-config: 4.0.2(postcss@8.4.41)(ts-node@10.9.2(@swc/core@1.7.6)(@types/node@20.14.14)(typescript@5.5.4))
-      tailwindcss: 3.4.7(ts-node@10.9.2(@swc/core@1.7.6)(@types/node@20.14.14)(typescript@5.5.4))
+      postcss-load-config: 4.0.2(postcss@8.4.41)(ts-node@10.9.2(@swc/core@1.7.6(@swc/helpers@0.5.5))(@types/node@20.14.14)(typescript@5.5.4))
+      tailwindcss: 3.4.7(ts-node@10.9.2(@swc/core@1.7.6(@swc/helpers@0.5.5))(@types/node@20.14.14)(typescript@5.5.4))
     transitivePeerDependencies:
       - ts-node
 
@@ -10963,6 +10966,8 @@ snapshots:
   '@cloudflare/workerd-windows-64@1.20240725.0':
     optional: true
 
+  '@cloudflare/workers-shared@0.1.0': {}
+
   '@cloudflare/workers-types@4.20240806.0': {}
 
   '@commander-js/extra-typings@12.1.0(commander@12.1.0)':
@@ -11761,18 +11766,18 @@ snapshots:
       '@types/react': 18.3.3
       next: 14.2.5(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@kuma-ui/next-plugin@1.3.1(@babel/core@7.25.2)(@types/react@18.3.3)(next@14.2.5(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)(webpack@5.93.0)':
+  '@kuma-ui/next-plugin@1.3.1(@babel/core@7.25.2)(@types/react@18.3.3)(next@14.2.5(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)(webpack@5.93.0(@swc/core@1.7.6(@swc/helpers@0.5.5)))':
     dependencies:
       '@babel/preset-env': 7.25.3(@babel/core@7.25.2)
       '@babel/preset-react': 7.24.7(@babel/core@7.25.2)
       '@babel/preset-typescript': 7.24.7(@babel/core@7.25.2)
       '@kuma-ui/core': 1.5.7(@types/react@18.3.3)(next@14.2.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
-      '@kuma-ui/webpack-plugin': 1.4.1(@types/react@18.3.3)(next@14.2.5(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)(webpack@5.93.0)
-      babel-loader: 9.1.3(@babel/core@7.25.2)(webpack@5.93.0)
+      '@kuma-ui/webpack-plugin': 1.4.1(@types/react@18.3.3)(next@14.2.5(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)(webpack@5.93.0(@swc/core@1.7.6(@swc/helpers@0.5.5)))
+      babel-loader: 9.1.3(@babel/core@7.25.2)(webpack@5.93.0(@swc/core@1.7.6(@swc/helpers@0.5.5)))
       browserslist: 4.21.5
       next: 14.2.5(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
-      webpack: 5.93.0
+      webpack: 5.93.0(@swc/core@1.7.6(@swc/helpers@0.5.5))
     optionalDependencies:
       '@types/react': 18.3.3
     transitivePeerDependencies:
@@ -11804,14 +11809,14 @@ snapshots:
 
   '@kuma-ui/wasm@1.0.2': {}
 
-  '@kuma-ui/webpack-plugin@1.4.1(@types/react@18.3.3)(next@14.2.5(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)(webpack@5.93.0)':
+  '@kuma-ui/webpack-plugin@1.4.1(@types/react@18.3.3)(next@14.2.5(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)(webpack@5.93.0(@swc/core@1.7.6(@swc/helpers@0.5.5)))':
     dependencies:
       '@kuma-ui/compiler': 1.3.1(@types/react@18.3.3)(next@14.2.5(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
       '@kuma-ui/sheet': 1.3.1
       '@kuma-ui/system': 1.7.4
       esbuild: 0.18.20
       eval: 0.1.8
-      webpack: 5.93.0
+      webpack: 5.93.0(@swc/core@1.7.6(@swc/helpers@0.5.5))
     transitivePeerDependencies:
       - '@types/react'
       - next
@@ -12955,17 +12960,17 @@ snapshots:
     dependencies:
       defer-to-connect: 2.0.1
 
-  '@tailwindcss/line-clamp@0.4.4(tailwindcss@3.4.7(ts-node@10.9.2(@types/node@20.14.14)(typescript@5.5.4)))':
+  '@tailwindcss/line-clamp@0.4.4(tailwindcss@3.4.7(ts-node@10.9.2(@swc/core@1.7.6(@swc/helpers@0.5.5))(@types/node@20.14.14)(typescript@5.5.4)))':
     dependencies:
-      tailwindcss: 3.4.7(ts-node@10.9.2(@swc/core@1.7.6)(@types/node@20.14.14)(typescript@5.5.4))
+      tailwindcss: 3.4.7(ts-node@10.9.2(@swc/core@1.7.6(@swc/helpers@0.5.5))(@types/node@20.14.14)(typescript@5.5.4))
 
-  '@tailwindcss/typography@0.5.13(tailwindcss@3.4.7(ts-node@10.9.2(@types/node@20.14.14)(typescript@5.5.4)))':
+  '@tailwindcss/typography@0.5.13(tailwindcss@3.4.7(ts-node@10.9.2(@swc/core@1.7.6(@swc/helpers@0.5.5))(@types/node@20.14.14)(typescript@5.5.4)))':
     dependencies:
       lodash.castarray: 4.4.0
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       postcss-selector-parser: 6.0.10
-      tailwindcss: 3.4.7(ts-node@10.9.2(@swc/core@1.7.6)(@types/node@20.14.14)(typescript@5.5.4))
+      tailwindcss: 3.4.7(ts-node@10.9.2(@swc/core@1.7.6(@swc/helpers@0.5.5))(@types/node@20.14.14)(typescript@5.5.4))
 
   '@tanstack/react-virtual@3.8.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -13035,7 +13040,7 @@ snapshots:
 
   '@tsconfig/node16@1.0.4': {}
 
-  '@turbo/gen@2.0.12(@swc/core@1.7.6)(@types/node@20.14.14)(typescript@5.5.4)':
+  '@turbo/gen@2.0.12(@swc/core@1.7.6(@swc/helpers@0.5.5))(@types/node@20.14.14)(typescript@5.5.4)':
     dependencies:
       '@turbo/workspaces': 2.0.12
       commander: 10.0.1
@@ -13045,7 +13050,7 @@ snapshots:
       node-plop: 0.26.3
       picocolors: 1.0.1
       proxy-agent: 6.4.0
-      ts-node: 10.9.2(@swc/core@1.7.6)(@types/node@20.14.14)(typescript@5.5.4)
+      ts-node: 10.9.2(@swc/core@1.7.6(@swc/helpers@0.5.5))(@types/node@20.14.14)(typescript@5.5.4)
       update-check: 1.5.4
       validate-npm-package-name: 5.0.1
     transitivePeerDependencies:
@@ -13997,12 +14002,12 @@ snapshots:
     dependencies:
       '@babel/core': 7.25.2
 
-  babel-loader@9.1.3(@babel/core@7.25.2)(webpack@5.93.0):
+  babel-loader@9.1.3(@babel/core@7.25.2)(webpack@5.93.0(@swc/core@1.7.6(@swc/helpers@0.5.5))):
     dependencies:
       '@babel/core': 7.25.2
       find-cache-dir: 4.0.0
       schema-utils: 4.2.0
-      webpack: 5.93.0
+      webpack: 5.93.0(@swc/core@1.7.6(@swc/helpers@0.5.5))
 
   babel-plugin-macros@3.1.0:
     dependencies:
@@ -18576,13 +18581,13 @@ snapshots:
       camelcase-css: 2.0.1
       postcss: 8.4.41
 
-  postcss-load-config@4.0.2(postcss@8.4.41)(ts-node@10.9.2(@swc/core@1.7.6)(@types/node@20.14.14)(typescript@5.5.4)):
+  postcss-load-config@4.0.2(postcss@8.4.41)(ts-node@10.9.2(@swc/core@1.7.6(@swc/helpers@0.5.5))(@types/node@20.14.14)(typescript@5.5.4)):
     dependencies:
       lilconfig: 3.1.2
       yaml: 2.5.0
     optionalDependencies:
       postcss: 8.4.41
-      ts-node: 10.9.2(@swc/core@1.7.6)(@types/node@20.14.14)(typescript@5.5.4)
+      ts-node: 10.9.2(@swc/core@1.7.6(@swc/helpers@0.5.5))(@types/node@20.14.14)(typescript@5.5.4)
 
   postcss-media-query-parser@0.2.3: {}
 
@@ -19954,11 +19959,11 @@ snapshots:
 
   tailwind-merge@2.4.0: {}
 
-  tailwindcss-animate@1.0.7(tailwindcss@3.4.7(ts-node@10.9.2(@swc/core@1.7.6)(@types/node@20.14.14)(typescript@5.5.4))):
+  tailwindcss-animate@1.0.7(tailwindcss@3.4.7(ts-node@10.9.2(@swc/core@1.7.6(@swc/helpers@0.5.5))(@types/node@20.14.14)(typescript@5.5.4))):
     dependencies:
-      tailwindcss: 3.4.7(ts-node@10.9.2(@swc/core@1.7.6)(@types/node@20.14.14)(typescript@5.5.4))
+      tailwindcss: 3.4.7(ts-node@10.9.2(@swc/core@1.7.6(@swc/helpers@0.5.5))(@types/node@20.14.14)(typescript@5.5.4))
 
-  tailwindcss@3.4.7(ts-node@10.9.2(@swc/core@1.7.6)(@types/node@20.14.14)(typescript@5.5.4)):
+  tailwindcss@3.4.7(ts-node@10.9.2(@swc/core@1.7.6(@swc/helpers@0.5.5))(@types/node@20.14.14)(typescript@5.5.4)):
     dependencies:
       '@alloc/quick-lru': 5.2.0
       arg: 5.0.2
@@ -19977,7 +19982,7 @@ snapshots:
       postcss: 8.4.41
       postcss-import: 15.1.0(postcss@8.4.41)
       postcss-js: 4.0.1(postcss@8.4.41)
-      postcss-load-config: 4.0.2(postcss@8.4.41)(ts-node@10.9.2(@swc/core@1.7.6)(@types/node@20.14.14)(typescript@5.5.4))
+      postcss-load-config: 4.0.2(postcss@8.4.41)(ts-node@10.9.2(@swc/core@1.7.6(@swc/helpers@0.5.5))(@types/node@20.14.14)(typescript@5.5.4))
       postcss-nested: 6.2.0(postcss@8.4.41)
       postcss-selector-parser: 6.1.1
       resolve: 1.22.8
@@ -20013,14 +20018,16 @@ snapshots:
       type-fest: 2.19.0
       unique-string: 3.0.0
 
-  terser-webpack-plugin@5.3.10(webpack@5.93.0):
+  terser-webpack-plugin@5.3.10(@swc/core@1.7.6(@swc/helpers@0.5.5))(webpack@5.93.0(@swc/core@1.7.6(@swc/helpers@0.5.5))):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
       jest-worker: 27.5.1
       schema-utils: 3.3.0
       serialize-javascript: 6.0.2
       terser: 5.31.3
-      webpack: 5.93.0
+      webpack: 5.93.0(@swc/core@1.7.6(@swc/helpers@0.5.5))
+    optionalDependencies:
+      '@swc/core': 1.7.6(@swc/helpers@0.5.5)
 
   terser@5.31.3:
     dependencies:
@@ -20106,7 +20113,7 @@ snapshots:
       '@ts-morph/common': 0.20.0
       code-block-writer: 12.0.0
 
-  ts-node@10.9.2(@swc/core@1.7.6)(@types/node@20.14.14)(typescript@5.5.4):
+  ts-node@10.9.2(@swc/core@1.7.6(@swc/helpers@0.5.5))(@types/node@20.14.14)(typescript@5.5.4):
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
       '@tsconfig/node10': 1.0.11
@@ -20670,7 +20677,7 @@ snapshots:
 
   webpack-virtual-modules@0.6.2: {}
 
-  webpack@5.93.0:
+  webpack@5.93.0(@swc/core@1.7.6(@swc/helpers@0.5.5)):
     dependencies:
       '@types/eslint-scope': 3.7.7
       '@types/estree': 1.0.5
@@ -20693,7 +20700,7 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 3.3.0
       tapable: 2.2.1
-      terser-webpack-plugin: 5.3.10(webpack@5.93.0)
+      terser-webpack-plugin: 5.3.10(@swc/core@1.7.6(@swc/helpers@0.5.5))(webpack@5.93.0(@swc/core@1.7.6(@swc/helpers@0.5.5)))
       watchpack: 2.4.1
       webpack-sources: 3.2.3
     transitivePeerDependencies:
@@ -20775,9 +20782,10 @@ snapshots:
       '@cloudflare/workerd-linux-arm64': 1.20240725.0
       '@cloudflare/workerd-windows-64': 1.20240725.0
 
-  wrangler@3.68.0(@cloudflare/workers-types@4.20240806.0):
+  wrangler@3.69.1(@cloudflare/workers-types@4.20240806.0):
     dependencies:
       '@cloudflare/kv-asset-handler': 0.3.4
+      '@cloudflare/workers-shared': 0.1.0
       '@esbuild-plugins/node-globals-polyfill': 0.2.3(esbuild@0.17.19)
       '@esbuild-plugins/node-modules-polyfill': 0.2.2(esbuild@0.17.19)
       blake3-wasm: 2.1.5
