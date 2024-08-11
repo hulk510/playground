@@ -19,4 +19,4 @@ services:
       dockerfile: apps/api/Dockerfile
     container_name: integration-tests-api
     ports:
-      - '8888:8888'
+      - '8898:8888'
