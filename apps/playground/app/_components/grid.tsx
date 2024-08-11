@@ -13,8 +13,6 @@ type Props = {
   images: UploadImage[];
 };
 
-// とりあえずあとはデプロイしてみて色々確認して早く表示できるようにするかー
-// layoutとかpartialでimportできるようにもしてみたいし。
 const socket = io(process.env.NEXT_PUBLIC_SOCKET_SERVER_URL ?? '', {
   transports: ['websocket'],
 });
@@ -25,7 +23,7 @@ export function Grid({ images }: Props) {
     const newState = [...state];
     newState[action.y * 24 + action.x] = {
       ...action,
-      url: `/assets/${action.url}`,
+      url: action.url,
     };
     return newState;
   };

@@ -13,8 +13,6 @@ export default function ImageUploader({
   y: number;
   onImageUpload: (image: UploadImage) => void;
 }): JSX.Element {
-  // server actionにできないかなー？
-  // そのままformData保存する方が楽な気がする。知らんけど
   const handleImageUpload = async (
     event: React.ChangeEvent<HTMLInputElement>,
   ) => {
@@ -22,16 +20,17 @@ export default function ImageUploader({
     if (!file) {
       return;
     }
-    const formData = new FormData();
-    formData.append('image', file);
-    formData.append('x', String(x));
-    formData.append('y', String(y));
+
     try {
-      const res = await fetch('/api/images', {
-        method: 'POST',
-        body: formData,
-      });
-      const data = await res.json();
+      const response = await fetch(
+        `/api/images?filename=${file.name}&x=${x}&y=${y}`,
+        {
+          method: 'POST',
+          body: file,
+        },
+      );
+
+      const data = (await response.json()) as UploadImage;
       onImageUpload(data);
     } catch (error) {
       toast({
