@@ -22,7 +22,7 @@ export default async function Page() {
   imageUrls.forEach((image) => {
     const index = image.y * 24 + image.x; // x, yからインデックスを計算
     images[index] = {
-      url: `/assets/${image.url}`,
+      url: image.url,
       x: image.x,
       y: image.y,
     };

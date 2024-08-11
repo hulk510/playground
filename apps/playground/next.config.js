@@ -5,7 +5,13 @@ const nextConfig = {
   reactStrictMode: true,
   transpilePackages: ['@repo/ui'],
   images: {
-    domains: ['localhost'],
+    remotePatterns: [
+      { protocol: 'http', hostname: 'localhost', port: '3000' },
+      {
+        protocol: 'https',
+        hostname: 'rxb7a9nggk0nv8c4.public.blob.vercel-storage.com',
+      },
+    ],
   },
 };
 

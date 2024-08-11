@@ -1,57 +1,37 @@
 import { PrismaClient } from '@repo/db';
-import { randomUUID } from 'crypto';
-import { promises as fs } from 'fs';
-import path from 'path';
+import { put } from '@vercel/blob';
+import { url } from 'inspector';
 
 const prisma = new PrismaClient();
 
-// 送信でファイルを保存している。この時にAPIに保存して本来はAPIのURLを保持するべきか。
-// GETではそのx-yを元に保存するようにする。
-
-// これ別にroute handler使わずにserver actionで書けば楽だと思う？
-// わざわざAPIとして叩くよりも、リクエストするアクションとして作ってあげるべき？そうなるとAPIとしたい場合ってなんなの？
-// server actionにした場合でもs3とかに保存するリクエストはできるはず。APIにする場面がよくわからん。
 export async function POST(req: Request) {
-  const fileName = randomUUID();
-  const formData = await req.formData();
-  const x = formData.get('x');
-  const y = formData.get('y');
-  const file = formData.get('image') as Blob | null;
-  if (!file) {
-    return new Response('file not found', {
+  const { searchParams } = new URL(req.url);
+  const filename = searchParams.get('filename');
+  const x = searchParams.get('x');
+  const y = searchParams.get('y');
+  if (!filename || !req.body) {
+    return new Response('filename or body is required', {
       status: 400,
     });
   }
-  console.log(file);
-
-  const arrayBuffer = await file.arrayBuffer();
-  const buffer = Buffer.from(arrayBuffer);
-
-  // 保存先のディレクトリを指定
-  const savePath = path.join(
-    process.cwd(),
-    'public',
-    'assets',
-    `${fileName}.jpg`,
-  );
 
   try {
     // ファイルを保存
-    await fs.writeFile(savePath, buffer);
+    const blob = await put('mosaic-uploader/' + filename, req.body, {
+      access: 'public',
+    });
     await prisma.images.create({
       data: {
         x: Number(x),
         y: Number(y),
-        url: `${fileName}.jpg`,
+        url: blob.url,
       },
     });
-    console.log(`File saved to ${savePath}`);
+    return Response.json({ url, x, y });
   } catch (error) {
     console.error('Error saving file:', error);
     return new Response('file save error', {
       status: 500,
     });
   }
-
-  return Response.json({ url: `${fileName}.jpg`, x, y });
 }
