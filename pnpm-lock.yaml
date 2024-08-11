@@ -201,7 +201,7 @@ importers:
         specifier: 18.3.0
         version: 18.3.0
       '@vercel/blob':
-        specifier: ^0.23.4
+        specifier: 0.23.4
         version: 0.23.4
       autoprefixer:
         specifier: 10.4.20
