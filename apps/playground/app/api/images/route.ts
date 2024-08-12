@@ -1,6 +1,5 @@
 import { PrismaClient } from '@repo/db';
 import { put } from '@vercel/blob';
-import { url } from 'inspector';
 
 const prisma = new PrismaClient();
 
@@ -20,14 +19,15 @@ export async function POST(req: Request) {
     const blob = await put('mosaic-uploader/' + filename, req.body, {
       access: 'public',
     });
+    const newImage = {
+      x: Number(x),
+      y: Number(y),
+      url: blob.url,
+    };
     await prisma.images.create({
-      data: {
-        x: Number(x),
-        y: Number(y),
-        url: blob.url,
-      },
+      data: newImage,
     });
-    return Response.json({ url, x, y });
+    return Response.json(newImage);
   } catch (error) {
     console.error('Error saving file:', error);
     return new Response('file save error', {
