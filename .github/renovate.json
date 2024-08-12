@@ -8,10 +8,12 @@
     ":disablePrControls",
     ":label(renovate)",
     ":maintainLockFilesWeekly",
-    ":prHourlyLimitNone",
     ":rebaseStalePrs",
     ":semanticCommits",
-    "npm:unpublishSafe"
+    "npm:unpublishSafe",
+    "schedule:daily",
+    ":prConcurrentLimit10",
+    ":prHourlyLimit4"
   ],
   "automergeStrategy": "squash",
   "assigneesFromCodeOwners": true,
@@ -31,6 +33,5 @@
       "groupName": "turbo monorepo",
       "matchUpdateTypes": ["digest", "patch", "minor", "major"]
     }
-  ],
-  "schedule": ["every weekend"]
+  ]
 }
