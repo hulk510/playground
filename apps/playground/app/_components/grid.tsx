@@ -36,8 +36,8 @@ export function Grid({ images }: Props) {
     socket.on('disconnect', () => {
       console.log('Socket.IO connection closed');
     });
-    socket.on('image', (image: { x: string; y: string; url: string }) => {
-      dispatch({ ...image, x: Number(image.x), y: Number(image.y) });
+    socket.on('image', (image: { x: number; y: number; url: string }) => {
+      dispatch({ ...image, x: image.x, y: image.y });
     });
 
     return () => {
