@@ -40,6 +40,5 @@ jobs:
         with:
           commit: 'test'
           title: 'Release'
-
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
