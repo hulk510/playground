@@ -1,5 +1,15 @@
 # @repo/math
 
+## 1.1.0
+
+### Minor Changes
+
+- [#865](https://github.com/hulk510/playground/pull/865) [`4843975`](https://github.com/hulk510/playground/commit/4843975d3e6c9c6921fd956551f94c0a30631000) Thanks [@hulk510](https://github.com/hulk510)! - 重ねてやるとどうなるのか？
+
+### Patch Changes
+
+- [#864](https://github.com/hulk510/playground/pull/864) [`e5ba8e6`](https://github.com/hulk510/playground/commit/e5ba8e6849e40602326959b2efc019ce31697644) Thanks [@hulk510](https://github.com/hulk510)! - patch test
+
 ## 1.0.0
 
 ### Major Changes
