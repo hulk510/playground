@@ -4,7 +4,8 @@
     "@changesets/changelog-github",
     { "repo": "hulk510/playground" }
   ],
-  "commit": "chore(release): update versions and changelog [skip ci]",
+  "commit": ["./commit.js", { "skipCI": "version" }],
+  "title": "playground",
   "fixed": [],
   "linked": [],
   "access": "restricted",
