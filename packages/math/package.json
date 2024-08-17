@@ -1,0 +1,22 @@
+{
+  "name": "@repo/math",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup index.ts --format cjs,esm --dts",
+    "lint": "tsc --noEmit",
+    "dev": "tsup index.ts --format cjs,esm --dts --watch"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "autoprefixer": "10.4.20",
+    "tsup": "^8.2.4",
+    "typescript": "5.5.4"
+  }
+}
