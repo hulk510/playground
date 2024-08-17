@@ -38,11 +38,20 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+      - name: Add NPM token to .npmrc
+        run: |
+          cat << EOF >> "$HOME/.npmrc"
+            @hulk510:registry=https://npm.pkg.github.com
+            //npm.pkg.github.com/:_authToken=$GITHUB_TOKEN
+          EOF
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create Release Pull Request
         uses: changesets/action@v1
         with:
           commit: 'chore(release): update versions and changelog [skip ci]'
-          # title: 'chore(release): update versions and changelog [skip ci]'
+          title: 'chore(release): update versions and changelog [skip ci]'
+          publish: pnpm publish-packages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
