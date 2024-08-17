@@ -51,7 +51,7 @@ jobs:
         uses: changesets/action@v1
         with:
           commit: 'chore(release): update versions and changelog [skip ci]'
-          title: 'chore(release): update versions and changelog [skip ci]'
+          title: 'chore(release): update versions and changelog'
           publish: pnpm publish-packages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
