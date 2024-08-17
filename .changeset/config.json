@@ -2,7 +2,7 @@
   "$schema": "https://unpkg.com/@changesets/config@3.0.2/schema.json",
   "changelog": [
     "@changesets/changelog-github",
-    { "repo": "hayato94087/turborepo-changesets-template" }
+    { "repo": "hulk510/playground" }
   ],
   "commit": false,
   "fixed": [],
