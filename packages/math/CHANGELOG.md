@@ -1,5 +1,11 @@
 # @repo/math
 
+## 1.1.2
+
+### Patch Changes
+
+- [#871](https://github.com/hulk510/playground/pull/871) [`732e230`](https://github.com/hulk510/playground/commit/732e23034708e05a4542656443932a941abf0eca) Thanks [@hulk510](https://github.com/hulk510)! - nameを変えてみた
+
 ## 1.1.1
 
 ### Patch Changes
