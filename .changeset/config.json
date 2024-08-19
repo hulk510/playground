@@ -4,7 +4,7 @@
     "@changesets/changelog-github",
     { "repo": "hulk510/playground" }
   ],
-  "commit": ["./commit.js", { "skipCI": "version" }],
+  "commit": true,
   "fixed": [],
   "linked": [],
   "access": "restricted",
