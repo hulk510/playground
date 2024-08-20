@@ -4,11 +4,6 @@
   "private": true,
   "main": "./src/index.tsx",
   "types": "./src/index.tsx",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/hulk510/playground.git",
-    "directory": "packages/test"
-  },
   "scripts": {
     "lint": "eslint . --max-warnings 0"
   },
