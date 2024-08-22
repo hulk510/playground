@@ -1,4 +1,4 @@
-FROM node:20.16.0-alpine@sha256:eb8101caae9ac02229bd64c024919fe3d4504ff7f329da79ca60a04db08cef52 AS base
+FROM node:20.17.0-alpine@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb AS base
 RUN corepack enable
 
 # The web Dockerfile is copy-pasted into our main docs at /docs/handbook/deploying-with-docker.
