@@ -359,8 +359,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/tailwind-config
       '@tailwindcss/typography':
-        specifier: 0.5.14
-        version: 0.5.14(tailwindcss@3.4.10(ts-node@10.9.2(@swc/core@1.7.14(@swc/helpers@0.5.5))(@types/node@20.16.1)(typescript@5.5.4)))
+        specifier: 0.5.15
+        version: 0.5.15(tailwindcss@3.4.10(ts-node@10.9.2(@swc/core@1.7.14(@swc/helpers@0.5.5))(@types/node@20.16.1)(typescript@5.5.4)))
       '@types/github-slugger':
         specifier: 2.0.0
         version: 2.0.0
@@ -3619,10 +3619,10 @@ packages:
     peerDependencies:
       tailwindcss: '>=2.0.0 || >=3.0.0 || >=3.0.0-alpha.1'
 
-  '@tailwindcss/typography@0.5.14':
-    resolution: {integrity: sha512-ZvOCjUbsJBjL9CxQBn+VEnFpouzuKhxh2dH8xMIWHILL+HfOYtlAkWcyoon8LlzE53d2Yo6YO6pahKKNW3q1YQ==}
+  '@tailwindcss/typography@0.5.15':
+    resolution: {integrity: sha512-AqhlCXl+8grUz8uqExv5OTtgpjuVIwFTSXTrh8y9/pw6q2ek7fJ+Y8ZEVw7EB2DCcuCOtEjf9w3+J3rzts01uA==}
     peerDependencies:
-      tailwindcss: '>=3.0.0 || insiders'
+      tailwindcss: '>=3.0.0 || insiders || >=4.0.0-alpha.20'
 
   '@tanstack/react-virtual@3.10.1':
     resolution: {integrity: sha512-h5kNeE+yQwspjl9E3sJ3UYQu/MuspNOBT5cVdc+NA0uU9B1XSkxbzp86teV3arMDVcQ4ESExqs4JyIirYAMcuA==}
@@ -13324,7 +13324,7 @@ snapshots:
     dependencies:
       tailwindcss: 3.4.10(ts-node@10.9.2(@swc/core@1.7.14(@swc/helpers@0.5.5))(@types/node@20.16.1)(typescript@5.5.4))
 
-  '@tailwindcss/typography@0.5.14(tailwindcss@3.4.10(ts-node@10.9.2(@swc/core@1.7.14(@swc/helpers@0.5.5))(@types/node@20.16.1)(typescript@5.5.4)))':
+  '@tailwindcss/typography@0.5.15(tailwindcss@3.4.10(ts-node@10.9.2(@swc/core@1.7.14(@swc/helpers@0.5.5))(@types/node@20.16.1)(typescript@5.5.4)))':
     dependencies:
       lodash.castarray: 4.4.0
       lodash.isplainobject: 4.0.6
@@ -13807,7 +13807,7 @@ snapshots:
       '@typescript-eslint/eslint-plugin': 7.18.0(@typescript-eslint/parser@7.18.0(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0)(typescript@5.5.4)
       '@typescript-eslint/parser': 7.18.0(eslint@8.57.0)(typescript@5.5.4)
       eslint-config-prettier: 9.1.0(eslint@8.57.0)
-      eslint-import-resolver-alias: 1.1.2(eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.18.0(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0))
+      eslint-import-resolver-alias: 1.1.2(eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.18.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0))
       eslint-import-resolver-typescript: 3.6.1(@typescript-eslint/parser@7.18.0(eslint@8.57.0)(typescript@5.5.4))(eslint-plugin-import@2.29.1)(eslint@8.57.0)
       eslint-plugin-eslint-comments: 3.2.0(eslint@8.57.0)
       eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.18.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
@@ -15668,7 +15668,7 @@ snapshots:
       eslint: 8.57.0
       eslint-plugin-turbo: 2.0.14(eslint@8.57.0)
 
-  eslint-import-resolver-alias@1.1.2(eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.18.0(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0)):
+  eslint-import-resolver-alias@1.1.2(eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.18.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)):
     dependencies:
       eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.18.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
 
