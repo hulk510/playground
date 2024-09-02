@@ -23,7 +23,7 @@
     "@repo/typescript-config": "workspace:*",
     "eslint": "8.57.0",
     "prisma": "latest",
-    "tsx": "4.18.0",
+    "tsx": "4.19.0",
     "typescript": "5.5.4"
   }
 }
