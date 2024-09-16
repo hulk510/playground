@@ -353,8 +353,8 @@ importers:
         specifier: 5.1.0
         version: 5.1.0(astro@4.15.4(@types/node@20.16.5)(lightningcss@1.26.0)(rollup@4.21.2)(terser@5.31.6)(typescript@5.5.4))(tailwindcss@3.4.11(ts-node@10.9.2(@swc/core@1.7.24(@swc/helpers@0.5.5))(@types/node@20.16.5)(typescript@5.5.4)))(ts-node@10.9.2(@swc/core@1.7.24(@swc/helpers@0.5.5))(@types/node@20.16.5)(typescript@5.5.4))
       '@divriots/jampack':
-        specifier: 0.26.0
-        version: 0.26.0(@swc/helpers@0.5.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: 0.27.1
+        version: 0.27.1(@swc/helpers@0.5.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@repo/tailwind-config':
         specifier: workspace:*
         version: link:../../packages/tailwind-config
@@ -1573,8 +1573,8 @@ packages:
     resolution: {integrity: sha512-kQUVEgMDj0yE7LOdrDhKOC8JkfUzUKsUqp8m9WQDiSxim8Bnga+80opjXaCtHLhO3/W3DIZMow8QXtXUqNS+zA==}
     engines: {node: '>= 6'}
 
-  '@divriots/jampack@0.26.0':
-    resolution: {integrity: sha512-xeIwgG1qrNF/4WfQTZgoFRv9WNkHQ9eQcTVF3W0qSMfpkSHa+5FXfvDAWtDULIHtvLT5/M0z2+npjy9qO/outw==}
+  '@divriots/jampack@0.27.1':
+    resolution: {integrity: sha512-/xrrMDAJlwsOak1SMcnRFkP1VBdw9QmnJpzMH5lMsYXM81DcH1/v+RVscbj4+pTcwp+JcenW1dVJMSBNcKKM3g==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -11465,7 +11465,7 @@ snapshots:
       undici: 5.28.4
       whatwg-mimetype: 3.0.0
 
-  '@divriots/jampack@0.26.0(@swc/helpers@0.5.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@divriots/jampack@0.27.1(@swc/helpers@0.5.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@commander-js/extra-typings': 12.1.0(commander@12.1.0)
       '@divriots/cheerio': 1.0.0-rc.12
