@@ -371,8 +371,8 @@ importers:
         specifier: 7.18.0
         version: 7.18.0(eslint@8.57.0)(typescript@5.5.4)
       astro-eslint-parser:
-        specifier: 1.0.2
-        version: 1.0.2(typescript@5.5.4)
+        specifier: 1.0.3
+        version: 1.0.3(typescript@5.5.4)
       eslint:
         specifier: 8.57.0
         version: 8.57.0
@@ -4356,8 +4356,8 @@ packages:
     resolution: {integrity: sha512-LElXdjswlqjWrPpJFg1Fx4wpkOCxj1TDHlSV4PlaRxHGWko024xICaa97ZkMfs6DRKlCguiAI+rbXv5GWwXIkg==}
     hasBin: true
 
-  astro-eslint-parser@1.0.2:
-    resolution: {integrity: sha512-8hJaCuqxObShWl2wEsnASqh/DbQ2O+S66m0Q3ctJlzBPEQ4pfGwwama3FCjZO3GDLQsjvn1T0v93Vxyu/+5fGw==}
+  astro-eslint-parser@1.0.3:
+    resolution: {integrity: sha512-AGsGgcg7Jg9UpyCDgvl/EkdYpe1oMkFdmC2Zl+KWneoieLCtQIFjmcY8yt41gcNx4mby0w8BBJQcBmPuf8UAoQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   astro@4.15.4:
@@ -14241,7 +14241,7 @@ snapshots:
 
   astring@1.9.0: {}
 
-  astro-eslint-parser@1.0.2(typescript@5.5.4):
+  astro-eslint-parser@1.0.3(typescript@5.5.4):
     dependencies:
       '@astrojs/compiler': 2.10.3
       '@typescript-eslint/scope-manager': 7.18.0
@@ -15715,7 +15715,7 @@ snapshots:
       '@eslint-community/eslint-utils': 4.4.0(eslint@8.57.0)
       '@jridgewell/sourcemap-codec': 1.5.0
       '@typescript-eslint/types': 7.18.0
-      astro-eslint-parser: 1.0.2(typescript@5.5.4)
+      astro-eslint-parser: 1.0.3(typescript@5.5.4)
       eslint: 8.57.0
       eslint-compat-utils: 0.5.1(eslint@8.57.0)
       globals: 15.9.0
