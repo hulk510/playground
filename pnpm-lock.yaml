@@ -334,8 +334,8 @@ importers:
         specifier: 9.0.0
         version: 9.0.0
       satori:
-        specifier: 0.11.0
-        version: 0.11.0
+        specifier: 0.11.1
+        version: 0.11.1
       tailwindcss:
         specifier: 3.4.12
         version: 3.4.12(ts-node@10.9.2(@swc/core@1.7.24(@swc/helpers@0.5.5))(@types/node@22.5.5)(typescript@5.5.4))
@@ -8551,8 +8551,8 @@ packages:
   sass-formatter@0.7.9:
     resolution: {integrity: sha512-CWZ8XiSim+fJVG0cFLStwDvft1VI7uvXdCNJYXhDvowiv+DsbD1nXLiQ4zrE5UBvj5DWZJ93cwN0NX5PMsr1Pw==}
 
-  satori@0.11.0:
-    resolution: {integrity: sha512-m5llKBX+JRvZLvFwSvJ8TaF2WTjylI/1c8xigTlfHqw8ExyD6ZKg9e0mCuq/m30aMr1VgEYndonfcGkl3fNzWQ==}
+  satori@0.11.1:
+    resolution: {integrity: sha512-xIfUwWEiGsJPK4T+iALLhop2bNY4Kg/PvElG9aCQFdocBgPBWTTOULDdOBVaGwqqCMNmibXMoGC0uSteNr7kuQ==}
     engines: {node: '>=16'}
 
   sax@1.4.1:
@@ -19272,7 +19272,7 @@ snapshots:
     dependencies:
       suf-log: 2.5.3
 
-  satori@0.11.0:
+  satori@0.11.1:
     dependencies:
       '@shuding/opentype.js': 1.4.0-beta.0
       css-background-parser: 0.1.0
