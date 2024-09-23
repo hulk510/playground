@@ -319,8 +319,8 @@ importers:
         specifier: 2.6.2
         version: 2.6.2
       astro:
-        specifier: 4.15.7
-        version: 4.15.7(@types/node@22.5.5)(lightningcss@1.26.0)(rollup@4.21.2)(terser@5.31.6)(typescript@5.5.4)
+        specifier: 4.15.8
+        version: 4.15.8(@types/node@22.5.5)(lightningcss@1.26.0)(rollup@4.21.2)(terser@5.31.6)(typescript@5.5.4)
       fuse.js:
         specifier: 7.0.0
         version: 7.0.0
@@ -351,7 +351,7 @@ importers:
         version: 3.1.6
       '@astrojs/tailwind':
         specifier: 5.1.1
-        version: 5.1.1(astro@4.15.7(@types/node@22.5.5)(lightningcss@1.26.0)(rollup@4.21.2)(terser@5.31.6)(typescript@5.5.4))(tailwindcss@3.4.12(ts-node@10.9.2(@swc/core@1.7.24(@swc/helpers@0.5.5))(@types/node@22.5.5)(typescript@5.5.4)))(ts-node@10.9.2(@swc/core@1.7.24(@swc/helpers@0.5.5))(@types/node@22.5.5)(typescript@5.5.4))
+        version: 5.1.1(astro@4.15.8(@types/node@22.5.5)(lightningcss@1.26.0)(rollup@4.21.2)(terser@5.31.6)(typescript@5.5.4))(tailwindcss@3.4.12(ts-node@10.9.2(@swc/core@1.7.24(@swc/helpers@0.5.5))(@types/node@22.5.5)(typescript@5.5.4)))(ts-node@10.9.2(@swc/core@1.7.24(@swc/helpers@0.5.5))(@types/node@22.5.5)(typescript@5.5.4))
       '@divriots/jampack':
         specifier: 0.28.0
         version: 0.28.0(@swc/helpers@0.5.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -4308,8 +4308,8 @@ packages:
     resolution: {integrity: sha512-AGsGgcg7Jg9UpyCDgvl/EkdYpe1oMkFdmC2Zl+KWneoieLCtQIFjmcY8yt41gcNx4mby0w8BBJQcBmPuf8UAoQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  astro@4.15.7:
-    resolution: {integrity: sha512-RGZjGpLcR3jcnXA1+g56i73O77krmqs7VjpoBOfk9UVP8Js5T2YSeUBAyComOUb6vj31wEw1vgRgOEN0MzYc8w==}
+  astro@4.15.8:
+    resolution: {integrity: sha512-pdXjtRF6O1xChiPAUF32R7oVRTW7AK1/Oy/JqPNhLfbelO0l6C7cLdSEuSLektwOEnMhOVXqccetjBs7HPaoxA==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -7822,9 +7822,6 @@ packages:
   path-to-regexp@0.1.10:
     resolution: {integrity: sha512-7lf7qcQidTku0Gu3YDPc8DJ1q7OOucfa/BSsIwjuh56VU7katFvuM8hULfkwB3Fns/rsVF7PwPKVw1sl5KQS9w==}
 
-  path-to-regexp@6.2.2:
-    resolution: {integrity: sha512-GQX3SSMokngb36+whdpRXE+3f9V8UzyAorlYvOGx87ufGHehNTn5lCxrKtLyZ4Yl/wEKnNnr98ZzOwwDZV5ogw==}
-
   path-type@4.0.0:
     resolution: {integrity: sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==}
     engines: {node: '>=8'}
@@ -10023,9 +10020,9 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 3.23.8
 
-  '@astrojs/tailwind@5.1.1(astro@4.15.7(@types/node@22.5.5)(lightningcss@1.26.0)(rollup@4.21.2)(terser@5.31.6)(typescript@5.5.4))(tailwindcss@3.4.12(ts-node@10.9.2(@swc/core@1.7.24(@swc/helpers@0.5.5))(@types/node@22.5.5)(typescript@5.5.4)))(ts-node@10.9.2(@swc/core@1.7.24(@swc/helpers@0.5.5))(@types/node@22.5.5)(typescript@5.5.4))':
+  '@astrojs/tailwind@5.1.1(astro@4.15.8(@types/node@22.5.5)(lightningcss@1.26.0)(rollup@4.21.2)(terser@5.31.6)(typescript@5.5.4))(tailwindcss@3.4.12(ts-node@10.9.2(@swc/core@1.7.24(@swc/helpers@0.5.5))(@types/node@22.5.5)(typescript@5.5.4)))(ts-node@10.9.2(@swc/core@1.7.24(@swc/helpers@0.5.5))(@types/node@22.5.5)(typescript@5.5.4))':
     dependencies:
-      astro: 4.15.7(@types/node@22.5.5)(lightningcss@1.26.0)(rollup@4.21.2)(terser@5.31.6)(typescript@5.5.4)
+      astro: 4.15.8(@types/node@22.5.5)(lightningcss@1.26.0)(rollup@4.21.2)(terser@5.31.6)(typescript@5.5.4)
       autoprefixer: 10.4.20(postcss@8.4.47)
       postcss: 8.4.47
       postcss-load-config: 4.0.2(postcss@8.4.47)(ts-node@10.9.2(@swc/core@1.7.24(@swc/helpers@0.5.5))(@types/node@22.5.5)(typescript@5.5.4))
@@ -13974,7 +13971,7 @@ snapshots:
       - supports-color
       - typescript
 
-  astro@4.15.7(@types/node@22.5.5)(lightningcss@1.26.0)(rollup@4.21.2)(terser@5.31.6)(typescript@5.5.4):
+  astro@4.15.8(@types/node@22.5.5)(lightningcss@1.26.0)(rollup@4.21.2)(terser@5.31.6)(typescript@5.5.4):
     dependencies:
       '@astrojs/compiler': 2.10.3
       '@astrojs/internal-helpers': 0.4.1
@@ -14022,7 +14019,6 @@ snapshots:
       ora: 8.1.0
       p-limit: 6.1.0
       p-queue: 8.0.1
-      path-to-regexp: 6.2.2
       preferred-pm: 4.0.0
       prompts: 2.4.2
       rehype: 13.0.1
@@ -18486,8 +18482,6 @@ snapshots:
       minipass: 7.1.2
 
   path-to-regexp@0.1.10: {}
-
-  path-to-regexp@6.2.2: {}
 
   path-type@4.0.0: {}
 
