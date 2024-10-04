@@ -14,7 +14,7 @@
     "postinstall": "manypkg check",
     "package:fix": "manypkg fix",
     "ui:add": "pnpm --filter @repo/ui ui:add",
-    "publish-packages": "turbo run build lint test -F @hulk510/math -F @hulk510/test && changeset publish"
+    "publish-packages": "turbo run build lint test -F @hulk510/math -F && changeset publish"
   },
   "engines": {
     "node": ">=18"
