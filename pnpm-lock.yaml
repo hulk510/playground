@@ -158,8 +158,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/ui
       hono:
-        specifier: 4.6.8
-        version: 4.6.8
+        specifier: 4.6.9
+        version: 4.6.9
       next:
         specifier: 15.0.2
         version: 15.0.2(@babel/core@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -6198,8 +6198,8 @@ packages:
   hoist-non-react-statics@3.3.2:
     resolution: {integrity: sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==}
 
-  hono@4.6.8:
-    resolution: {integrity: sha512-f+2Ec9JAzabT61pglDiLJcF/DjiSefZkjCn9bzm1cYLGkD5ExJ3Jnv93ax9h0bn7UPLHF81KktoyjdQfWI2n1Q==}
+  hono@4.6.9:
+    resolution: {integrity: sha512-p/pN5yZLuZaHzyAOT2nw2/Ud6HhJHYmDNGH6Ck1OWBhPMVeM1r74jbCRwNi0gyFRjjbsGgoHbOyj7mT1PDNbTw==}
     engines: {node: '>=16.9.0'}
 
   hosted-git-info@2.8.9:
@@ -16254,7 +16254,7 @@ snapshots:
     dependencies:
       react-is: 16.13.1
 
-  hono@4.6.8: {}
+  hono@4.6.9: {}
 
   hosted-git-info@2.8.9: {}
 
