@@ -64,7 +64,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
       - name: Publish to Chromatic
-        uses: chromaui/action@c87f51948ffd40e4ef359939cd942c04b78b917b # v11
+        uses: chromaui/action@0efa3230f403b7848d5d65c6ce140b617fb68380 # v11
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           workingDir: apps/storybooks
