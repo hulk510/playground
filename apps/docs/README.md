@@ -1,5 +1,0 @@
-## docs
-
-作ったコンポーネントのポートフォリオとして使うサービス
-
-使ってるのはnextjsだけどnextraのライブラリの関係上routingはpage routerになってる

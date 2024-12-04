@@ -1,7 +1,6 @@
 import type { StorybookConfig } from '@storybook/react-vite';
 
 import { dirname, join } from 'path';
-import { mergeConfig } from 'vite';
 
 /**
  * This function is used to resolve the absolute path of a package.
@@ -30,13 +29,6 @@ const config: StorybookConfig = {
   },
   typescript: {
     reactDocgen: 'react-docgen',
-  },
-  // MEMO: なんかnext/imageを使ってるrepo/uiをimportするとエラー起きたのでこのワークアラウンドを追加してとりあえず対応してる。
-  // https://github.com/storybookjs/storybook/issues/18920#issuecomment-1342865124
-  async viteFinal(config, { configType }) {
-    return mergeConfig(config, {
-      define: { 'process.env': {} },
-    });
   },
 };
 export default config;

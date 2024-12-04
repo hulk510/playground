@@ -1,4 +1,3 @@
-import { KumaRegistry } from '@kuma-ui/next-plugin/registry';
 import '@repo/ui/styles.css';
 import { Toaster } from '@repo/ui/ui/toaster';
 import type { Metadata } from 'next';
@@ -19,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }): JSX.Element {
   return (
-    <html lang='ja' className='min-h-screen'>
+    <html lang='ja' className='min-h-screen' suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider
           attribute='class' // MEMO: これはなに？
@@ -27,7 +26,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <KumaRegistry>{children}</KumaRegistry>
+          {children}
         </ThemeProvider>
         <Toaster />
       </body>

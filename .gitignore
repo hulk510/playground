@@ -7,10 +7,7 @@ node_modules
 
 # Local env files
 .env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env*.local
 
 # Testing
 coverage
@@ -25,6 +22,7 @@ coverage
 .next/
 out/
 build
+.output/
 dist
 storybook-static
 
@@ -74,3 +72,6 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
+
+# ignore .astro directory
+.astro
