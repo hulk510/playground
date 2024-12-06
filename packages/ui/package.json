@@ -22,13 +22,11 @@
     "build": "tailwindcss -i ./src/globals.css -o ./dist/index.css",
     "lint": "eslint . --max-warnings 0",
     "dev": "tailwindcss -i ./src/globals.css -o ./dist/index.css --watch",
-    "lint:styles": "stylelint ./src/**/*.tsx",
     "generate:component": "turbo gen react-component",
     "ui:add": "pnpm dlx shadcn-ui@latest add"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
-    "@repo/stylelint-config": "workspace:*",
     "@repo/tailwind-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@turbo/gen": "2.3.3",
@@ -40,7 +38,6 @@
     "eslint": "8.57.1",
     "postcss": "8.4.49",
     "react": "18.3.1",
-    "stylelint": "16.11.0",
     "tailwindcss": "3.4.15",
     "typescript": "5.7.2"
   },

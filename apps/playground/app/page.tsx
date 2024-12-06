@@ -1,8 +1,7 @@
 'use client';
-import { FloatAnimation } from '@repo/sandbox';
-import { ModeToggle } from '@repo/ui/molecules/mode-toggle';
-import { SearchInput } from '@repo/ui/molecules/searchInput';
-import { Onboarding } from '@repo/ui/organism/onboarding';
+import { ModeToggle } from '@repo/ui/mode-toggle';
+import { SearchInput } from '@repo/ui/searchInput';
+import { Onboarding } from '@repo/ui/onboarding';
 import {
   Card,
   CardDescription,
@@ -15,39 +14,7 @@ import type { Link } from '@repo/ui/types';
 import { Button } from '@repo/ui/ui/button';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-const LINKS: Link[] = [
-  {
-    id: 1,
-    title: 'Hello World, Kuma UI',
-    href: '/kuma-ui',
-    description: '🐻',
-  },
-  {
-    id: 2,
-    title: 'React Hook Form and Material UI',
-    href: '/hook-form-and-material',
-    description:
-      'A simple form with validation using react-hook-form and material-ui',
-  },
-  {
-    id: 3,
-    title: 'Framer Motion',
-    href: '/framer-motion',
-    description: 'Interactive animations for the web',
-  },
-  {
-    id: 4,
-    title: 'Prisma Todo App',
-    href: '/todo',
-    description: 'sample prisma client',
-  },
-  {
-    id: 5,
-    title: 'Mosaic Uploader',
-    href: '/mosaic-uploader',
-    description: '画像をたくさん載せれる',
-  },
-];
+const LINKS: Link[] = [];
 
 export default function Page(): JSX.Element {
   const [query, setQuery] = useState('');
@@ -143,9 +110,6 @@ export default function Page(): JSX.Element {
           </motion.div>
         </div>
       )}
-      <div className='flex justify-center'>
-        <FloatAnimation />
-      </div>
       {/* TODO: girdで全てリストアップして表示する */}
     </main>
   );
