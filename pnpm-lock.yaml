@@ -187,6 +187,9 @@ importers:
       '@astrojs/rss':
         specifier: 4.0.9
         version: 4.0.9
+      '@repo/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
       '@resvg/resvg-js':
         specifier: 2.6.2
         version: 2.6.2
@@ -199,6 +202,9 @@ importers:
       github-slugger:
         specifier: 2.0.0
         version: 2.0.0
+      lucide-react:
+        specifier: 0.462.0
+        version: 0.462.0(react@18.3.1)
       remark-collapse:
         specifier: 0.1.2
         version: 0.1.2
