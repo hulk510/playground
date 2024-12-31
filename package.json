@@ -18,7 +18,7 @@
   "engines": {
     "node": ">=18"
   },
-  "packageManager": "pnpm@9.15.1",
+  "packageManager": "pnpm@9.15.2",
   "dependencies": {
     "@manypkg/cli": "0.22.0",
     "@repo/eslint-config": "workspace:*",
