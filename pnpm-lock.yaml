@@ -155,8 +155,8 @@ importers:
         specifier: 3.7.2
         version: 3.7.2(@swc/helpers@0.5.15)(vite@6.0.7(@types/node@22.10.4)(jiti@1.21.7)(yaml@2.6.1))
       chromatic:
-        specifier: 11.20.2
-        version: 11.20.2
+        specifier: 11.22.0
+        version: 11.22.0
       eslint:
         specifier: 8.57.1
         version: 8.57.1
@@ -2686,8 +2686,8 @@ packages:
     resolution: {integrity: sha512-Qgzu8kfBvo+cA4962jnP1KkS6Dop5NS6g7R5LFYJr4b8Ub94PPQXUksCw9PvXoeXPRRddRNC5C1JQUR2SMGtnA==}
     engines: {node: '>= 14.16.0'}
 
-  chromatic@11.20.2:
-    resolution: {integrity: sha512-c+M3HVl5Y60c7ipGTZTyeWzWubRW70YsJ7PPDpO1D735ib8+Lu3yGF90j61pvgkXGngpkTPHZyBw83lcu2JMxA==}
+  chromatic@11.22.0:
+    resolution: {integrity: sha512-u1kAPR9lj9aFzsCp0iWPXBbsKgcxFU7iJO6mFbgNHGVg+YPBqiJMuvgB8EQHdNbHjk5amFnGnIz/Ww8fK3t9Hw==}
     hasBin: true
     peerDependencies:
       '@chromatic-com/cypress': ^0.*.* || ^1.0.0
@@ -8710,7 +8710,7 @@ snapshots:
     dependencies:
       readdirp: 4.0.2
 
-  chromatic@11.20.2: {}
+  chromatic@11.22.0: {}
 
   ci-info@4.1.0: {}
 
