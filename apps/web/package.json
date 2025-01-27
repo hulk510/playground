@@ -15,7 +15,7 @@
     "@astrojs/rss": "4.0.11",
     "@repo/ui": "workspace:*",
     "@resvg/resvg-js": "2.6.2",
-    "astro": "5.1.8",
+    "astro": "5.1.9",
     "fuse.js": "7.0.0",
     "github-slugger": "2.0.0",
     "lucide-react": "0.473.0",
