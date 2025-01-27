@@ -194,8 +194,8 @@ importers:
         specifier: 2.6.2
         version: 2.6.2
       astro:
-        specifier: 5.1.8
-        version: 5.1.8(@types/node@22.10.10)(jiti@1.21.7)(rollup@4.29.1)(typescript@5.7.3)(yaml@2.6.1)
+        specifier: 5.1.9
+        version: 5.1.9(@types/node@22.10.10)(jiti@1.21.7)(rollup@4.29.1)(typescript@5.7.3)(yaml@2.6.1)
       fuse.js:
         specifier: 7.0.0
         version: 7.0.0
@@ -229,7 +229,7 @@ importers:
         version: 3.2.1
       '@astrojs/tailwind':
         specifier: 5.1.5
-        version: 5.1.5(astro@5.1.8(@types/node@22.10.10)(jiti@1.21.7)(rollup@4.29.1)(typescript@5.7.3)(yaml@2.6.1))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.10.4(@swc/helpers@0.5.15))(@types/node@22.10.10)(typescript@5.7.3)))(ts-node@10.9.2(@swc/core@1.10.4(@swc/helpers@0.5.15))(@types/node@22.10.10)(typescript@5.7.3))
+        version: 5.1.5(astro@5.1.9(@types/node@22.10.10)(jiti@1.21.7)(rollup@4.29.1)(typescript@5.7.3)(yaml@2.6.1))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.10.4(@swc/helpers@0.5.15))(@types/node@22.10.10)(typescript@5.7.3)))(ts-node@10.9.2(@swc/core@1.10.4(@swc/helpers@0.5.15))(@types/node@22.10.10)(typescript@5.7.3))
       '@repo/tailwind-config':
         specifier: workspace:*
         version: link:../../packages/tailwind-config
@@ -2384,8 +2384,8 @@ packages:
     resolution: {integrity: sha512-F6NW1RJo5pp2kPnnM97M5Ohw8zAGjv83MpxHqfAochH68n/kiXN57+hYaNUCA7XkScoVNr6yzvly3hsY34TGfQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  astro@5.1.8:
-    resolution: {integrity: sha512-7fNNceI/dXqGIkkZQjxhH31alAfgf33cDv34cPLCGFVSHHOpYG0NSrofnxdYf0BvWRlddqkq393UqDM5cJlv1w==}
+  astro@5.1.9:
+    resolution: {integrity: sha512-QB3MH7Ul3gEvmHXEfvPkGpTZyyB/TBKQbm0kTHpo0BTEB7BvaY+wrcWiGEJBVDpVdEAKY9fM3zrJ0c7hZSXVlw==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -6220,9 +6220,9 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 3.24.1
 
-  '@astrojs/tailwind@5.1.5(astro@5.1.8(@types/node@22.10.10)(jiti@1.21.7)(rollup@4.29.1)(typescript@5.7.3)(yaml@2.6.1))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.10.4(@swc/helpers@0.5.15))(@types/node@22.10.10)(typescript@5.7.3)))(ts-node@10.9.2(@swc/core@1.10.4(@swc/helpers@0.5.15))(@types/node@22.10.10)(typescript@5.7.3))':
+  '@astrojs/tailwind@5.1.5(astro@5.1.9(@types/node@22.10.10)(jiti@1.21.7)(rollup@4.29.1)(typescript@5.7.3)(yaml@2.6.1))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.10.4(@swc/helpers@0.5.15))(@types/node@22.10.10)(typescript@5.7.3)))(ts-node@10.9.2(@swc/core@1.10.4(@swc/helpers@0.5.15))(@types/node@22.10.10)(typescript@5.7.3))':
     dependencies:
-      astro: 5.1.8(@types/node@22.10.10)(jiti@1.21.7)(rollup@4.29.1)(typescript@5.7.3)(yaml@2.6.1)
+      astro: 5.1.9(@types/node@22.10.10)(jiti@1.21.7)(rollup@4.29.1)(typescript@5.7.3)(yaml@2.6.1)
       autoprefixer: 10.4.20(postcss@8.5.1)
       postcss: 8.5.1
       postcss-load-config: 4.0.2(postcss@8.5.1)(ts-node@10.9.2(@swc/core@1.10.4(@swc/helpers@0.5.15))(@types/node@22.10.10)(typescript@5.7.3))
@@ -8228,7 +8228,7 @@ snapshots:
       - supports-color
       - typescript
 
-  astro@5.1.8(@types/node@22.10.10)(jiti@1.21.7)(rollup@4.29.1)(typescript@5.7.3)(yaml@2.6.1):
+  astro@5.1.9(@types/node@22.10.10)(jiti@1.21.7)(rollup@4.29.1)(typescript@5.7.3)(yaml@2.6.1):
     dependencies:
       '@astrojs/compiler': 2.10.3
       '@astrojs/internal-helpers': 0.4.2
