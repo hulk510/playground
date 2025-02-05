@@ -1,4 +1,4 @@
-import { Card } from '@repo/ui/ui/card'
+import { Card } from '@repo/design-system/ui/card'
 import { getRandomGradient } from '@utils/colors'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useRef } from 'react'

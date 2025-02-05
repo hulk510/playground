@@ -5,22 +5,46 @@
 @layer base {
   :root,
   html[data-theme="light"] {
-    --color-fill: 250, 252, 252;
-    --color-text-base: 34, 46, 54;
-    --color-text-body: 34, 46, 54;
-    --color-accent: 130, 100, 11;
-    --color-card: 234, 206, 219;
-    --color-card-muted: 241, 186, 212;
-    --color-border: 227, 169, 198;
+    --color-fill: 45 50% 95%; /* 柔らかなクリームベージュの背景 */
+    --color-text-base: 30 25% 20%; /* 深みのあるウォームブラウンのテキスト */
+    --color-text-body: 35 20% 40%; /* 落ち着いたキャメルブラウンのボディテキスト */
+    --color-accent: 15 70% 55%; /* シナモンオレンジのアクセント */
+    --color-card: 0 0% 100%; /* ピュアホワイトのカード背景 */
+    --color-card-muted: 40 30% 90%; /* 控えめなサンドベージュのカード */
+    --color-border: 35 20% 80%; /* 柔らかなトープグレーの境界線 */
+
+    --card: 0 0% 100%; /* ホワイトのカード */
+    --card-foreground: 30 20% 25%; /* ダークチョコレートブラウンの前景 */
+
+    --primary: 20 65% 50%; /* 落ち着きのあるテラコッタのプライマリー */
+    --primary-foreground: 0 0% 100%; /* 白い前景 */
+
+    --secondary: 90 40% 85%; /* セージグリーンのセカンダリー */
+    --secondary-foreground: 30 20% 30%; /* ダスティブラウンのテキスト */
+
+    --destructive: 350 60% 50%; /* 深みのあるクランベリーレッドの警告色 */
+    --destructive-foreground: 0 0% 100%; /* 白い前景 */
   }
   html[data-theme="dark"] {
-    --color-fill: 0, 1, 35;
-    --color-accent: 230, 150, 235;
-    --color-text-base: 238, 238, 238;
-    --color-text-body: 168, 178, 189;
-    --color-card: 33, 34, 83;
-    --color-card-muted: 12, 14, 79;
-    --color-border: 48, 63, 138;
+    --color-fill: 25 20% 12%; /* ダークブロンズの背景 */
+    --color-accent: 10 65% 60%; /* 焼けたアンバーオレンジのアクセント */
+    --color-text-base: 0 0% 90%; /* 柔らかなアイボリーホワイトのメインテキスト */
+    --color-text-body: 30 10% 75%; /* 温かみのあるベージュグレーのボディテキスト */
+    --color-card: 20 20% 20%; /* ダークチョコレートブラウンのカード背景 */
+    --color-card-muted: 30 25% 30%; /* 控えめなトープブラウンのカード */
+    --color-border: 20 20% 35%; /* ソフトなウォームグレーの境界線 */
+
+    --card: 20 20% 20%; /* ダークブラウンのカード */
+    --card-foreground: 0 0% 90%; /* アイボリーホワイトの前景 */
+
+    --primary: 15 70% 55%; /* 深みのあるバーントオレンジのプライマリー */
+    --primary-foreground: 0 0% 100%; /* 白い前景 */
+
+    --secondary: 100 35% 35%; /* オリーブグリーンのセカンダリー */
+    --secondary-foreground: 0 0% 90%; /* 明るいアイボリーのテキスト */
+
+    --destructive: 350 65% 45%; /* 落ち着いたガーネットレッドの警告色 */
+    --destructive-foreground: 0 0% 100%; /* 白い前景 */
   }
   #sun-svg,
   html[data-theme="dark"] #moon-svg {
@@ -31,7 +55,7 @@
     display: block;
   }
   body {
-    @apply bg-skin-fill text-skin-base selection:bg-skin-accent selection:text-skin-inverted font-display flex min-h-[100svh] flex-col selection:bg-opacity-70;
+    @apply bg-skin-fill text-skin-base selection:bg-skin-accent selection:text-skin-inverted font-display min-h-[100svh] selection:bg-opacity-70;
   }
   section,
   footer {

@@ -1,4 +1,4 @@
-import { Button } from '@repo/ui/ui/button'
+import { Button } from '@repo/design-system/ui/button'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import {
   Github,
@@ -157,7 +157,7 @@ export default function Hero() {
               <Button
                 variant='outline'
                 size='icon'
-                className='group relative overflow-hidden'
+                className='group relative overflow-hidden border-none'
                 aria-label={item.label}
               >
                 <motion.div

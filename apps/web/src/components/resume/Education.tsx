@@ -1,4 +1,4 @@
-import { Card, CardContent } from '@repo/ui/ui/card'
+import { Card, CardContent } from '@repo/design-system/ui/card'
 import { getRandomGradient } from '@utils/colors'
 import { motion } from 'framer-motion'
 
@@ -48,7 +48,7 @@ export default function Education() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.2 }}
             >
-              <Card className='h-full overflow-hidden'>
+              <Card className='h-full border-none overflow-hidden'>
                 <div
                   className='h-1 w-full'
                   style={{ background: getRandomGradient() }}

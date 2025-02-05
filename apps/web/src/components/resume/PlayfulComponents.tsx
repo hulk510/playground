@@ -1,5 +1,5 @@
-import { Button } from '@repo/ui/ui/button'
-import { Card, CardContent } from '@repo/ui/ui/card'
+import { Button } from '@repo/design-system/ui/button'
+import { Card, CardContent } from '@repo/design-system/ui/card'
 import { motion, useAnimation, useMotionValue } from 'framer-motion'
 import { Lightbulb, Zap } from 'lucide-react'
 import { useEffect, useRef, useState } from 'react'

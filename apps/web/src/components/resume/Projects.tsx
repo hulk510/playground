@@ -1,5 +1,5 @@
-import { Button } from '@repo/ui/ui/button'
-import { Card, CardContent } from '@repo/ui/ui/card'
+import { Button } from '@repo/design-system/ui/button'
+import { Card, CardContent } from '@repo/design-system/ui/card'
 import { getRandomGradient, gradients } from '@utils/colors'
 import { motion } from 'framer-motion'
 import { Github, Link } from 'lucide-react'

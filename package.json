@@ -11,7 +11,7 @@
     "clean": "rm -rf .turbo **/*/.turbo** node_modules **/*/node_modules**",
     "postinstall": "manypkg check",
     "package:fix": "manypkg fix",
-    "ui:add": "pnpm --filter @repo/ui ui:add"
+    "ui:add": "pnpm -F @repo/design-system ui:add"
   },
   "engines": {
     "node": ">=20"
