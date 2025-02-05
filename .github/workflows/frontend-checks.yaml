@@ -19,9 +19,9 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a # v4
         with:
-          node-version-file: 'package.json'
-          cache: 'pnpm'
+          node-version-file: "package.json"
+          cache: "pnpm"
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
       - name: checks lint and test
-        run: pnpm dlx turbo run lint test
+        run: pnpm format-and-lint
