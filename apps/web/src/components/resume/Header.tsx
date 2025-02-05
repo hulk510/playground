@@ -1,18 +1,18 @@
-'use client';
+'use client'
 
-import { Button } from '@repo/ui/ui/button';
-import { motion } from 'framer-motion';
-import { Menu, Moon, Sun } from 'lucide-react';
-import { useState } from 'react';
+import { Button } from '@repo/ui/ui/button'
+import { motion } from 'framer-motion'
+import { Menu, Moon, Sun } from 'lucide-react'
+import { useState } from 'react'
 
 export default function Header() {
-  const [isDark, setIsDark] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDark, setIsDark] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const toggleTheme = () => {
-    setIsDark(!isDark);
-    document.documentElement.classList.toggle('dark');
-  };
+    setIsDark(!isDark)
+    document.documentElement.classList.toggle('dark')
+  }
 
   return (
     <motion.header
@@ -103,5 +103,5 @@ export default function Header() {
         </motion.div>
       )}
     </motion.header>
-  );
+  )
 }

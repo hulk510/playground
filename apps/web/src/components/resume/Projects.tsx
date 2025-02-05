@@ -1,8 +1,8 @@
-import { Button } from '@repo/ui/ui/button';
-import { Card, CardContent } from '@repo/ui/ui/card';
-import { getRandomGradient, gradients } from '@utils/colors';
-import { motion } from 'framer-motion';
-import { Github, Link } from 'lucide-react';
+import { Button } from '@repo/ui/ui/button'
+import { Card, CardContent } from '@repo/ui/ui/card'
+import { getRandomGradient, gradients } from '@utils/colors'
+import { motion } from 'framer-motion'
+import { Github, Link } from 'lucide-react'
 
 const projects = [
   {
@@ -49,7 +49,7 @@ const projects = [
       'Used by 500+ developers',
     ],
   },
-];
+]
 
 function Tag({ name, index }: { name: string; index: number }) {
   return (
@@ -64,17 +64,17 @@ function Tag({ name, index }: { name: string; index: number }) {
     >
       {name}
     </motion.span>
-  );
+  )
 }
 
 function ProjectCard({
   project,
   index,
 }: {
-  project: (typeof projects)[0];
-  index: number;
+  project: (typeof projects)[0]
+  index: number
 }) {
-  const gradientPair = gradients[index % gradients.length];
+  const gradientPair = gradients[index % gradients.length]
 
   return (
     <motion.div
@@ -132,7 +132,7 @@ function ProjectCard({
         </CardContent>
       </Card>
     </motion.div>
-  );
+  )
 }
 
 export default function Projects() {
@@ -154,5 +154,5 @@ export default function Projects() {
         </div>
       </div>
     </section>
-  );
+  )
 }

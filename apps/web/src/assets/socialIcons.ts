@@ -215,6 +215,6 @@ const socialIcons = {
         h16.3C61.3,83.3,62.1,82.9,62.5,82.1z"/>
     </g>
   </svg>`,
-};
+}
 
-export default socialIcons;
+export default socialIcons

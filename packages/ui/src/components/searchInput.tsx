@@ -1,13 +1,13 @@
-import { Link } from '#types';
-import { MagnifyingGlassIcon } from '@radix-ui/react-icons';
-import { motion } from 'framer-motion';
+import { MagnifyingGlassIcon } from '@radix-ui/react-icons'
+import { motion } from 'framer-motion'
+import type { Link } from '#types'
 type SearchInputProps = {
-  value: string;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  placeholder: string;
-  lists: Link[];
-  onSelect: (link: Link) => void;
-};
+  value: string
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
+  placeholder: string
+  lists: Link[]
+  onSelect: (link: Link) => void
+}
 
 export function SearchInput({
   value,
@@ -52,5 +52,5 @@ export function SearchInput({
         </ul>
       )}
     </motion.div>
-  );
+  )
 }

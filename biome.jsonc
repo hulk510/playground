@@ -2,19 +2,19 @@
   "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
   "files": {
     "ignoreUnknown": true,
-    "ignore": ["public"],
+    "ignore": ["public"]
   },
   "formatter": {
     "useEditorconfig": true,
-    "indentStyle": "space",
+    "indentStyle": "space"
   },
   "organizeImports": {
-    "enabled": true,
+    "enabled": true
   },
   "linter": {
     "rules": {
-      "recommended": true,
-    },
+      "recommended": true
+    }
   },
   "javascript": {
     "formatter": {
@@ -24,20 +24,20 @@
       "semicolons": "asNeeded",
       "arrowParentheses": "always",
       "quoteStyle": "single",
-      "attributePosition": "auto",
-    },
+      "attributePosition": "auto"
+    }
   },
   "vcs": {
     "enabled": true,
     "clientKind": "git",
-    "useIgnoreFile": true,
+    "useIgnoreFile": true
   },
   "overrides": [
     {
       "include": ["*.astro"],
       "javascript": {
-        "globals": ["Astro"],
-      },
-    },
-  ],
+        "globals": ["Astro"]
+      }
+    }
+  ]
 }

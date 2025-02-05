@@ -1,5 +1,5 @@
-import { CheckCircledIcon } from '@radix-ui/react-icons';
-import { motion } from 'framer-motion';
+import { CheckCircledIcon } from '@radix-ui/react-icons'
+import { motion } from 'framer-motion'
 
 export function Onboarding() {
   return (
@@ -32,5 +32,5 @@ export function Onboarding() {
         </h1>
       </motion.div>
     </div>
-  );
+  )
 }

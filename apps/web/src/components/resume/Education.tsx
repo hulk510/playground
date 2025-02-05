@@ -1,6 +1,6 @@
-import { motion } from 'framer-motion';
-import { Card, CardContent } from '@repo/ui/ui/card';
-import { getRandomGradient } from '@utils/colors';
+import { Card, CardContent } from '@repo/ui/ui/card'
+import { getRandomGradient } from '@utils/colors'
+import { motion } from 'framer-motion'
 
 const education = [
   {
@@ -25,7 +25,7 @@ const education = [
       'Completed internship at major tech company',
     ],
   },
-];
+]
 
 export default function Education() {
   return (
@@ -84,5 +84,5 @@ export default function Education() {
         </div>
       </div>
     </section>
-  );
+  )
 }

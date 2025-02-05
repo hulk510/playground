@@ -1,35 +1,35 @@
-'use client';
-import { ModeToggle } from '@repo/ui/mode-toggle';
-import { SearchInput } from '@repo/ui/searchInput';
-import { Onboarding } from '@repo/ui/onboarding';
+'use client'
+import { ModeToggle } from '@repo/ui/mode-toggle'
+import { Onboarding } from '@repo/ui/onboarding'
+import { SearchInput } from '@repo/ui/searchInput'
 import {
   Card,
   CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
-} from '@repo/ui/shadcn/card';
+} from '@repo/ui/shadcn/card'
 
-import type { Link } from '@repo/ui/types';
-import { Button } from '@repo/ui/ui/button';
-import { motion } from 'framer-motion';
-import { useState } from 'react';
-const LINKS: Link[] = [];
+import type { Link } from '@repo/ui/types'
+import { Button } from '@repo/ui/ui/button'
+import { motion } from 'framer-motion'
+import { useState } from 'react'
+const LINKS: Link[] = []
 
 export default function Page(): JSX.Element {
-  const [query, setQuery] = useState('');
-  const [selectedLink, setSelectedLink] = useState<Link | null>(null);
+  const [query, setQuery] = useState('')
+  const [selectedLink, setSelectedLink] = useState<Link | null>(null)
 
   const handleSelectLink = (link: Link) => {
-    setSelectedLink(link);
-    setQuery('');
-  };
+    setSelectedLink(link)
+    setQuery('')
+  }
 
   const filteredLinks = LINKS.filter(
     (link) =>
       link.title.toLowerCase().includes(query.toLowerCase()) ||
       link.description.toLowerCase().includes(query.toLowerCase()),
-  );
+  )
 
   return (
     <main className='min-h-screen'>
@@ -43,7 +43,7 @@ export default function Page(): JSX.Element {
             placeholder='Please Type Something...'
             lists={filteredLinks}
             onSelect={(lists) => {
-              handleSelectLink(lists);
+              handleSelectLink(lists)
             }}
           />
         </div>
@@ -86,7 +86,7 @@ export default function Page(): JSX.Element {
             transition={{
               x: {
                 duration: 50,
-                repeat: Infinity,
+                repeat: Number.POSITIVE_INFINITY,
                 repeatType: 'loop',
                 ease: 'linear',
               },
@@ -112,5 +112,5 @@ export default function Page(): JSX.Element {
       )}
       {/* TODO: girdで全てリストアップして表示する */}
     </main>
-  );
+  )
 }

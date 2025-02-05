@@ -1,7 +1,7 @@
-import { Card } from '@repo/ui/ui/card';
-import { getRandomGradient } from '@utils/colors';
-import { motion, useScroll, useTransform } from 'framer-motion';
-import { useRef } from 'react';
+import { Card } from '@repo/ui/ui/card'
+import { getRandomGradient } from '@utils/colors'
+import { motion, useScroll, useTransform } from 'framer-motion'
+import { useRef } from 'react'
 
 const experiences = [
   {
@@ -40,14 +40,14 @@ const experiences = [
     description: 'Built websites and web applications using Vue.js',
     icon: '🌠',
   },
-];
+]
 
 function StarryBackground() {
   return (
     <div className='absolute inset-0 overflow-hidden'>
       {Array.from({ length: 50 }).map((_, i) => (
         <motion.div
-          key={i}
+          key={`star-${i}-${Math.random()}`}
           className='absolute h-1 w-1 rounded-full bg-white'
           style={{
             top: `${Math.random() * 100}%`,
@@ -59,31 +59,31 @@ function StarryBackground() {
           }}
           transition={{
             duration: Math.random() * 3 + 2,
-            repeat: Infinity,
+            repeat: Number.POSITIVE_INFINITY,
             delay: Math.random() * 2,
           }}
         />
       ))}
     </div>
-  );
+  )
 }
 
 function TimelineNode({
   experience,
   index,
 }: {
-  experience: (typeof experiences)[0];
-  index: number;
+  experience: (typeof experiences)[0]
+  index: number
 }) {
-  const nodeRef = useRef<HTMLDivElement>(null);
+  const nodeRef = useRef<HTMLDivElement>(null)
   const { scrollYProgress } = useScroll({
     target: nodeRef,
     offset: ['start end', 'center center'],
-  });
+  })
 
-  const y = useTransform(scrollYProgress, [0, 1], [100, 0]);
-  const opacity = useTransform(scrollYProgress, [0, 1], [0.3, 1]);
-  const scale = useTransform(scrollYProgress, [0, 1], [0.95, 1.05]);
+  const y = useTransform(scrollYProgress, [0, 1], [100, 0])
+  const opacity = useTransform(scrollYProgress, [0, 1], [0.3, 1])
+  const scale = useTransform(scrollYProgress, [0, 1], [0.95, 1.05])
 
   return (
     <motion.div
@@ -128,7 +128,7 @@ function TimelineNode({
                 }}
                 transition={{
                   duration: 2,
-                  repeat: Infinity,
+                  repeat: Number.POSITIVE_INFINITY,
                   ease: 'easeInOut',
                 }}
               />
@@ -171,7 +171,7 @@ function TimelineNode({
         </div>
       </Card>
     </motion.div>
-  );
+  )
 }
 
 export default function Timeline() {
@@ -193,5 +193,5 @@ export default function Timeline() {
         ))}
       </div>
     </section>
-  );
+  )
 }
