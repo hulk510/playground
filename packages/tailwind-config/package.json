@@ -8,8 +8,5 @@
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
     "tailwindcss": "3.4.17"
-  },
-  "dependencies": {
-    "@tailwindcss/line-clamp": "0.4.4"
   }
 }

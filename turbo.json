@@ -11,9 +11,12 @@
       ],
       "env": ["DATABASE_PRISMA_URL", "NEXT_PUBLIC_SOCKET_SERVER_URL"]
     },
-    "test": {},
-    "lint": {
+    "//#format-and-lint": {
       "outputLogs": "errors-only"
+    },
+    "//#format-and-lint:fix": {
+      "outputLogs": "errors-only",
+      "cache": false
     },
     "dev": {
       "cache": false,

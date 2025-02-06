@@ -1,12 +1,12 @@
-import { Button } from '@repo/ui/ui/button';
-import { Card, CardContent } from '@repo/ui/ui/card';
-import { motion, useAnimation, useMotionValue } from 'framer-motion';
-import { Lightbulb, Zap } from 'lucide-react';
-import { useEffect, useRef, useState } from 'react';
+import { Button } from '@repo/design-system/ui/button'
+import { Card, CardContent } from '@repo/design-system/ui/card'
+import { motion, useAnimation, useMotionValue } from 'framer-motion'
+import { Lightbulb, Zap } from 'lucide-react'
+import { useEffect, useRef, useState } from 'react'
 
 function FallingCard() {
-  const [isVisible, setIsVisible] = useState(true);
-  const controls = useAnimation();
+  const [isVisible, setIsVisible] = useState(true)
+  const controls = useAnimation()
 
   const handleClick = async () => {
     await controls.start({
@@ -14,11 +14,11 @@ function FallingCard() {
       rotate: 720,
       scale: 0,
       transition: { duration: 1.5, type: 'spring' },
-    });
-    setIsVisible(false);
-  };
+    })
+    setIsVisible(false)
+  }
 
-  if (!isVisible) return null;
+  if (!isVisible) return null
 
   return (
     <motion.div
@@ -38,11 +38,11 @@ function FallingCard() {
         </CardContent>
       </Card>
     </motion.div>
-  );
+  )
 }
 
 function LightBulb() {
-  const [isOn, setIsOn] = useState(false);
+  const [isOn, setIsOn] = useState(false)
 
   return (
     <div className='relative'>
@@ -63,22 +63,22 @@ function LightBulb() {
         <Lightbulb size={48} />
       </motion.button>
     </div>
-  );
+  )
 }
 
 function TrafficLight() {
   const [activeLight, setActiveLight] = useState<'red' | 'yellow' | 'green'>(
     'red',
-  );
+  )
 
   useEffect(() => {
-    const sequence = ['red', 'green', 'yellow'] as const;
-    const currentIndex = sequence.indexOf(activeLight);
+    const sequence = ['red', 'green', 'yellow'] as const
+    const currentIndex = sequence.indexOf(activeLight)
     const timer = setTimeout(() => {
-      setActiveLight(sequence[(currentIndex + 1) % sequence.length]);
-    }, 3000);
-    return () => clearTimeout(timer);
-  }, [activeLight]);
+      setActiveLight(sequence[(currentIndex + 1) % sequence.length])
+    }, 3000)
+    return () => clearTimeout(timer)
+  }, [activeLight])
 
   return (
     <div className='space-y-6 rounded-3xl bg-gray-800 p-6 shadow-lg'>
@@ -102,42 +102,42 @@ function TrafficLight() {
         />
       ))}
     </div>
-  );
+  )
 }
 
 function DodgingButton() {
-  const buttonRef = useRef<HTMLButtonElement>(null);
-  const x = useMotionValue(0);
-  const y = useMotionValue(0);
+  const buttonRef = useRef<HTMLButtonElement>(null)
+  const x = useMotionValue(0)
+  const y = useMotionValue(0)
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
-      const button = buttonRef.current;
-      if (!button) return;
+      const button = buttonRef.current
+      if (!button) return
 
-      const rect = button.getBoundingClientRect();
-      const buttonCenterX = rect.x + rect.width / 2;
-      const buttonCenterY = rect.y + rect.height / 2;
+      const rect = button.getBoundingClientRect()
+      const buttonCenterX = rect.x + rect.width / 2
+      const buttonCenterY = rect.y + rect.height / 2
 
-      const deltaX = e.clientX - buttonCenterX;
-      const deltaY = e.clientY - buttonCenterY;
-      const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
+      const deltaX = e.clientX - buttonCenterX
+      const deltaY = e.clientY - buttonCenterY
+      const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY)
 
       if (distance < 100) {
-        const angle = Math.atan2(deltaY, deltaX);
-        const newX = Math.cos(angle + Math.PI) * 50;
-        const newY = Math.sin(angle + Math.PI) * 50;
-        x.set(newX);
-        y.set(newY);
+        const angle = Math.atan2(deltaY, deltaX)
+        const newX = Math.cos(angle + Math.PI) * 50
+        const newY = Math.sin(angle + Math.PI) * 50
+        x.set(newX)
+        y.set(newY)
       } else {
-        x.set(0);
-        y.set(0);
+        x.set(0)
+        y.set(0)
       }
-    };
+    }
 
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
-  }, [x, y]);
+    window.addEventListener('mousemove', handleMouseMove)
+    return () => window.removeEventListener('mousemove', handleMouseMove)
+  }, [x, y])
 
   return (
     <motion.div style={{ x, y }}>
@@ -148,13 +148,14 @@ function DodgingButton() {
         Try to catch me!
       </Button>
     </motion.div>
-  );
+  )
 }
 
 function ElectricityEffect() {
   return (
     <div className='relative h-64 w-64'>
       <svg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'>
+        <title>Electricity Effect</title>
         <defs>
           <filter id='electricity'>
             <feTurbulence
@@ -179,12 +180,12 @@ function ElectricityEffect() {
         className='absolute inset-0 flex items-center justify-center'
         initial={{ opacity: 0 }}
         animate={{ opacity: [0.5, 1, 0.5] }}
-        transition={{ duration: 0.5, repeat: Infinity }}
+        transition={{ duration: 0.5, repeat: Number.POSITIVE_INFINITY }}
       >
         <Zap size={64} className='text-yellow-400' />
       </motion.div>
     </div>
-  );
+  )
 }
 
 export default function PlayfulComponents() {
@@ -208,5 +209,5 @@ export default function PlayfulComponents() {
         </div>
       </div>
     </section>
-  );
+  )
 }

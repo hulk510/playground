@@ -1,22 +1,22 @@
 ---
-import Card from '@components/Card';
-import Footer from '@components/Footer.astro';
-import Header from '@components/Header.astro';
-import Hr from '@components/Hr.astro';
-import LinkButton from '@components/LinkButton.astro';
-import Socials from '@components/Socials.astro';
-import { SOCIALS } from '@config';
-import Layout from '@layouts/Layout.astro';
-import getSortedPosts from '@utils/getSortedPosts';
-import { getCollection } from 'astro:content';
+import { getCollection } from 'astro:content'
+import Card from '@components/Card'
+import Footer from '@components/Footer.astro'
+import Header from '@components/Header.astro'
+import Hr from '@components/Hr.astro'
+import LinkButton from '@components/LinkButton.astro'
+import Socials from '@components/Socials.astro'
+import { SOCIALS } from '@config'
+import Layout from '@layouts/Layout.astro'
+import getSortedPosts from '@utils/getSortedPosts'
 
-const posts = await getCollection('blog');
+const posts = await getCollection('blog')
 
-const sortedPosts = getSortedPosts(posts);
-const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
-const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
+const sortedPosts = getSortedPosts(posts)
+const featuredPosts = sortedPosts.filter(({ data }) => data.featured)
+const recentPosts = sortedPosts.filter(({ data }) => !data.featured)
 
-const socialCount = SOCIALS.filter((social) => social.active).length;
+const socialCount = SOCIALS.filter((social) => social.active).length
 ---
 
 <Layout>

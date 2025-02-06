@@ -13,20 +13,12 @@
     "npm:unpublishSafe",
     "schedule:daily",
     ":prConcurrentLimit10",
-    ":prHourlyLimit4"
+    ":prHourlyLimit4",
+    "customManagers:biomeVersions"
   ],
   "automergeStrategy": "squash",
   "assigneesFromCodeOwners": true,
   "dependencyDashboardAutoclose": true,
-  "customManagers": [
-    {
-      "customType": "regex",
-      "fileMatch": ["(^|/)\\.npmrc$"],
-      "matchStrings": ["use-node-version=(?<currentValue>.*?)\\n"],
-      "depNameTemplate": "node",
-      "datasourceTemplate": "node-version"
-    }
-  ],
   "packageRules": [
     {
       "extends": ["monorepo:turbo"],

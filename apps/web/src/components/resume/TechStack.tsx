@@ -1,22 +1,22 @@
-import { Card } from '@repo/ui/ui/card';
-import { getRandomGradient } from '@utils/colors';
-import { motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
+import { Card } from '@repo/design-system/ui/card'
+import { getRandomGradient } from '@utils/colors'
+import { motion } from 'framer-motion'
+import { useEffect, useState } from 'react'
 
 const technologies = {
   Frontend: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
   Backend: ['Node.js', 'Go', 'Clean Architecture', 'REST APIs'],
   'Tools & Others': ['Git', 'Docker', 'Bun', 'Hono', 'Prisma'],
-};
+}
 
 function CategorySection({
   category,
   skills,
   index,
 }: {
-  category: string;
-  skills: string[];
-  index: number;
+  category: string
+  skills: string[]
+  index: number
 }) {
   return (
     <motion.div
@@ -34,15 +34,15 @@ function CategorySection({
         ))}
       </div>
     </motion.div>
-  );
+  )
 }
 
 function SkillCard({ name, index }: { name: string; index: number }) {
-  const [gradient, setGradient] = useState('');
+  const [gradient, setGradient] = useState('')
 
   useEffect(() => {
-    setGradient(getRandomGradient());
-  }, []);
+    setGradient(getRandomGradient())
+  }, [])
 
   return (
     <motion.div
@@ -52,7 +52,7 @@ function SkillCard({ name, index }: { name: string; index: number }) {
       whileHover={{ scale: 1.05, rotate: [-1, 1, -1, 0] }}
       className='relative'
     >
-      <Card className='p-4 backdrop-blur-sm'>
+      <Card className='p-4 border-none backdrop-blur-sm'>
         <div
           className='absolute inset-0 rounded-lg opacity-80'
           style={{ background: gradient }}
@@ -62,7 +62,7 @@ function SkillCard({ name, index }: { name: string; index: number }) {
         </div>
       </Card>
     </motion.div>
-  );
+  )
 }
 
 export default function TechStack() {
@@ -94,5 +94,5 @@ export default function TechStack() {
         </div>
       </div>
     </section>
-  );
+  )
 }

@@ -1,5 +1,5 @@
-import { Button } from '@repo/ui/ui/button';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { Button } from '@repo/design-system/ui/button'
+import { motion, useScroll, useTransform } from 'framer-motion'
 import {
   Github,
   Globe,
@@ -8,25 +8,25 @@ import {
   MapPin,
   Phone,
   Twitter,
-} from 'lucide-react';
-import { useEffect, useRef } from 'react';
+} from 'lucide-react'
+import { useEffect, useRef } from 'react'
 
 function ParticlesBackground() {
-  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const canvasRef = useRef<HTMLCanvasElement>(null)
 
   useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
+    const canvas = canvasRef.current
+    if (!canvas) return
 
-    const ctx = canvas.getContext('2d');
-    if (!ctx) return;
+    const ctx = canvas.getContext('2d')
+    if (!ctx) return
 
     const resize = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    };
-    resize();
-    window.addEventListener('resize', resize);
+      canvas.width = window.innerWidth
+      canvas.height = window.innerHeight
+    }
+    resize()
+    window.addEventListener('resize', resize)
 
     const particlesArray = Array.from({ length: 50 }, () => ({
       x: Math.random() * canvas.width,
@@ -34,51 +34,51 @@ function ParticlesBackground() {
       dx: (Math.random() - 0.5) * 2,
       dy: (Math.random() - 0.5) * 2,
       size: Math.random() * 3 + 1,
-    }));
+    }))
 
     const animate = () => {
-      if (!ctx || !canvas) return;
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      if (!ctx || !canvas) return
+      ctx.clearRect(0, 0, canvas.width, canvas.height)
 
-      particlesArray.forEach((particle) => {
-        particle.x += particle.dx;
-        particle.y += particle.dy;
+      for (const particle of particlesArray) {
+        particle.x += particle.dx
+        particle.y += particle.dy
 
-        if (particle.x > canvas.width) particle.x = 0;
-        if (particle.x < 0) particle.x = canvas.width;
-        if (particle.y > canvas.height) particle.y = 0;
-        if (particle.y < 0) particle.y = canvas.height;
+        if (particle.x > canvas.width) particle.x = 0
+        if (particle.x < 0) particle.x = canvas.width
+        if (particle.y > canvas.height) particle.y = 0
+        if (particle.y < 0) particle.y = canvas.height
 
-        ctx.beginPath();
-        ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(255, 255, 255, 0.15)';
-        ctx.fill();
-      });
+        ctx.beginPath()
+        ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2)
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.15)'
+        ctx.fill()
+      }
 
-      requestAnimationFrame(animate);
-    };
-    animate();
+      requestAnimationFrame(animate)
+    }
+    animate()
 
-    return () => window.removeEventListener('resize', resize);
-  }, []);
+    return () => window.removeEventListener('resize', resize)
+  }, [])
 
   return (
     <canvas
       ref={canvasRef}
       className='pointer-events-none fixed inset-0 -z-10 opacity-40'
     />
-  );
+  )
 }
 
 export default function Hero() {
-  const ref = useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLDivElement>(null)
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ['start start', 'end start'],
-  });
+  })
 
-  const y = useTransform(scrollYProgress, [0, 1], ['0%', '50%']);
-  const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
+  const y = useTransform(scrollYProgress, [0, 1], ['0%', '50%'])
+  const opacity = useTransform(scrollYProgress, [0, 1], [1, 0])
 
   return (
     <motion.section
@@ -148,16 +148,16 @@ export default function Hero() {
             { icon: Linkedin, href: '#', label: 'LinkedIn' },
             { icon: Twitter, href: '#', label: 'Twitter' },
             { icon: Globe, href: '#', label: 'Website' },
-          ].map((item, i) => (
+          ].map((item) => (
             <motion.div
-              key={i}
+              key={item.label}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
               <Button
                 variant='outline'
                 size='icon'
-                className='group relative overflow-hidden'
+                className='group relative overflow-hidden border-none'
                 aria-label={item.label}
               >
                 <motion.div
@@ -173,5 +173,5 @@ export default function Hero() {
         </motion.div>
       </motion.div>
     </motion.section>
-  );
+  )
 }

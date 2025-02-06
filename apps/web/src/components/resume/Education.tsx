@@ -1,6 +1,6 @@
-import { motion } from 'framer-motion';
-import { Card, CardContent } from '@repo/ui/ui/card';
-import { getRandomGradient } from '@utils/colors';
+import { Card, CardContent } from '@repo/design-system/ui/card'
+import { getRandomGradient } from '@utils/colors'
+import { motion } from 'framer-motion'
 
 const education = [
   {
@@ -25,7 +25,7 @@ const education = [
       'Completed internship at major tech company',
     ],
   },
-];
+]
 
 export default function Education() {
   return (
@@ -48,7 +48,7 @@ export default function Education() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.2 }}
             >
-              <Card className='h-full overflow-hidden'>
+              <Card className='h-full border-none overflow-hidden'>
                 <div
                   className='h-1 w-full'
                   style={{ background: getRandomGradient() }}
@@ -84,5 +84,5 @@ export default function Education() {
         </div>
       </div>
     </section>
-  );
+  )
 }

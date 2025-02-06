@@ -20,11 +20,10 @@ export const gradients = [
   ['#FFABE1', '#DDD6F3'], // Cotton Candy Pink to Lavender
   ['#89CFF0', '#FCBAD3'], // Baby Blue to Baby Pink
   ['#F0E68C', '#FFA07A'], // Khaki to Light Salmon
-] as const;
+] as const
 
 export function getRandomGradient(
   index: number = Math.floor(Math.random() * gradients.length),
 ) {
-  return `linear-gradient(135deg, ${gradients[index % gradients.length].join(', ')})`;
+  return `linear-gradient(135deg, ${gradients[index % gradients.length].join(', ')})`
 }
-
