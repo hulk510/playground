@@ -14,7 +14,7 @@
     "@astrojs/rss": "4.0.11",
     "@repo/design-system": "workspace:*",
     "@resvg/resvg-js": "2.6.2",
-    "astro": "5.5.3",
+    "astro": "5.5.4",
     "astro-expressive-code": "0.40.2",
     "fuse.js": "7.1.0",
     "github-slugger": "2.0.0",
@@ -28,7 +28,7 @@
   "devDependencies": {
     "@astrojs/react": "4.2.1",
     "@astrojs/sitemap": "3.3.0",
-    "@astrojs/tailwind": "6.0.0",
+    "@astrojs/tailwind": "6.0.1",
     "@repo/tailwind-config": "workspace:*",
     "@tailwindcss/typography": "0.5.16",
     "@types/react": "18.3.19",
