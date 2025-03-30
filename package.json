@@ -21,7 +21,7 @@
       "nodeVersion": "20.18.0"
     }
   },
-  "packageManager": "pnpm@10.6.5",
+  "packageManager": "pnpm@10.7.0",
   "dependencies": {
     "@biomejs/biome": "1.9.4",
     "@manypkg/cli": "0.22.0",
