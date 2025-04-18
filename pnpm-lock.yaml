@@ -39,11 +39,11 @@ importers:
         specifier: 2.6.2
         version: 2.6.2
       astro:
-        specifier: 5.6.1
-        version: 5.6.1(@types/node@22.14.1)(jiti@1.21.7)(rollup@4.40.0)(typescript@5.8.3)(yaml@2.7.1)
+        specifier: 5.6.2
+        version: 5.6.2(@types/node@22.14.1)(jiti@1.21.7)(rollup@4.40.0)(typescript@5.8.3)(yaml@2.7.1)
       astro-expressive-code:
         specifier: 0.41.1
-        version: 0.41.1(astro@5.6.1(@types/node@22.14.1)(jiti@1.21.7)(rollup@4.40.0)(typescript@5.8.3)(yaml@2.7.1))
+        version: 0.41.1(astro@5.6.2(@types/node@22.14.1)(jiti@1.21.7)(rollup@4.40.0)(typescript@5.8.3)(yaml@2.7.1))
       fuse.js:
         specifier: 7.1.0
         version: 7.1.0
@@ -70,14 +70,14 @@ importers:
         version: 5.8.3
     devDependencies:
       '@astrojs/react':
-        specifier: 4.2.3
-        version: 4.2.3(@types/node@22.14.1)(@types/react-dom@18.3.6(@types/react@18.3.20))(@types/react@18.3.20)(jiti@1.21.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(yaml@2.7.1)
+        specifier: 4.2.4
+        version: 4.2.4(@types/node@22.14.1)(@types/react-dom@18.3.6(@types/react@18.3.20))(@types/react@18.3.20)(jiti@1.21.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(yaml@2.7.1)
       '@astrojs/sitemap':
         specifier: 3.3.0
         version: 3.3.0
       '@astrojs/tailwind':
         specifier: 6.0.2
-        version: 6.0.2(astro@5.6.1(@types/node@22.14.1)(jiti@1.21.7)(rollup@4.40.0)(typescript@5.8.3)(yaml@2.7.1))(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.14.1)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.14.1)(typescript@5.8.3))
+        version: 6.0.2(astro@5.6.2(@types/node@22.14.1)(jiti@1.21.7)(rollup@4.40.0)(typescript@5.8.3)(yaml@2.7.1))(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.14.1)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.14.1)(typescript@5.8.3))
       '@repo/tailwind-config':
         specifier: workspace:*
         version: link:../../packages/tailwind-config
@@ -327,8 +327,8 @@ packages:
     resolution: {integrity: sha512-GilTHKGCW6HMq7y3BUv9Ac7GMe/MO9gi9GW62GzKtth0SwukCu/qp2wLiGpEujhY+VVhaG9v7kv/5vFzvf4NYw==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0}
 
-  '@astrojs/react@4.2.3':
-    resolution: {integrity: sha512-icL1hCnW1v+w+NCAz8REfsh9R1aGMW75fYBoeLjyhrVDxXQHiFbTfyBIHkgH79qqID7SM81+hPxHlqcgCuBP8w==}
+  '@astrojs/react@4.2.4':
+    resolution: {integrity: sha512-Qnj4dPsGZzUF0duQG+m6B7oFbGZpiRTl8TP6WvjeMr6BlI3dobj7wkKc/I9dQhUrWsswUafbPJuOJPGFUZtmKQ==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0}
     peerDependencies:
       '@types/react': ^17.0.50 || ^18.0.21 || ^19.0.0
@@ -1985,8 +1985,8 @@ packages:
     peerDependencies:
       astro: ^4.0.0-beta || ^5.0.0-beta || ^3.3.0
 
-  astro@5.6.1:
-    resolution: {integrity: sha512-aQ2TV7wIf+q2Oi6gGWMINHWEAZqoP0eH6/mihodfTJYATPWyd03JIGVfjtYUJlkNdNSKxDXwEe/r/Zx4CZ1FPg==}
+  astro@5.6.2:
+    resolution: {integrity: sha512-Ds4x3Au2s+YfBKLXY2HCHird+73ff4wTds+cuAGqaHmY4GR+Gc+sCAP54Mq6blkpuFqXwqjPUAcmxvAwovJPGQ==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -4549,7 +4549,7 @@ snapshots:
     dependencies:
       prismjs: 1.30.0
 
-  '@astrojs/react@4.2.3(@types/node@22.14.1)(@types/react-dom@18.3.6(@types/react@18.3.20))(@types/react@18.3.20)(jiti@1.21.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(yaml@2.7.1)':
+  '@astrojs/react@4.2.4(@types/node@22.14.1)(@types/react-dom@18.3.6(@types/react@18.3.20))(@types/react@18.3.20)(jiti@1.21.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(yaml@2.7.1)':
     dependencies:
       '@types/react': 18.3.20
       '@types/react-dom': 18.3.6(@types/react@18.3.20)
@@ -4583,9 +4583,9 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 3.24.2
 
-  '@astrojs/tailwind@6.0.2(astro@5.6.1(@types/node@22.14.1)(jiti@1.21.7)(rollup@4.40.0)(typescript@5.8.3)(yaml@2.7.1))(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.14.1)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.14.1)(typescript@5.8.3))':
+  '@astrojs/tailwind@6.0.2(astro@5.6.2(@types/node@22.14.1)(jiti@1.21.7)(rollup@4.40.0)(typescript@5.8.3)(yaml@2.7.1))(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.14.1)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.14.1)(typescript@5.8.3))':
     dependencies:
-      astro: 5.6.1(@types/node@22.14.1)(jiti@1.21.7)(rollup@4.40.0)(typescript@5.8.3)(yaml@2.7.1)
+      astro: 5.6.2(@types/node@22.14.1)(jiti@1.21.7)(rollup@4.40.0)(typescript@5.8.3)(yaml@2.7.1)
       autoprefixer: 10.4.21(postcss@8.5.3)
       postcss: 8.5.3
       postcss-load-config: 4.0.2(postcss@8.5.3)(ts-node@10.9.2(@types/node@22.14.1)(typescript@5.8.3))
@@ -6218,12 +6218,12 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  astro-expressive-code@0.41.1(astro@5.6.1(@types/node@22.14.1)(jiti@1.21.7)(rollup@4.40.0)(typescript@5.8.3)(yaml@2.7.1)):
+  astro-expressive-code@0.41.1(astro@5.6.2(@types/node@22.14.1)(jiti@1.21.7)(rollup@4.40.0)(typescript@5.8.3)(yaml@2.7.1)):
     dependencies:
-      astro: 5.6.1(@types/node@22.14.1)(jiti@1.21.7)(rollup@4.40.0)(typescript@5.8.3)(yaml@2.7.1)
+      astro: 5.6.2(@types/node@22.14.1)(jiti@1.21.7)(rollup@4.40.0)(typescript@5.8.3)(yaml@2.7.1)
       rehype-expressive-code: 0.41.1
 
-  astro@5.6.1(@types/node@22.14.1)(jiti@1.21.7)(rollup@4.40.0)(typescript@5.8.3)(yaml@2.7.1):
+  astro@5.6.2(@types/node@22.14.1)(jiti@1.21.7)(rollup@4.40.0)(typescript@5.8.3)(yaml@2.7.1):
     dependencies:
       '@astrojs/compiler': 2.11.0
       '@astrojs/internal-helpers': 0.6.1
