@@ -27,6 +27,6 @@
     "@manypkg/cli": "0.22.0",
     "@repo/typescript-config": "workspace:*",
     "husky": "9.1.7",
-    "turbo": "2.5.2"
+    "turbo": "2.5.3"
   }
 }
