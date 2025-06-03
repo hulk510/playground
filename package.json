@@ -24,7 +24,7 @@
   "packageManager": "pnpm@10.11.0",
   "dependencies": {
     "@biomejs/biome": "1.9.4",
-    "@manypkg/cli": "0.22.0",
+    "@manypkg/cli": "0.24.0",
     "@repo/typescript-config": "workspace:*",
     "husky": "9.1.7",
     "turbo": "2.5.4"
