@@ -39,11 +39,11 @@ importers:
         specifier: 2.6.2
         version: 2.6.2
       astro:
-        specifier: 5.9.2
-        version: 5.9.2(@types/node@22.15.31)(jiti@1.21.7)(rollup@4.43.0)(typescript@5.8.3)(yaml@2.8.0)
+        specifier: 5.9.3
+        version: 5.9.3(@types/node@22.15.31)(jiti@1.21.7)(rollup@4.43.0)(typescript@5.8.3)(yaml@2.8.0)
       astro-expressive-code:
         specifier: 0.41.2
-        version: 0.41.2(astro@5.9.2(@types/node@22.15.31)(jiti@1.21.7)(rollup@4.43.0)(typescript@5.8.3)(yaml@2.8.0))
+        version: 0.41.2(astro@5.9.3(@types/node@22.15.31)(jiti@1.21.7)(rollup@4.43.0)(typescript@5.8.3)(yaml@2.8.0))
       fuse.js:
         specifier: 7.1.0
         version: 7.1.0
@@ -77,7 +77,7 @@ importers:
         version: 3.4.1
       '@astrojs/tailwind':
         specifier: 6.0.2
-        version: 6.0.2(astro@5.9.2(@types/node@22.15.31)(jiti@1.21.7)(rollup@4.43.0)(typescript@5.8.3)(yaml@2.8.0))(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.15.31)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.15.31)(typescript@5.8.3))
+        version: 6.0.2(astro@5.9.3(@types/node@22.15.31)(jiti@1.21.7)(rollup@4.43.0)(typescript@5.8.3)(yaml@2.8.0))(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.15.31)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.15.31)(typescript@5.8.3))
       '@repo/tailwind-config':
         specifier: workspace:*
         version: link:../../packages/tailwind-config
@@ -2018,8 +2018,8 @@ packages:
     peerDependencies:
       astro: ^4.0.0-beta || ^5.0.0-beta || ^3.3.0
 
-  astro@5.9.2:
-    resolution: {integrity: sha512-K/zZlQOWMpamfLDOls5jvG7lrsjH1gkk3ESRZyZDCkVBtKHMF4LbjwCicm/iBb3mX3V/PerqRYzLbOy3/4JLCQ==}
+  astro@5.9.3:
+    resolution: {integrity: sha512-VReZrpUa/3rfeiVvsQ1A2M3ujDPI+pDGIYOMtXPEZwut8tZoEyealXXLjitgCsJ+3dunKGZbg4Eak6i+r0vniw==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -4678,9 +4678,9 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 3.25.63
 
-  '@astrojs/tailwind@6.0.2(astro@5.9.2(@types/node@22.15.31)(jiti@1.21.7)(rollup@4.43.0)(typescript@5.8.3)(yaml@2.8.0))(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.15.31)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.15.31)(typescript@5.8.3))':
+  '@astrojs/tailwind@6.0.2(astro@5.9.3(@types/node@22.15.31)(jiti@1.21.7)(rollup@4.43.0)(typescript@5.8.3)(yaml@2.8.0))(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.15.31)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.15.31)(typescript@5.8.3))':
     dependencies:
-      astro: 5.9.2(@types/node@22.15.31)(jiti@1.21.7)(rollup@4.43.0)(typescript@5.8.3)(yaml@2.8.0)
+      astro: 5.9.3(@types/node@22.15.31)(jiti@1.21.7)(rollup@4.43.0)(typescript@5.8.3)(yaml@2.8.0)
       autoprefixer: 10.4.21(postcss@8.5.5)
       postcss: 8.5.5
       postcss-load-config: 4.0.2(postcss@8.5.5)(ts-node@10.9.2(@types/node@22.15.31)(typescript@5.8.3))
@@ -6347,12 +6347,12 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  astro-expressive-code@0.41.2(astro@5.9.2(@types/node@22.15.31)(jiti@1.21.7)(rollup@4.43.0)(typescript@5.8.3)(yaml@2.8.0)):
+  astro-expressive-code@0.41.2(astro@5.9.3(@types/node@22.15.31)(jiti@1.21.7)(rollup@4.43.0)(typescript@5.8.3)(yaml@2.8.0)):
     dependencies:
-      astro: 5.9.2(@types/node@22.15.31)(jiti@1.21.7)(rollup@4.43.0)(typescript@5.8.3)(yaml@2.8.0)
+      astro: 5.9.3(@types/node@22.15.31)(jiti@1.21.7)(rollup@4.43.0)(typescript@5.8.3)(yaml@2.8.0)
       rehype-expressive-code: 0.41.2
 
-  astro@5.9.2(@types/node@22.15.31)(jiti@1.21.7)(rollup@4.43.0)(typescript@5.8.3)(yaml@2.8.0):
+  astro@5.9.3(@types/node@22.15.31)(jiti@1.21.7)(rollup@4.43.0)(typescript@5.8.3)(yaml@2.8.0):
     dependencies:
       '@astrojs/compiler': 2.12.2
       '@astrojs/internal-helpers': 0.6.1
