@@ -6,8 +6,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "ui:add": "shadcn add",
-    "type-check": "tsc --noEmit"
+    "ui:add": "shadcn add"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "1.2.11",

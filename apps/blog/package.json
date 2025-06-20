@@ -7,8 +7,7 @@
     "build": "astro check && astro build && pagefind --site dist && cp -r dist/pagefind public/",
     "preview": "astro preview",
     "sync": "astro sync",
-    "astro": "astro",
-    "type-check": "tsc --noEmit"
+    "astro": "astro"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.12",
