@@ -1,9 +1,9 @@
 'use client'
-import { Button } from '@/components/ui/button'
-import { Card, CardContent } from '@/components/ui/card'
 import { motion, useAnimation, useMotionValue } from 'framer-motion'
 import { Lightbulb, Zap } from 'lucide-react'
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useId, useRef, useState } from 'react'
+import { Button } from '@/components/ui/button'
+import { Card, CardContent } from '@/components/ui/card'
 
 function FallingCard() {
   const [isVisible, setIsVisible] = useState(true)
@@ -158,12 +158,15 @@ function DodgingButton() {
 }
 
 function ElectricityEffect() {
+  const uniqueId = useId()
+  const filterId = `electricity-${uniqueId}`
+
   return (
     <div className='relative h-64 w-64'>
       <svg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'>
         <title>Electricity Effect</title>
         <defs>
-          <filter id='electricity'>
+          <filter id={filterId}>
             <feTurbulence
               type='fractalNoise'
               baseFrequency='0.01'
@@ -180,7 +183,7 @@ function ElectricityEffect() {
             />
           </filter>
         </defs>
-        <rect width='100%' height='100%' filter='url(#electricity)' />
+        <rect width='100%' height='100%' filter={`url(#${filterId})`} />
       </svg>
       <motion.div
         className='absolute inset-0 flex items-center justify-center'

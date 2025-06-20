@@ -1,5 +1,4 @@
 'use client'
-import { Button } from '@/components/ui/button'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import {
   Github,
@@ -11,6 +10,7 @@ import {
   Twitter,
 } from 'lucide-react'
 import { useEffect, useRef } from 'react'
+import { Button } from '@/components/ui/button'
 
 function ParticlesBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null)

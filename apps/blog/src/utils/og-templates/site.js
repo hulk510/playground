@@ -1,5 +1,5 @@
-import { SITE } from '@/config'
 import satori from 'satori'
+import { SITE } from '@/config'
 import loadGoogleFonts from '../loadGoogleFont'
 
 export default async () => {

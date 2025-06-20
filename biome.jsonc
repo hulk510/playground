@@ -47,6 +47,18 @@
       "includes": ["**/*.astro"],
       "javascript": {
         "globals": ["Astro"]
+      },
+      "linter": {
+        "rules": {
+          "style": {
+            "useConst": "off",
+            "useImportType": "off"
+          },
+          "correctness": {
+            "noUnusedVariables": "off",
+            "noUnusedImports": "off"
+          }
+        }
       }
     }
   ]

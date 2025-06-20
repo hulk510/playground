@@ -1,7 +1,7 @@
 'use client'
+import { motion } from 'framer-motion'
 import { Card, CardContent } from '@/components/ui/card'
 import { getRandomGradient } from '@/utils/colors'
-import { motion } from 'framer-motion'
 
 const education = [
   {

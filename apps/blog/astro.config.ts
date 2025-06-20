@@ -1,4 +1,3 @@
-import react from '@astrojs/react'
 import sitemap from '@astrojs/sitemap'
 import {
   transformerNotationDiff,

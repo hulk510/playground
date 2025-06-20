@@ -51,19 +51,16 @@
       @apply opacity-75;
     }
 
-    table {
-      th,
-      td {
-        @apply border border-border p-2;
-      }
+    table th,
+    table td {
+      @apply border border-border p-2;
+    }
+    table th {
+      @apply py-1.5;
+    }
 
-      th {
-        @apply py-1.5;
-      }
-
-      code {
-        @apply break-all sm:break-normal;
-      }
+    table code {
+      @apply break-all sm:break-normal;
     }
 
     code {

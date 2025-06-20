@@ -1,8 +1,8 @@
 'use client'
-import { Card } from '@/components/ui/card'
-import { getRandomGradient } from '@/utils/colors'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useMemo, useRef } from 'react'
+import { Card } from '@/components/ui/card'
+import { getRandomGradient } from '@/utils/colors'
 
 const experiences = [
   {

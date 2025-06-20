@@ -1,8 +1,8 @@
 'use client'
-import { Card } from '@/components/ui/card'
-import { getRandomGradient } from '@/utils/colors'
 import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
+import { Card } from '@/components/ui/card'
+import { getRandomGradient } from '@/utils/colors'
 
 const technologies = {
   Frontend: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
