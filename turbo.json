@@ -22,11 +22,6 @@
       "cache": false,
       "persistent": true
     },
-    "transit": {
-      "dependsOn": ["^transit"]
-    },
-    "type-check": {
-      "dependsOn": ["transit"]
-    }
+    "type-check": {}
   }
 }
