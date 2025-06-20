@@ -238,8 +238,8 @@ importers:
         specifier: 1.1.2
         version: 1.1.2(@types/react-dom@18.3.7(@types/react@18.3.23))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       zod:
-        specifier: 3.25.64
-        version: 3.25.64
+        specifier: 3.25.67
+        version: 3.25.67
     devDependencies:
       '@repo/tailwind-config':
         specifier: workspace:*
@@ -4561,8 +4561,8 @@ packages:
       typescript: ^4.9.4 || ^5.0.2
       zod: ^3
 
-  zod@3.25.64:
-    resolution: {integrity: sha512-hbP9FpSZf7pkS7hRVUrOjhwKJNyampPgtXKc3AN6DsWtoHsg2Sb4SQaS4Tcay380zSwd2VPo9G9180emBACp5g==}
+  zod@3.25.67:
+    resolution: {integrity: sha512-idA2YXwpCdqUSKRCACDE6ItZD9TZzy3OZMtpfLoh6oPR47lipysRrJfjzMqFxQ3uJuUPyUeWe1r9vLH33xO/Qw==}
 
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
@@ -4676,7 +4676,7 @@ snapshots:
     dependencies:
       sitemap: 8.0.0
       stream-replace-string: 2.0.0
-      zod: 3.25.64
+      zod: 3.25.67
 
   '@astrojs/tailwind@6.0.2(astro@5.9.3(@types/node@22.15.32)(jiti@1.21.7)(rollup@4.43.0)(typescript@5.8.3)(yaml@2.8.0))(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@22.15.32)(typescript@5.8.3)))(ts-node@10.9.2(@types/node@22.15.32)(typescript@5.8.3))':
     dependencies:
@@ -6412,9 +6412,9 @@ snapshots:
       xxhash-wasm: 1.1.0
       yargs-parser: 21.1.1
       yocto-spinner: 0.2.3
-      zod: 3.25.64
-      zod-to-json-schema: 3.24.5(zod@3.25.64)
-      zod-to-ts: 1.2.0(typescript@5.8.3)(zod@3.25.64)
+      zod: 3.25.67
+      zod-to-json-schema: 3.24.5(zod@3.25.67)
+      zod-to-ts: 1.2.0(typescript@5.8.3)(zod@3.25.67)
     optionalDependencies:
       sharp: 0.33.5
     transitivePeerDependencies:
@@ -9303,15 +9303,15 @@ snapshots:
 
   yoga-wasm-web@0.3.3: {}
 
-  zod-to-json-schema@3.24.5(zod@3.25.64):
+  zod-to-json-schema@3.24.5(zod@3.25.67):
     dependencies:
-      zod: 3.25.64
+      zod: 3.25.67
 
-  zod-to-ts@1.2.0(typescript@5.8.3)(zod@3.25.64):
+  zod-to-ts@1.2.0(typescript@5.8.3)(zod@3.25.67):
     dependencies:
       typescript: 5.8.3
-      zod: 3.25.64
+      zod: 3.25.67
 
-  zod@3.25.64: {}
+  zod@3.25.67: {}
 
   zwitch@2.0.4: {}
