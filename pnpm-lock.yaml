@@ -143,7 +143,7 @@ importers:
         specifier: 19.1.8
         version: 19.1.8
       '@types/react-dom':
-        specifier: ^19
+        specifier: 19.1.6
         version: 19.1.6(@types/react@19.1.8)
       shadcn:
         specifier: latest
