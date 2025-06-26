@@ -1,6 +1,5 @@
 {
   "name": "blog",
-  "type": "module",
   "version": "5.4.2",
   "scripts": {
     "dev": "astro dev",

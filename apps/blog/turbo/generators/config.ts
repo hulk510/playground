@@ -33,7 +33,7 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
     actions: [
       {
         type: 'add',
-        path: './src/content/blog/{{dashCase slug}}.md',
+        path: './src/data/blog/{{dashCase slug}}.md',
         templateFile: 'templates/blog.hbs',
       },
     ],
