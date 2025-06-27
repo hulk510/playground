@@ -11,7 +11,7 @@ export interface Props {
 
 const { hideEditPost, post, class: className = '' } = Astro.props
 
-const href = `${SITE.editPost.url}/apps/web/${post.filePath}`
+const href = `${SITE.editPost.url}apps/blog/${post.filePath}`
 const showEditPost =
   SITE.editPost.enabled && !hideEditPost && href.trim() !== ''
 ---
