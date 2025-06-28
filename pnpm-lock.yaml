@@ -140,10 +140,10 @@ importers:
         specifier: 24.0.3
         version: 24.0.3
       '@types/react':
-        specifier: ^19.1.8
+        specifier: 19.1.8
         version: 19.1.8
       '@types/react-dom':
-        specifier: ^19.1.6
+        specifier: 19.1.6
         version: 19.1.6(@types/react@19.1.8)
       shadcn:
         specifier: latest
@@ -195,10 +195,10 @@ importers:
         specifier: 14.6.1
         version: 14.6.1(@testing-library/dom@10.4.0)
       '@types/react':
-        specifier: ^19.1.8
+        specifier: 19.1.8
         version: 19.1.8
       '@types/react-dom':
-        specifier: ^19.1.6
+        specifier: 19.1.6
         version: 19.1.6(@types/react@19.1.8)
       '@types/react-redux':
         specifier: ^7.1.34
