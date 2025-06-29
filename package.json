@@ -26,7 +26,7 @@
   },
   "packageManager": "pnpm@10.12.3",
   "devDependencies": {
-    "@biomejs/biome": "2.0.5",
+    "@biomejs/biome": "2.0.6",
     "@manypkg/cli": "0.24.0",
     "@repo/typescript-config": "workspace:*",
     "husky": "9.1.7",
