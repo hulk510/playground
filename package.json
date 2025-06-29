@@ -19,7 +19,10 @@
   "pnpm": {
     "executionEnv": {
       "nodeVersion": "21.7.3"
-    }
+    },
+    "onlyBuiltDependencies": [
+      "@tailwindcss/oxide"
+    ]
   },
   "packageManager": "pnpm@10.12.3",
   "devDependencies": {
