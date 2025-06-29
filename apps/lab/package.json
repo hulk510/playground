@@ -7,7 +7,10 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "ui:add": "shadcn add"
+    "ui:add": "shadcn add",
+    "test:e2e": "pnpm exec playwright test",
+    "test:e2e:ui": "pnpm exec playwright test --ui",
+    "test:e2e:headed": "pnpm exec playwright test --headed"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "1.2.11",
@@ -22,6 +25,7 @@
     "tailwind-merge": "3.3.1"
   },
   "devDependencies": {
+    "@playwright/test": "^1.49.1",
     "@repo/typescript-config": "workspace:*",
     "@tailwindcss/postcss": "4.1.10",
     "@types/node": "24.0.4",
