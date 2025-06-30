@@ -1,5 +1,23 @@
 # Changelog
 
+## [0.2.1](https://github.com/hulk510/playground/compare/v0.2.0...v0.2.1) (2025-06-30)
+
+
+### Features
+
+* add react-test-provider-wrapper-example with todo slice ([#1774](https://github.com/hulk510/playground/issues/1774)) ([7d8b086](https://github.com/hulk510/playground/commit/7d8b08612b0c31d7db4ae3939211a7e5cceb901a))
+* **blog:** add multiple favicon sizes and apple touch icon ([#1768](https://github.com/hulk510/playground/issues/1768)) ([d664eb3](https://github.com/hulk510/playground/commit/d664eb31c916c513b1f704a55e645d5dd039f96b))
+
+
+### Bug Fixes
+
+* **blog:** correct edit post URL path for blog posts ([#1779](https://github.com/hulk510/playground/issues/1779)) ([7c251e5](https://github.com/hulk510/playground/commit/7c251e5205b5c7212c5dee9e18e7eb929210168b))
+* **deps:** update dependency framer-motion to v12.19.1 ([#1777](https://github.com/hulk510/playground/issues/1777)) ([4c5694a](https://github.com/hulk510/playground/commit/4c5694aae56b1c5bf697fa0f601ceb394faee4d0))
+* **deps:** update dependency lucide-react to v0.522.0 ([#1770](https://github.com/hulk510/playground/issues/1770)) ([5d567f7](https://github.com/hulk510/playground/commit/5d567f7e33b22b57d0a8446f636dfae323d6e60c))
+* **deps:** update dependency lucide-react to v0.523.0 ([#1783](https://github.com/hulk510/playground/issues/1783)) ([841c4a3](https://github.com/hulk510/playground/commit/841c4a3ee0855d8fb9a02383203ba4580868e20b))
+* **deps:** update tailwindcss monorepo to v4.1.11 ([#1798](https://github.com/hulk510/playground/issues/1798)) ([b9ae9e5](https://github.com/hulk510/playground/commit/b9ae9e5187ee88e76425031acdffd9198b0aba3c))
+* **generator:** update blog post path and remove module type ([#1771](https://github.com/hulk510/playground/issues/1771)) ([eefe7a8](https://github.com/hulk510/playground/commit/eefe7a8ef887a5c1a0baa34048f30fcebd581a3f))
+
 ## [0.2.0](https://github.com/hulk510/playground/compare/v0.1.0...v0.2.0) (2025-06-28)
 
 
