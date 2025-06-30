@@ -24,7 +24,7 @@
       "@tailwindcss/oxide"
     ]
   },
-  "packageManager": "pnpm@10.12.3",
+  "packageManager": "pnpm@10.12.4",
   "devDependencies": {
     "@biomejs/biome": "2.0.6",
     "@manypkg/cli": "0.24.0",
