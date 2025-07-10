@@ -8,30 +8,28 @@ export default async () => {
       type: 'div',
       props: {
         style: {
-          background: '#fefbfb',
+          background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
           width: '100%',
           height: '100%',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
+          fontFamily: 'Noto Sans JP, IBM Plex Mono',
+          position: 'relative',
         },
         children: [
+          // 装飾用の円形背景
           {
             type: 'div',
             props: {
               style: {
                 position: 'absolute',
-                top: '-1px',
-                right: '-1px',
-                border: '4px solid #000',
-                background: '#ecebeb',
-                opacity: '0.9',
-                borderRadius: '4px',
-                display: 'flex',
-                justifyContent: 'center',
-                margin: '2.5rem',
-                width: '88%',
-                height: '80%',
+                top: '-150px',
+                right: '-150px',
+                width: '400px',
+                height: '400px',
+                borderRadius: '50%',
+                background: 'rgba(255, 255, 255, 0.1)',
               },
             },
           },
@@ -39,80 +37,97 @@ export default async () => {
             type: 'div',
             props: {
               style: {
-                border: '4px solid #000',
-                background: '#fefbfb',
-                borderRadius: '4px',
+                position: 'absolute',
+                bottom: '-200px',
+                left: '-200px',
+                width: '500px',
+                height: '500px',
+                borderRadius: '50%',
+                background: 'rgba(255, 255, 255, 0.05)',
+              },
+            },
+          },
+          // メインカード
+          {
+            type: 'div',
+            props: {
+              style: {
+                background: 'rgba(255, 255, 255, 0.95)',
+                borderRadius: '32px',
+                boxShadow: '0 25px 80px rgba(0, 0, 0, 0.3)',
                 display: 'flex',
+                flexDirection: 'column',
                 justifyContent: 'center',
-                margin: '2rem',
-                width: '88%',
+                alignItems: 'center',
+                padding: '80px',
+                margin: '60px',
+                width: '85%',
                 height: '80%',
+                border: '3px solid rgba(255, 255, 255, 0.3)',
+                textAlign: 'center',
               },
-              children: {
-                type: 'div',
-                props: {
-                  style: {
-                    display: 'flex',
-                    flexDirection: 'column',
-                    justifyContent: 'space-between',
-                    margin: '20px',
-                    width: '90%',
-                    height: '90%',
+              children: [
+                // タイトル部分
+                {
+                  type: 'h1',
+                  props: {
+                    style: {
+                      fontSize: '84px',
+                      fontWeight: '900',
+                      margin: '0 0 30px 0',
+                      background: 'linear-gradient(45deg, #667eea, #764ba2)',
+                      WebkitBackgroundClip: 'text',
+                      WebkitTextFillColor: 'transparent',
+                      backgroundClip: 'text',
+                      letterSpacing: '-2px',
+                      fontFamily: 'Noto Sans JP',
+                    },
+                    children: SITE.title,
                   },
-                  children: [
-                    {
-                      type: 'div',
-                      props: {
-                        style: {
-                          display: 'flex',
-                          flexDirection: 'column',
-                          justifyContent: 'center',
-                          alignItems: 'center',
-                          height: '90%',
-                          maxHeight: '90%',
-                          overflow: 'hidden',
-                          textAlign: 'center',
-                        },
-                        children: [
-                          {
-                            type: 'p',
-                            props: {
-                              style: { fontSize: 72, fontWeight: 'bold' },
-                              children: SITE.title,
-                            },
-                          },
-                          {
-                            type: 'p',
-                            props: {
-                              style: { fontSize: 28 },
-                              children: SITE.desc,
-                            },
-                          },
-                        ],
-                      },
-                    },
-                    {
-                      type: 'div',
-                      props: {
-                        style: {
-                          display: 'flex',
-                          justifyContent: 'flex-end',
-                          width: '100%',
-                          marginBottom: '8px',
-                          fontSize: 28,
-                        },
-                        children: {
-                          type: 'span',
-                          props: {
-                            style: { overflow: 'hidden', fontWeight: 'bold' },
-                            children: new URL(SITE.website).hostname,
-                          },
-                        },
-                      },
-                    },
-                  ],
                 },
-              },
+                // 説明文部分
+                {
+                  type: 'p',
+                  props: {
+                    style: {
+                      fontSize: '36px',
+                      color: '#666666',
+                      margin: '0 0 50px 0',
+                      fontWeight: '500',
+                      lineHeight: '1.4',
+                      fontFamily: 'Noto Sans JP',
+                    },
+                    children: SITE.desc,
+                  },
+                },
+                // ウェブサイト部分
+                {
+                  type: 'div',
+                  props: {
+                    style: {
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      padding: '20px 40px',
+                      background: 'linear-gradient(135deg, #ff6b6b, #feca57)',
+                      borderRadius: '25px',
+                      color: 'white',
+                      fontSize: '32px',
+                      fontWeight: '600',
+                      fontFamily: 'Noto Sans JP',
+                      textShadow: '0 2px 4px rgba(0, 0, 0, 0.2)',
+                    },
+                    children: [
+                      {
+                        type: 'span',
+                        props: {
+                          children: new URL(SITE.website).hostname,
+                        },
+                      },
+                    ],
+                  },
+                },
+              ],
             },
           },
         ],
@@ -122,7 +137,7 @@ export default async () => {
       width: 1200,
       height: 630,
       embedFont: true,
-      fonts: await loadGoogleFonts(SITE.title + SITE.desc + SITE.website),
+      fonts: await loadGoogleFonts(`${SITE.title}${SITE.desc}${SITE.website}`),
     },
   )
 }
