@@ -26,9 +26,9 @@
       "msw"
     ]
   },
-  "packageManager": "pnpm@10.12.4",
+  "packageManager": "pnpm@10.13.1",
   "devDependencies": {
-    "@biomejs/biome": "2.0.6",
+    "@biomejs/biome": "2.1.1",
     "@manypkg/cli": "0.24.0",
     "@repo/typescript-config": "workspace:*",
     "husky": "9.1.7",
