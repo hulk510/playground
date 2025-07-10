@@ -77,14 +77,21 @@ export default async () => {
                           {
                             type: 'p',
                             props: {
-                              style: { fontSize: 72, fontWeight: 'bold' },
+                              style: { 
+                                fontSize: 72, 
+                                fontWeight: 'bold',
+                                fontFamily: 'Noto Sans JP, IBM Plex Mono',
+                              },
                               children: SITE.title,
                             },
                           },
                           {
                             type: 'p',
                             props: {
-                              style: { fontSize: 28 },
+                              style: { 
+                                fontSize: 28,
+                                fontFamily: 'Noto Sans JP, IBM Plex Mono',
+                              },
                               children: SITE.desc,
                             },
                           },
@@ -100,6 +107,7 @@ export default async () => {
                           width: '100%',
                           marginBottom: '8px',
                           fontSize: 28,
+                          fontFamily: 'Noto Sans JP, IBM Plex Mono',
                         },
                         children: {
                           type: 'span',

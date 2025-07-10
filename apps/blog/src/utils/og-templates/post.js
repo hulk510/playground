@@ -160,6 +160,7 @@ export default async (post) => {
                           fontWeight: 'bold',
                           maxHeight: '84%',
                           overflow: 'hidden',
+                          fontFamily: 'Noto Sans JP, IBM Plex Mono',
                         },
                         children: post.data.title,
                       },
@@ -173,6 +174,7 @@ export default async (post) => {
                           width: '100%',
                           marginBottom: '8px',
                           fontSize: 28,
+                          fontFamily: 'Noto Sans JP, IBM Plex Mono',
                         },
                         children: [
                           {
