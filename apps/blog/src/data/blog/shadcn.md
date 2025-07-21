@@ -45,7 +45,7 @@ tsconfig.json, package.json, components.jsonを最終こんな感じで記載し
 
 packages/ui/components.json
 
-```packages/ui/components.json
+```json file="packages/ui/components.json"
 {
   "$schema": "<https://ui.shadcn.com/schema.json>",
   "style": "default",
@@ -67,7 +67,7 @@ packages/ui/components.json
 
 packages/ui/package.json
 
-```packages/ui/package.json
+```json file="packages/ui/package.json"
   ...
   "exports": {
     "./*": "./src/components/*.tsx",
@@ -85,7 +85,7 @@ packages/ui/package.json
 
 packages/ui/tsconfig.json
 
-```packages/ui/tsconfig.json
+```json file="packages/ui/tsconfig.json"
 {
   "extends": "@repo/typescript-config/react-library.json",
   "compilerOptions": {
@@ -106,7 +106,7 @@ packages/ui/tsconfig.json
 
 なのでpackage.jsonでimportsにsubpathの指定を書く。`src/lib/*.ts`にマッチするものを全て`#deps/lib/*`でimportするって書いてたら使う側で適当に解決してくれるっぽい。
 
-```packages/ui/components/ui/accordion.tsx
+```typescript file="packages/ui/components/ui/accordion.tsx"
 'use client';
 
 import * as AccordionPrimitive from '@radix-ui/react-accordion';

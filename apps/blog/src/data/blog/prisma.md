@@ -22,7 +22,7 @@ prismaは.envの内容を読んでschemaを登録するDBを決めれる。
 開発時は開発用のDBに繋げて、本番環境に上げる時に、ciの環境変数で本番用のDBをセットするのが良さそう。
 ワイはvercelのbuild後にdb migrate deployをやるようにしたら今のところはいい感じ。
 
-```turbo.json
+```json file="turbo.json"
     "build": {
       "dependsOn": ["^build", "^db:generate"],
       "outputs": [
@@ -52,7 +52,7 @@ migrationを作成しないだけでdbのschemaを適用させる。開発途中
 
 prisma clientのnode_modulesに設定したschemaのメソッドみたいなのが作られる。それをimportすることで制御できるみたい。
 
-```schema.prisma
+```prisma file="schema.prisma"
 model Todo {
   id      String @id @default(cuid())
   content String

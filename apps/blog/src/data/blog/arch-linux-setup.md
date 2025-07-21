@@ -66,7 +66,7 @@ sudo vi /etc/ssh/sshd_config
 
 `/etc/ssh/sshd_config`のファイル修正して以下のあたりの設定追加。
 
-```bash:/etc/ssh/sshd_config
+```bash file="/etc/ssh/sshd_config"
 PubkeyAuthentication yes
 PasswordAuthentication no
 ```
