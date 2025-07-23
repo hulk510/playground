@@ -3,6 +3,7 @@ pubDatetime: 2024-07-16T08:57:51.484Z
 title: DevtoolのResponse Header Overrideが便利だった
 featured: true
 draft: false
+slug: chrome-devtool-response-override
 tags:
   - tech
 description: Set-CookieされてなくてHTTPのヘッダーを試す際にブラウザ単体で試したりができるDevtool最高

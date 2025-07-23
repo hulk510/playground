@@ -3,6 +3,7 @@ pubDatetime: 2024-06-19T05:40:47.644Z
 title: prismaを使ってみた
 featured: true
 draft: false
+slug: prisma
 tags:
   - playground
 description: DBのORMのPrismaを単純な興味からPlaygroundに入れてみた。

@@ -1,8 +1,9 @@
 ---
-pubDatetime: 2025-07-01T15:30:00.000Z
+pubDatetime: 2025-07-01T02:30:00+09:00
 title: 'MCP + Playwrightを使ってみた: 実際の作業をAIエージェントにやらせてみた感想'
 featured: true
 draft: false
+slug: mcp-playwright-experience
 tags:
   - mcp
   - playwright
