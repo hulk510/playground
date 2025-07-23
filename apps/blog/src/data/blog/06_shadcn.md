@@ -3,6 +3,7 @@ pubDatetime: 2024-06-19T05:40:47.644Z
 title: shadcnをmonorepoに入れてみた
 featured: true
 draft: false
+slug: shadcn
 tags:
   - playground
 description: いまだに読み方がわからないshadcnをplaygroundに入れてみた。

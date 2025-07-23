@@ -1,7 +1,8 @@
 ---
-pubDatetime: 2025-07-21T15:00:00.000Z
+pubDatetime: 2025-07-21T22:27:00+09:00
 title: 'LINE Bot × AI：1週間でAIチャットボットを作ってみた振り返り'
 featured: true
+slug: line-bot-mugi
 draft: false
 tags:
   - linebot
@@ -11,7 +12,6 @@ tags:
   - vercel
   - 振り返り
 description: LINE Bot + Next.js + AI で何かを作ってみたものの、結局普通のAIチャットと何が違うのか分からない仕上がりに。技術的な学びと反省をまとめてみました。
-toc: true
 ---
 
 ## 作ったもの：「ムギちゃん」LINEBot

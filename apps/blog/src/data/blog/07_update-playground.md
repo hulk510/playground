@@ -3,6 +3,7 @@ pubDatetime: 2024-06-26T06:59:08.071Z
 title: PlaygroundにTodoアプリを実装
 featured: true
 draft: false
+slug: update-playground
 tags:
   - playground
 description: Prisma、Nextjsのapp routeを使ったTODOアプリのCRUD実装（Updateは作ってないけど）

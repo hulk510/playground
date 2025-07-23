@@ -3,6 +3,7 @@ pubDatetime: 2024-05-20T18:59:01.651Z
 title: ノートPCにSSHできるようにしてみた
 featured: true
 draft: false
+slug: arch-linux-setup
 tags:
   - tech
   - Arch Linux

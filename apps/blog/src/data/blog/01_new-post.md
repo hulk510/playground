@@ -3,6 +3,7 @@ pubDatetime: 2024-04-10T05:40:47.644Z
 title: ブログを移行してみたよ
 featured: true
 draft: false
+slug: new-post
 tags:
   - 適当
 description: 新しい幕開け

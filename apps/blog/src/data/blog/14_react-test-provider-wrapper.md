@@ -3,6 +3,7 @@ pubDatetime: 2025-06-26T13:57:51.484Z
 title: 'React Testing: ProviderWrapperを作ってテスト環境を楽にしてみた'
 featured: true
 draft: false
+slug: react-test-provider-wrapper
 tags:
   - test
   - react
