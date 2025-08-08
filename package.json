@@ -26,7 +26,7 @@
       "msw"
     ]
   },
-  "packageManager": "pnpm@10.13.1",
+  "packageManager": "pnpm@10.14.0",
   "devDependencies": {
     "@biomejs/biome": "2.1.3",
     "@manypkg/cli": "0.25.0",
