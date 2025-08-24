@@ -173,8 +173,8 @@ importers:
         specifier: 19.1.1
         version: 19.1.1
       react-datepicker:
-        specifier: 8.5.0
-        version: 8.5.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+        specifier: 8.7.0
+        version: 8.7.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       react-dom:
         specifier: 19.1.1
         version: 19.1.1(react@19.1.1)
@@ -3558,8 +3558,8 @@ packages:
     resolution: {integrity: sha512-y3bGgqKj3QBdxLbLkomlohkvsA8gdAiUQlSBJnBhfn+BPxg4bc62d8TcBW15wavDfgexCgccckhcZvywyQYPOw==}
     hasBin: true
 
-  react-datepicker@8.5.0:
-    resolution: {integrity: sha512-GdKElMgEBgyAv2L5QjwvlStdZU8Nz76roBZ2rkpxFx8eIJ0SAHaAGckG8+FSi00EQnzKqA2N9qA61oxll8CyhA==}
+  react-datepicker@8.7.0:
+    resolution: {integrity: sha512-r5OJbiLWc3YiVNy69Kau07/aVgVGsFVMA6+nlqCV7vyQ8q0FUOnJ+wAI4CgVxHejG3i5djAEiebrF8/Eip4rIw==}
     peerDependencies:
       react: ^16.9.0 || ^17 || ^18 || ^19 || ^19.0.0-rc
       react-dom: ^16.9.0 || ^17 || ^18 || ^19 || ^19.0.0-rc
@@ -8042,7 +8042,7 @@ snapshots:
       minimist: 1.2.8
       strip-json-comments: 2.0.1
 
-  react-datepicker@8.5.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1):
+  react-datepicker@8.7.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1):
     dependencies:
       '@floating-ui/react': 0.27.15(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       clsx: 2.1.1
