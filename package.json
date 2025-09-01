@@ -29,7 +29,7 @@
   "packageManager": "pnpm@10.15.0",
   "devDependencies": {
     "@biomejs/biome": "2.1.4",
-    "@manypkg/cli": "0.25.0",
+    "@manypkg/cli": "0.25.1",
     "@repo/typescript-config": "workspace:*",
     "husky": "9.1.7",
     "turbo": "2.5.6"
