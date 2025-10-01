@@ -1,5 +1,71 @@
 # Changelog
 
+## [0.2.1](https://github.com/hulk510/playground/compare/v0.2.0...v0.2.1) (2025-10-01)
+
+
+### Features
+
+* add react-test-provider-wrapper-example with todo slice ([#1774](https://github.com/hulk510/playground/issues/1774)) ([7d8b086](https://github.com/hulk510/playground/commit/7d8b08612b0c31d7db4ae3939211a7e5cceb901a))
+* **blog:** add multiple favicon sizes and apple touch icon ([#1768](https://github.com/hulk510/playground/issues/1768)) ([d664eb3](https://github.com/hulk510/playground/commit/d664eb31c916c513b1f704a55e645d5dd039f96b))
+* **blog:** add Noto Sans JP font and apply to OG templates ([#1824](https://github.com/hulk510/playground/issues/1824)) ([19fd716](https://github.com/hulk510/playground/commit/19fd71682e895ff6f08024d7d24b3049dba39c63))
+* **blog:** add PostHog analytics integration ([#1805](https://github.com/hulk510/playground/issues/1805)) ([52142cf](https://github.com/hulk510/playground/commit/52142cfc06642562e5390821161850dc3ca50153))
+
+
+### Bug Fixes
+
+* **blog:** correct edit post URL path for blog posts ([#1779](https://github.com/hulk510/playground/issues/1779)) ([7c251e5](https://github.com/hulk510/playground/commit/7c251e5205b5c7212c5dee9e18e7eb929210168b))
+* **deps:** pin remark-toc version to 9.0.0 ([#1831](https://github.com/hulk510/playground/issues/1831)) ([2f35cfe](https://github.com/hulk510/playground/commit/2f35cfeb631e959b68a0b320e076cab254c6e1c5))
+* **deps:** update dependency @openfeature/react-sdk to v1.0.1 ([#1897](https://github.com/hulk510/playground/issues/1897)) ([1ef4f2e](https://github.com/hulk510/playground/commit/1ef4f2eed3b285f8ef64c22fab23132fca3131cc))
+* **deps:** update dependency @radix-ui/react-accordion to v1.2.12 ([#1886](https://github.com/hulk510/playground/issues/1886)) ([d7514a9](https://github.com/hulk510/playground/commit/d7514a9ad203d05df1e36a98b092d974e29ec630))
+* **deps:** update dependency @reduxjs/toolkit to v2.9.0 ([#1919](https://github.com/hulk510/playground/issues/1919)) ([a08648b](https://github.com/hulk510/playground/commit/a08648b943e2912211d4e397a7f5d00a41247dc8))
+* **deps:** update dependency @tanstack/react-query to v5.81.5 ([#1801](https://github.com/hulk510/playground/issues/1801)) ([42e66ea](https://github.com/hulk510/playground/commit/42e66ea1c417e105bb24351385f9a2dc761e6747))
+* **deps:** update dependency @tanstack/react-query to v5.82.0 ([#1826](https://github.com/hulk510/playground/issues/1826)) ([f2a642d](https://github.com/hulk510/playground/commit/f2a642dd9676978dd06dca7048a925a455b654b1))
+* **deps:** update dependency @tanstack/react-query to v5.83.0 ([#1834](https://github.com/hulk510/playground/issues/1834)) ([d61f01a](https://github.com/hulk510/playground/commit/d61f01a2df5bb722b73d866b993fa7f0c725889b))
+* **deps:** update dependency @tanstack/react-query to v5.84.1 ([#1872](https://github.com/hulk510/playground/issues/1872)) ([0b0cb41](https://github.com/hulk510/playground/commit/0b0cb4115be60c986310d6c9b1f4c0218f1952bd))
+* **deps:** update dependency @tanstack/react-query to v5.84.2 ([#1879](https://github.com/hulk510/playground/issues/1879)) ([d55fdf0](https://github.com/hulk510/playground/commit/d55fdf0775101f96a7fb34a8f78c4f9be219647f))
+* **deps:** update dependency @tanstack/react-query to v5.85.0 ([#1885](https://github.com/hulk510/playground/issues/1885)) ([45123e4](https://github.com/hulk510/playground/commit/45123e44730d32e16a2fdb98f9db45e55f4f8803))
+* **deps:** update dependency @tanstack/react-query to v5.85.3 ([#1887](https://github.com/hulk510/playground/issues/1887)) ([98d6946](https://github.com/hulk510/playground/commit/98d694680fd5d90862c5962123ef275948d9f628))
+* **deps:** update dependency @tanstack/react-query to v5.85.5 ([#1898](https://github.com/hulk510/playground/issues/1898)) ([3cb5732](https://github.com/hulk510/playground/commit/3cb573224ab480eb9da26bbd90067965a380990c))
+* **deps:** update dependency @tanstack/react-query to v5.85.6 ([#1913](https://github.com/hulk510/playground/issues/1913)) ([35d349a](https://github.com/hulk510/playground/commit/35d349a0293c4b14dd136b07d70b8b0b28a6b709))
+* **deps:** update dependency @tanstack/react-query to v5.85.9 ([#1918](https://github.com/hulk510/playground/issues/1918)) ([64da3ef](https://github.com/hulk510/playground/commit/64da3efe236aa6453be1c1ab71a00f6b98cb6450))
+* **deps:** update dependency @tanstack/react-query to v5.86.0 ([#1924](https://github.com/hulk510/playground/issues/1924)) ([fe585b4](https://github.com/hulk510/playground/commit/fe585b4071e90c3a3ab12e02db1b84b6c2732a48))
+* **deps:** update dependency @tanstack/react-query to v5.87.1 ([#1926](https://github.com/hulk510/playground/issues/1926)) ([959bb17](https://github.com/hulk510/playground/commit/959bb1789c0d6fecd7b22b39cfc709cb05d17184))
+* **deps:** update dependency @tanstack/react-query to v5.87.4 ([#1928](https://github.com/hulk510/playground/issues/1928)) ([a3b54d9](https://github.com/hulk510/playground/commit/a3b54d97e6ee848dbfb6b2fe3b20b485631cb2fa))
+* **deps:** update dependency framer-motion to v12.19.1 ([#1777](https://github.com/hulk510/playground/issues/1777)) ([4c5694a](https://github.com/hulk510/playground/commit/4c5694aae56b1c5bf697fa0f601ceb394faee4d0))
+* **deps:** update dependency framer-motion to v12.19.2 ([#1802](https://github.com/hulk510/playground/issues/1802)) ([c3d527d](https://github.com/hulk510/playground/commit/c3d527dbb0b2de94d21b919300427a4f27a4cb17))
+* **deps:** update dependency framer-motion to v12.22.0 ([#1809](https://github.com/hulk510/playground/issues/1809)) ([957b2d2](https://github.com/hulk510/playground/commit/957b2d23336a0ebfb0616343b7c678044169e99f))
+* **deps:** update dependency framer-motion to v12.23.0 ([#1816](https://github.com/hulk510/playground/issues/1816)) ([865ddf4](https://github.com/hulk510/playground/commit/865ddf442c107e6a395bbe7e166b094156d52c8e))
+* **deps:** update dependency framer-motion to v12.23.12 ([#1863](https://github.com/hulk510/playground/issues/1863)) ([9512b2b](https://github.com/hulk510/playground/commit/9512b2b580cbc3de52657be9c09315bd171f7cab))
+* **deps:** update dependency framer-motion to v12.23.3 ([#1828](https://github.com/hulk510/playground/issues/1828)) ([d7c36ec](https://github.com/hulk510/playground/commit/d7c36ec3a9c46aa0afe8667f743a3bd794c6bf9a))
+* **deps:** update dependency framer-motion to v12.23.6 ([#1838](https://github.com/hulk510/playground/issues/1838)) ([6de3e5a](https://github.com/hulk510/playground/commit/6de3e5a5125c697e2f2ee774661bdc02b7b433e7))
+* **deps:** update dependency framer-motion to v12.23.7 ([#1855](https://github.com/hulk510/playground/issues/1855)) ([e1ccf87](https://github.com/hulk510/playground/commit/e1ccf87fc59fe087b5b30f83cab5fbf76a26ba73))
+* **deps:** update dependency framer-motion to v12.23.9 ([#1856](https://github.com/hulk510/playground/issues/1856)) ([cd45684](https://github.com/hulk510/playground/commit/cd4568490337e268eebb66e4fd9247814daf7f65))
+* **deps:** update dependency lucide-react to v0.522.0 ([#1770](https://github.com/hulk510/playground/issues/1770)) ([5d567f7](https://github.com/hulk510/playground/commit/5d567f7e33b22b57d0a8446f636dfae323d6e60c))
+* **deps:** update dependency lucide-react to v0.523.0 ([#1783](https://github.com/hulk510/playground/issues/1783)) ([841c4a3](https://github.com/hulk510/playground/commit/841c4a3ee0855d8fb9a02383203ba4580868e20b))
+* **deps:** update dependency lucide-react to v0.525.0 ([#1803](https://github.com/hulk510/playground/issues/1803)) ([2786563](https://github.com/hulk510/playground/commit/2786563c0675275be369208e3c8f4caeecc282ce))
+* **deps:** update dependency lucide-react to v0.536.0 ([#1873](https://github.com/hulk510/playground/issues/1873)) ([6f472c2](https://github.com/hulk510/playground/commit/6f472c2ec0245f7359e7437cae610774914898d6))
+* **deps:** update dependency lucide-react to v0.537.0 ([#1876](https://github.com/hulk510/playground/issues/1876)) ([6eb4c82](https://github.com/hulk510/playground/commit/6eb4c8283ea1c468570373209ae472d62acd2a12))
+* **deps:** update dependency lucide-react to v0.539.0 ([#1881](https://github.com/hulk510/playground/issues/1881)) ([c15385f](https://github.com/hulk510/playground/commit/c15385fde20e1f50bf321466ef3ce118368cb6eb))
+* **deps:** update dependency lucide-react to v0.540.0 ([#1902](https://github.com/hulk510/playground/issues/1902)) ([c714595](https://github.com/hulk510/playground/commit/c7145954df8508c3480b2f72fd11dbcaa7b3b730))
+* **deps:** update dependency lucide-react to v0.542.0 ([#1912](https://github.com/hulk510/playground/issues/1912)) ([4c8df61](https://github.com/hulk510/playground/commit/4c8df6129a2d2d29af74264f408a38134b35b692))
+* **deps:** update dependency next to v15.3.5 ([#1818](https://github.com/hulk510/playground/issues/1818)) ([c5bfe6e](https://github.com/hulk510/playground/commit/c5bfe6ec29b96d6f0343491041aaad064b7b18d1))
+* **deps:** update dependency next to v15.4.2 ([#1847](https://github.com/hulk510/playground/issues/1847)) ([376e372](https://github.com/hulk510/playground/commit/376e372f9e7ed4d568e4c54eb97503d9227342a4))
+* **deps:** update dependency next to v15.4.3 ([#1853](https://github.com/hulk510/playground/issues/1853)) ([df95482](https://github.com/hulk510/playground/commit/df95482da004d4d9d86677f544ab60e70d2d588a))
+* **deps:** update dependency next to v15.4.4 ([#1857](https://github.com/hulk510/playground/issues/1857)) ([267a2da](https://github.com/hulk510/playground/commit/267a2da61b3db67117de896131b72ebd44c08362))
+* **deps:** update dependency next to v15.4.5 ([#1864](https://github.com/hulk510/playground/issues/1864)) ([450a2c6](https://github.com/hulk510/playground/commit/450a2c6afc74f9286a2361b47345b973b932774a))
+* **deps:** update dependency next to v15.4.6 ([#1874](https://github.com/hulk510/playground/issues/1874)) ([e34e0db](https://github.com/hulk510/playground/commit/e34e0dbb5ea3bd23398bc3a249a1026e714bef7c))
+* **deps:** update dependency next to v15.5.0 ([#1903](https://github.com/hulk510/playground/issues/1903)) ([45b835c](https://github.com/hulk510/playground/commit/45b835c3fc19faf200ca89b9dd6ce98655bf31d8))
+* **deps:** update dependency next to v15.5.2 ([#1910](https://github.com/hulk510/playground/issues/1910)) ([50936ba](https://github.com/hulk510/playground/commit/50936ba0138d9dd959087f211f1a44bd39618b27))
+* **deps:** update dependency next to v15.5.3 ([#1929](https://github.com/hulk510/playground/issues/1929)) ([5032693](https://github.com/hulk510/playground/commit/5032693bd88659af60c0a6d413d8e40bfeac6129))
+* **deps:** update dependency react-datepicker to v8.5.0 ([#1893](https://github.com/hulk510/playground/issues/1893)) ([c3014a4](https://github.com/hulk510/playground/commit/c3014a4b10f13fe45c024d555b394dd561bce9f8))
+* **deps:** update dependency react-datepicker to v8.7.0 ([#1904](https://github.com/hulk510/playground/issues/1904)) ([f0acbbd](https://github.com/hulk510/playground/commit/f0acbbdf49eb7df3f2340ba79d7e7424dbfd0049))
+* **deps:** update react monorepo ([#1865](https://github.com/hulk510/playground/issues/1865)) ([503e55d](https://github.com/hulk510/playground/commit/503e55d5a38a807e021eab9dbe45e0dec31e30e0))
+* **deps:** update tailwindcss monorepo to v4.1.11 ([#1798](https://github.com/hulk510/playground/issues/1798)) ([b9ae9e5](https://github.com/hulk510/playground/commit/b9ae9e5187ee88e76425031acdffd9198b0aba3c))
+* **deps:** update tailwindcss monorepo to v4.1.12 ([#1888](https://github.com/hulk510/playground/issues/1888)) ([be9224d](https://github.com/hulk510/playground/commit/be9224d7f1326ab9b35bf3bd1eb56798716b3179))
+* **deps:** update tailwindcss monorepo to v4.1.13 ([#1923](https://github.com/hulk510/playground/issues/1923)) ([16a5086](https://github.com/hulk510/playground/commit/16a50866ca532fe625c9f5d6fdd37fc8e2a720c9))
+* **generator:** update blog post path and remove module type ([#1771](https://github.com/hulk510/playground/issues/1771)) ([eefe7a8](https://github.com/hulk510/playground/commit/eefe7a8ef887a5c1a0baa34048f30fcebd581a3f))
+* **package.json:** add core-js and msw to built dependencies ([#1806](https://github.com/hulk510/playground/issues/1806)) ([5e30702](https://github.com/hulk510/playground/commit/5e30702225c93dcc1088e7514b40a9eec0c2e764))
+
 ## [0.2.0](https://github.com/hulk510/playground/compare/v0.1.0...v0.2.0) (2025-06-28)
 
 
