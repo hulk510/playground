@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.4](https://github.com/hulk510/playground/compare/v0.2.3...v0.2.4) (2025-10-03)
+
+
+### Bug Fixes
+
+* Change release draft status to true ([#1939](https://github.com/hulk510/playground/issues/1939)) ([2344475](https://github.com/hulk510/playground/commit/23444757ef8f0f05cecf9bf0d62c678bb6545fe6))
+* Clean up README content ([#1937](https://github.com/hulk510/playground/issues/1937)) ([505d738](https://github.com/hulk510/playground/commit/505d738229e2a1f09dc5e795f340a00f1e9a216c))
+
 ## [0.2.3](https://github.com/hulk510/playground/compare/v0.2.2...v0.2.3) (2025-10-02)
 
 
