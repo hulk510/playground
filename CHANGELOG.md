@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.5](https://github.com/hulk510/playground/compare/v0.2.4...v0.2.5) (2025-10-03)
+
+
+### Bug Fixes
+
+* Update README.md ([#1940](https://github.com/hulk510/playground/issues/1940)) ([1d1d2c3](https://github.com/hulk510/playground/commit/1d1d2c36bed50f915e95ac6872c195ac475c72af))
+
 ## [0.2.4](https://github.com/hulk510/playground/compare/v0.2.3...v0.2.4) (2025-10-03)
 
 
