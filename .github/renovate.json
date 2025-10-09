@@ -10,7 +10,7 @@
     ":maintainLockFilesWeekly",
     ":rebaseStalePrs",
     ":semanticCommits",
-    "npm:unpublishSafe",
+    "security:minimumReleaseAgeNpm",
     "schedule:daily",
     ":prConcurrentLimit10",
     ":prHourlyLimit4",
@@ -21,9 +21,16 @@
   "dependencyDashboardAutoclose": true,
   "packageRules": [
     {
-      "extends": ["monorepo:turbo"],
+      "extends": [
+        "monorepo:turbo"
+      ],
       "groupName": "turbo monorepo",
-      "matchUpdateTypes": ["digest", "patch", "minor", "major"]
+      "matchUpdateTypes": [
+        "digest",
+        "patch",
+        "minor",
+        "major"
+      ]
     }
   ]
 }
