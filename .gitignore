@@ -75,3 +75,5 @@ terraform.rc
 
 # ignore .astro directory
 .astro
+
+.vscode/
