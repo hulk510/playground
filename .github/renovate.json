@@ -21,16 +21,9 @@
   "dependencyDashboardAutoclose": true,
   "packageRules": [
     {
-      "extends": [
-        "monorepo:turbo"
-      ],
+      "extends": ["monorepo:turbo"],
       "groupName": "turbo monorepo",
-      "matchUpdateTypes": [
-        "digest",
-        "patch",
-        "minor",
-        "major"
-      ]
+      "matchUpdateTypes": ["digest", "patch", "minor", "major"]
     }
   ]
 }
