@@ -24,7 +24,8 @@
       "@tailwindcss/oxide",
       "core-js",
       "esbuild",
-      "msw"
+      "msw",
+      "sharp"
     ]
   },
   "packageManager": "pnpm@10.15.1",
