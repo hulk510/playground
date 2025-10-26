@@ -1,7 +1,7 @@
 ---
 pubDatetime: 2024-08-12T13:13:39.874Z
 title: Wordpressを構築！改めて色々わかった気がする
-featured: true
+featured: false
 draft: false
 slug: create-wordpress-site
 tags:

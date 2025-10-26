@@ -1,7 +1,7 @@
 ---
 pubDatetime: 2025-02-06T03:24:24.109Z
 title: リポジトリを綺麗にした
-featured: true
+featured: false
 draft: false
 slug: repository-clean
 tags:

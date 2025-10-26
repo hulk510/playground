@@ -2,7 +2,7 @@
 pubDatetime: 2025-07-09T13:00:00+09:00
 title: レガシーコードにE2Eを追加していく戦略と考え方
 slug: legacy-e2e-strategy
-featured: true
+featured: false
 draft: false
 tags:
 - testing

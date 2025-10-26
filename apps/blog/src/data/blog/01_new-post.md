@@ -1,7 +1,7 @@
 ---
 pubDatetime: 2024-04-10T05:40:47.644Z
 title: ブログを移行してみたよ
-featured: true
+featured: false
 draft: false
 slug: new-post
 tags:
