@@ -28,7 +28,7 @@
       "sharp"
     ]
   },
-  "packageManager": "pnpm@10.18.3",
+  "packageManager": "pnpm@10.19.0",
   "devDependencies": {
     "@biomejs/biome": "2.2.6",
     "@manypkg/cli": "0.25.1",
