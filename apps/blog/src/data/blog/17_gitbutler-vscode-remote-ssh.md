@@ -2,7 +2,7 @@
 pubDatetime: 2025-07-09T22:16:00.000Z
 title: GitButlerとVSCode Remote SSH - リモート開発での課題と解決策
 slug: gitbutler-vscode-remote-ssh
-featured: true
+featured: false
 draft: false
 tags:
 - GitButler

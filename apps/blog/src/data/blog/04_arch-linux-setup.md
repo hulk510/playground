@@ -1,7 +1,7 @@
 ---
 pubDatetime: 2024-05-20T18:59:01.651Z
 title: ノートPCにSSHできるようにしてみた
-featured: true
+featured: false
 draft: false
 slug: arch-linux-setup
 tags:

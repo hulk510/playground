@@ -1,7 +1,7 @@
 ---
 title: Devcontainerで環境変数が呼び出せず詰んだ話と解決策
 pubDatetime: 2025-02-13T12:54:43.125Z
-featured: true
+featured: false
 draft: false
 slug: turbo-devcontainer
 tags:

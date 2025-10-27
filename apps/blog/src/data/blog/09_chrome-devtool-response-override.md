@@ -1,7 +1,7 @@
 ---
 pubDatetime: 2024-07-16T08:57:51.484Z
 title: DevtoolのResponse Header Overrideが便利だった
-featured: true
+featured: false
 draft: false
 slug: chrome-devtool-response-override
 tags:
