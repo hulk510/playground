@@ -7,7 +7,6 @@
     ":automergePr",
     ":disablePrControls",
     ":label(renovate)",
-    ":maintainLockFilesWeekly",
     ":rebaseStalePrs",
     ":semanticCommits",
     "security:minimumReleaseAgeNpm",
