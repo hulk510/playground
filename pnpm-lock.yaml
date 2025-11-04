@@ -161,8 +161,8 @@ importers:
   packages/react-test-provider-wrapper-example:
     dependencies:
       '@openfeature/react-sdk':
-        specifier: 1.0.1
-        version: 1.0.1(@openfeature/web-sdk@1.7.0(@openfeature/core@1.9.1))(react@19.2.0)
+        specifier: 1.0.2
+        version: 1.0.2(@openfeature/web-sdk@1.7.0(@openfeature/core@1.9.1))(react@19.2.0)
       '@reduxjs/toolkit':
         specifier: 2.9.2
         version: 2.9.2(react-redux@9.2.0(@types/react@19.2.2)(react@19.2.0)(redux@5.0.1))(react@19.2.0)
@@ -1263,8 +1263,8 @@ packages:
   '@openfeature/core@1.9.1':
     resolution: {integrity: sha512-YySPtH4s/rKKnHRU0xyFGrqMU8XA+OIPNWDrlEFxE6DCVWCIrxE5YpiB94YD2jMFn6SSdA0cwQ8vLkCkl8lm8A==}
 
-  '@openfeature/react-sdk@1.0.1':
-    resolution: {integrity: sha512-R6UwJgU1XLDi51RyKOvWYEj///BMQDOazL9W2a64+u96ELa6SboYfLlWs9vxDvzw2qmKnWslH8ZL/++muRwvAQ==}
+  '@openfeature/react-sdk@1.0.2':
+    resolution: {integrity: sha512-yzOOq6EORA7rAXDdTdFWVEz6nMj8FQknLvQQonBrCRxIOplCJs4RB2Pe7yw5L7JpzFwv/+icmQWn101YxDusqw==}
     peerDependencies:
       '@openfeature/web-sdk': ^1.5.0
       react: '>=16.8.0'
@@ -5711,7 +5711,7 @@ snapshots:
 
   '@openfeature/core@1.9.1': {}
 
-  '@openfeature/react-sdk@1.0.1(@openfeature/web-sdk@1.7.0(@openfeature/core@1.9.1))(react@19.2.0)':
+  '@openfeature/react-sdk@1.0.2(@openfeature/web-sdk@1.7.0(@openfeature/core@1.9.1))(react@19.2.0)':
     dependencies:
       '@openfeature/web-sdk': 1.7.0(@openfeature/core@1.9.1)
       react: 19.2.0
