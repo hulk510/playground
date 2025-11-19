@@ -2,7 +2,7 @@
 title: Shiki Highlight
 pubDatetime: 2024-04-11T11:52:01.651Z
 featured: false
-draft: false
+draft: true
 slug: shiki-highlight
 tags:
   - tech

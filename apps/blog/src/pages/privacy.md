@@ -20,15 +20,46 @@ title: 'プライバシーポリシー'
 - サービスの改善および分析
 - その他、個人を特定できない形での統計データとして利用
 
-## Google AdSenseについて
+## 広告配信について（Google AdSense）
 
-当サイトでは、広告配信のためにGoogle AdSenseを利用しています。Google AdSenseは、Cookie を使用して、ユーザーが当サイトや他のサイトにアクセスした際の情報に基づいて広告を配信します。
+当サイトでは、第三者配信の広告サービス「Google AdSense（グーグルアドセンス）」を利用しています。
 
-Googleによる広告Cookieの使用により、ユーザーが当サイトや他のサイトにアクセスした際の情報に基づいて、ユーザーに適切な広告を表示できます。
+### Google AdSenseの使用について
 
-ユーザーは、[Google広告設定ページ](https://www.google.com/settings/ads)で、パーソナライズ広告を無効にできます。また、[www.aboutads.info](https://www.aboutads.info/choices/)で、パーソナライズ広告に使用されるサードパーティベンダーのCookieを無効にすることができます。
+Google AdSenseは、訪問者様の興味に応じた広告を表示するため、Cookie（クッキー）を使用して情報を収集します。Cookieには、氏名、住所、メールアドレス、電話番号など、個人を特定する情報は含まれません。
 
-詳細については、[Googleのプライバシーポリシー](https://policies.google.com/technologies/ads?hl=ja)をご確認ください。
+### 収集される情報
+
+Google AdSenseにより収集される情報には、以下のようなものが含まれます：
+
+- 当サイトおよび他のサイトへの訪問履歴
+- 閲覧したページのURL
+- 使用しているブラウザやデバイスの情報
+- IPアドレス（個人を特定しない形で使用）
+- 検索クエリ
+- その他の利用状況に関する情報
+
+### パーソナライズド広告について
+
+これらの情報は、訪問者様により関連性の高い広告を配信するために使用されます（パーソナライズド広告）。パーソナライズド広告が不要な場合は、以下の方法で無効化できます：
+
+- [Google広告設定ページ](https://www.google.com/settings/ads)でパーソナライズ広告を無効化
+- [Digital Advertising Alliance（DAA）のオプトアウトページ](https://www.aboutads.info/choices/)でサードパーティCookieを無効化
+- お使いのブラウザのCookie設定から無効化
+
+### 広告配信事業者について
+
+当サイトに広告を配信する第三者配信事業者は、Cookieを使用して、ユーザーが当サイトや他のウェブサイトに過去にアクセスした際の情報に基づいて広告を配信します。
+
+Google を含む第三者配信事業者は、Cookie を使用して、ユーザーのウェブサイトへの過去のアクセス情報に基づいて広告を配信します。ユーザーは、広告設定でパーソナライズ広告を無効にできます。
+
+### Googleによるデータの使用
+
+Googleがどのように情報を使用するかについては、以下のページで詳しく説明されています：
+
+- [Googleのプライバシーポリシー](https://policies.google.com/privacy?hl=ja)
+- [Googleのサービスを使用するサイトやアプリから収集した情報のGoogleによる使用](https://policies.google.com/technologies/partner-sites?hl=ja)
+- [Google広告に関するポリシー](https://policies.google.com/technologies/ads?hl=ja)
 
 ## Google Analyticsについて
 
@@ -38,15 +69,52 @@ Google Analyticsで収集される情報は匿名で収集され、個人を特�
 
 詳細については、[Google Analyticsのプライバシーポリシー](https://policies.google.com/privacy?hl=ja)をご確認ください。
 
-## Cookieについて
+## Cookieおよび類似技術について
 
-当サイトでは、より良いサービスを提供するためにCookieを使用しています。Cookieは、ユーザーのコンピューターに保存される小さなテキストファイルです。
+### Cookieとは
 
-ユーザーは、ブラウザの設定によりCookieの受け取りを拒否することができます。ただし、Cookieを無効にした場合、サイトの一部機能が正常に動作しない場合があります。
+Cookieは、ウェブサイトがお使いのブラウザを通じてデバイスに保存する小さなテキストファイルです。当サイトでは、以下の目的でCookieを使用しています：
+
+- サイト機能の向上
+- ユーザー体験の最適化
+- サイト利用状況の分析
+- 広告の配信とパーソナライズ
+
+### Cookieの種類
+
+当サイトで使用されるCookieには、以下の種類があります：
+
+**必須Cookie**: サイトの基本機能を提供するために必要なCookie
+**分析Cookie**: Google Analyticsなどにより、サイトの利用状況を分析するためのCookie
+**広告Cookie**: Google AdSenseなどにより、関連性の高い広告を配信するためのCookie
+
+### Cookieの管理
+
+ブラウザの設定により、Cookieの受け取りを拒否したり、既存のCookieを削除したりすることができます。ただし、Cookieを無効化すると、サイトの一部機能が正常に動作しない場合があります。
+
+各ブラウザでのCookie設定方法については、以下をご参照ください：
+
+- [Google Chrome](https://support.google.com/chrome/answer/95647)
+- [Mozilla Firefox](https://support.mozilla.org/ja/kb/cookies-information-websites-store-on-your-computer)
+- [Safari](https://support.apple.com/ja-jp/guide/safari/sfri11471/mac)
+- [Microsoft Edge](https://support.microsoft.com/ja-jp/microsoft-edge)
 
 ## 個人情報の第三者提供
 
-当サイトは、法令に基づく場合を除き、ユーザーの同意なく個人情報を第三者に提供することはありません。
+当サイトは、以下の場合を除き、ユーザーの同意なく個人情報を第三者に提供することはありません：
+
+- 法令に基づく場合
+- 人の生命、身体または財産の保護のために必要がある場合
+- 国の機関もしくは地方公共団体またはその委託を受けた者が法令の定める事務を遂行することに対して協力する必要がある場合
+
+### 第三者サービスの利用
+
+当サイトでは、以下の第三者サービスを利用しており、これらのサービスは独自のプライバシーポリシーに基づいて情報を収集・利用します：
+
+- **Google AdSense**: 広告配信
+- **Google Analytics**: アクセス解析
+
+各サービスのプライバシーポリシーについては、それぞれのサービス提供元のウェブサイトをご確認ください。
 
 ## 個人情報の開示・訂正・削除
 
