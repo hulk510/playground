@@ -3,7 +3,7 @@ pubDatetime: 2025-11-09T18:15:00+09:00
 title: 'QUOカードもらったけど使い道に困る問題'
 featured: false
 slug: quo-card-gap
-draft: false
+draft: true
 tags:
   - 雑記
 description: QUOカードもらうのは嬉しいんだけど、いざ使おうとすると意外と困る。そんな話。

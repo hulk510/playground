@@ -3,7 +3,7 @@ pubDatetime: 2025-07-29T07:52:00+09:00
 title: '公開しているものが恥ずかしくなる'
 featured: false
 slug: embarrassing-publications
-draft: false
+draft: true
 tags:
   - tag
 description: 久々にnoteとか公開しているものを見返したら、恥ずかしくなった話。

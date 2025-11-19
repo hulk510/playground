@@ -2,7 +2,7 @@
 pubDatetime: 2024-07-16T07:33:08.279Z
 title: とうとう、私だけのdotfilesできた！
 featured: false
-draft: false
+draft: true
 slug: new-dotfiles
 tags:
   - 適当
