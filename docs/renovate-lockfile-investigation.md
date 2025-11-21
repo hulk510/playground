@@ -90,7 +90,8 @@ apps/blog/package.json | 2 +-
 
 2. **package-lock-only 設定の影響**
    - `.npmrc` に `package-lock-only=true` が設定されている
-   - この設定は npm 用だが、Renovate の動作に影響した可能性がある
+   - この設定は主に npm 用だが、pnpm も一部の npm 設定を尊重するため、ロックファイルの生成や更新に影響を与える可能性がある
+   - Renovate が pnpm を実行する際に、この設定が意図しない動作を引き起こした可能性がある
 
 3. **依存関係の解決の問題**
    - `globals` パッケージの更新時に依存関係の解決に失敗した
@@ -174,7 +175,9 @@ pnpm-lock.yaml | 18 +++++++++---------
 package-lock-only=true
 ```
 
-この設定は npm 用であり、pnpm では無視されるべきですが、念のため削除を検討してください。
+この設定は主に npm 用ですが、pnpm も一部の npm 設定を参照するため、ロックファイルの更新に干渉する可能性があります。
+
+**推奨**: この設定を削除することを強く推奨します。pnpm を使用する場合、この設定は不要であり、予期しない動作を引き起こす可能性があります。
 
 ### 3. CI/CD でのチェック
 
@@ -183,14 +186,24 @@ GitHub Actions に以下のチェックを追加することを推奨します�
 ```yaml
 - name: Check lockfile sync
   run: |
-    pnpm install --frozen-lockfile
+    # 現在のロックファイルをバックアップ
+    cp pnpm-lock.yaml pnpm-lock.yaml.backup
+    
+    # pnpm install を実行してロックファイルを更新
+    pnpm install --no-frozen-lockfile
+    
+    # ロックファイルに変更があるかチェック
     if git diff --quiet pnpm-lock.yaml; then
       echo "✅ Lockfile is in sync"
     else
-      echo "❌ Lockfile is out of sync"
+      echo "❌ Lockfile is out of sync with package.json"
+      echo "Changes detected:"
+      git diff pnpm-lock.yaml
       exit 1
     fi
 ```
+
+このチェックにより、package.json と pnpm-lock.yaml が同期していないPRを検出できます。
 
 ### 4. PR #2019 の修正方法
 
