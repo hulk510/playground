@@ -186,24 +186,28 @@ GitHub Actions に以下のチェックを追加することを推奨します�
 ```yaml
 - name: Check lockfile sync
   run: |
-    # 現在のロックファイルをバックアップ
-    cp pnpm-lock.yaml pnpm-lock.yaml.backup
-    
-    # pnpm install を実行してロックファイルを更新
+    # pnpm install を実行してロックファイルを再生成
+    # package.json と lockfile が同期していれば、lockfile は変更されない
+    # 同期していなければ、lockfile が更新される
     pnpm install --no-frozen-lockfile
     
     # ロックファイルに変更があるかチェック
     if git diff --quiet pnpm-lock.yaml; then
-      echo "✅ Lockfile is in sync"
+      echo "✅ Lockfile is in sync with package.json"
     else
       echo "❌ Lockfile is out of sync with package.json"
-      echo "Changes detected:"
+      echo "The lockfile needs to be regenerated. Changes detected:"
       git diff pnpm-lock.yaml
       exit 1
     fi
 ```
 
-このチェックにより、package.json と pnpm-lock.yaml が同期していないPRを検出できます。
+このチェックにより、package.json と pnpm-lock.yaml が同期していない PR を検出できます。
+
+**動作の説明:**
+- `pnpm install --no-frozen-lockfile` は package.json に基づいて lockfile を再生成します
+- 既に同期している場合、lockfile は変更されません（git diff で差分なし）
+- 同期していない場合、lockfile が更新されます（git diff で差分あり）→ CI が失敗
 
 ### 4. PR #2019 の修正方法
 
