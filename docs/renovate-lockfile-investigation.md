@@ -90,8 +90,9 @@ apps/blog/package.json | 2 +-
 
 2. **package-lock-only 設定の影響**
    - `.npmrc` に `package-lock-only=true` が設定されている
-   - この設定は主に npm 用だが、pnpm も一部の npm 設定を尊重するため、ロックファイルの生成や更新に影響を与える可能性がある
-   - Renovate が pnpm を実行する際に、この設定が意図しない動作を引き起こした可能性がある
+   - この設定はパッケージマネージャーに対して「ロックファイルの読み込みのみを行い、更新はしない」ことを指示する
+   - pnpm も一部の npm 設定を尊重するため、この設定により pnpm がロックファイルを更新できなくなった可能性がある
+   - Renovate が pnpm を実行する際に、この設定が pnpm-lock.yaml の更新を直接的にブロックした可能性が高い
 
 3. **依存関係の解決の問題**
    - `globals` パッケージの更新時に依存関係の解決に失敗した
@@ -206,8 +207,10 @@ GitHub Actions に以下のチェックを追加することを推奨します�
 
 **動作の説明:**
 - `pnpm install --no-frozen-lockfile` は package.json に基づいて lockfile を再生成します
-- 既に同期している場合、lockfile は変更されません（git diff で差分なし）
-- 同期していない場合、lockfile が更新されます（git diff で差分あり）→ CI が失敗
+- **同期している場合**: lockfile は変更されません（git diff で差分なし）→ CI が成功
+- **同期していない場合**: lockfile が更新されて package.json と一致します（git diff で差分あり）→ CI が失敗
+- つまり、このチェックにより「PR で lockfile が更新されていないまま package.json だけが変更された」というケースを検出できます
+- 失敗した場合は、PR 作成者が `pnpm install` を実行して lockfile を更新する必要があります
 
 ### 4. PR #2019 の修正方法
 
