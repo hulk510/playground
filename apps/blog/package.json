@@ -26,7 +26,7 @@
     "@astrojs/check": "0.9.6",
     "@astrojs/react": "4.4.2",
     "@pagefind/default-ui": "1.3.0",
-    "@shikijs/transformers": "3.17.0",
+    "@shikijs/transformers": "3.19.0",
     "@tailwindcss/typography": "0.5.16",
     "@types/lodash.kebabcase": "4.1.9",
     "globals": "16.5.0",
