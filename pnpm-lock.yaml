@@ -173,8 +173,8 @@ importers:
         specifier: 19.2.1
         version: 19.2.1
       react-datepicker:
-        specifier: 8.10.0
-        version: 8.10.0(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
+        specifier: 9.0.0
+        version: 9.0.0(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
       react-dom:
         specifier: 19.2.1
         version: 19.2.1(react@19.2.1)
@@ -3621,11 +3621,15 @@ packages:
     resolution: {integrity: sha512-y3bGgqKj3QBdxLbLkomlohkvsA8gdAiUQlSBJnBhfn+BPxg4bc62d8TcBW15wavDfgexCgccckhcZvywyQYPOw==}
     hasBin: true
 
-  react-datepicker@8.10.0:
-    resolution: {integrity: sha512-JIXuA+g+qP3c4MVJpx24o7n1gnv3WV/8A/D6964HucY1FlSEc30+ITPNUfbKZXYHl5rruCtxYCwi2lzn7gaz7g==}
+  react-datepicker@9.0.0:
+    resolution: {integrity: sha512-LGzKgBk5NUEcXUeSEJY2ICCCmPusm9UGRkNKRXCPgpUzoMx2CCsa0mOHTyv+itQeW7tR/jgGEpq5q/afZjGEFg==}
     peerDependencies:
+      date-fns-tz: ^3.0.0
       react: ^16.9.0 || ^17 || ^18 || ^19 || ^19.0.0-rc
       react-dom: ^16.9.0 || ^17 || ^18 || ^19 || ^19.0.0-rc
+    peerDependenciesMeta:
+      date-fns-tz:
+        optional: true
 
   react-dom@19.2.1:
     resolution: {integrity: sha512-ibrK8llX2a4eOskq1mXKu/TGZj9qzomO+sNfO98M6d9zIPOEhlBkMkBUBLd1vgS0gQsLDBzA+8jJBVXDnfHmJg==}
@@ -8165,7 +8169,7 @@ snapshots:
       minimist: 1.2.8
       strip-json-comments: 2.0.1
 
-  react-datepicker@8.10.0(react-dom@19.2.1(react@19.2.1))(react@19.2.1):
+  react-datepicker@9.0.0(react-dom@19.2.1(react@19.2.1))(react@19.2.1):
     dependencies:
       '@floating-ui/react': 0.27.16(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
       clsx: 2.1.1
