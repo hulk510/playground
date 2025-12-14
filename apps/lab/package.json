@@ -28,7 +28,7 @@
     "@playwright/test": "1.57.0",
     "@repo/typescript-config": "workspace:*",
     "@tailwindcss/postcss": "4.1.17",
-    "@types/node": "24.10.2",
+    "@types/node": "24.10.3",
     "@types/react": "19.2.7",
     "@types/react-dom": "19.2.3",
     "shadcn": "latest",
