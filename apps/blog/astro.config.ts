@@ -8,6 +8,7 @@ import tailwindcss from '@tailwindcss/vite'
 import { defineConfig, envField } from 'astro/config'
 import remarkCollapse from 'remark-collapse'
 import remarkToc from 'remark-toc'
+import type { PluginOption } from 'vite'
 import { SITE } from './src/config'
 import { transformerFileName } from './src/utils/transformers/fileName'
 
@@ -35,7 +36,7 @@ export default defineConfig({
     },
   },
   vite: {
-    plugins: [tailwindcss()],
+    plugins: [tailwindcss() as unknown as PluginOption],
     optimizeDeps: {
       exclude: ['@resvg/resvg-js'],
     },
