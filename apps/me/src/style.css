@@ -16,6 +16,7 @@
   --shadow: #d4cfe8;
   --cloud-fill: #ebe7f2;
   --cloud-opacity: 0.4;
+  --rain-speed: 1;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -717,7 +718,8 @@ footer {
   height: 14px;
   background: linear-gradient(to bottom, transparent, var(--accent-dark));
   border-radius: 0 0 2px 2px;
-  animation: rain-fall linear infinite;
+  animation: rain-fall calc(var(--duration-base, 1) * var(--rain-speed) * 1s)
+    linear infinite;
 }
 
 @keyframes rain-fall {
@@ -767,6 +769,8 @@ footer {
   .floating-clouds {
     max-width: 100%;
     height: 400px;
+    top: 40%;
+    --rain-speed: 1.8;
   }
 
   .cloud-1 {
@@ -782,6 +786,10 @@ footer {
   .cloud-3 {
     width: 70px;
     right: -10px;
+  }
+
+  .rain-drop {
+    top: -50px;
   }
 }
 

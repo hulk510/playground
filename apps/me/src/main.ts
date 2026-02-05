@@ -43,8 +43,8 @@ function generateRain(): string {
   for (let i = 0; i < 20; i++) {
     const left = 5 + i * 4.5
     const delay = (i * 0.12) % 2
-    const duration = 0.8 + (i % 3) * 0.15
-    drops += `<div class="rain-drop" style="left:${left}%; animation-delay:${delay}s; animation-duration:${duration}s;"></div>`
+    const durationBase = 0.8 + (i % 3) * 0.15
+    drops += `<div class="rain-drop" style="left:${left}%; animation-delay:${delay}s; --duration-base:${durationBase};"></div>`
   }
   return `<div class="weather-rain">${drops}</div>`
 }
