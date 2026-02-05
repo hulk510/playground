@@ -1,92 +1,106 @@
-export interface LinkConfig {
-  url: string
+export interface Link {
   label: string
-  note: string
+  url: string
 }
 
-export interface ProjectConfig {
-  id: string
+export type WorkType = 'app' | 'repo' | 'product' | 'service' | 'site'
+export type WorkStatus = 'live' | 'dev' | 'archived'
+
+export interface Work {
   name: string
-  desc: string
-  status: string
-  url?: string
-  note: string
+  description: string
+  url: string
+  type: WorkType
+  status?: WorkStatus
+  pinned?: boolean
 }
 
-export interface SiteConfig {
+export interface Social {
+  platform: string
+  url: string
+}
+
+export interface Theme {
+  accent: string
+  accentLight: string
+}
+
+export interface Config {
   name: string
-  tagline: string
-  location: string
-  build: string
-  links: Record<string, LinkConfig>
-  projects: ProjectConfig[]
-  modules: string[]
-  contact: {
-    url: string
-    responseTime: string
-    note: string
+  tagline?: string
+  bio?: string
+  avatar?: string | null
+  into?: string[]
+  links: Link[]
+  works: Work[]
+  socials: Social[]
+  theme?: Theme
+  initialVisible?: {
+    works?: number
   }
 }
 
-export const siteConfig: SiteConfig = {
-  name: 'HARUKA',
-  tagline: 'FREELANCE ENGINEER / INDIE DEVELOPER',
-  location: 'TOKYO/JP',
-  build: '2025.01',
+export const config: Config = {
+  name: 'haruka',
+  tagline: '気持ちはエンジニア',
+  bio: 'ゆるく生きるが目標。気になったらとりあえず作ってみる。',
+  avatar: '/avatar.jpg',
 
-  links: {
-    github: {
-      url: '#',
-      label: 'GitHub',
-      note: 'ソースはここ',
+  into: ['testing', 'dx', 'self-hosting', 'k3s', 'shipping fast'],
+
+  links: [
+    { label: 'blog', url: 'https://haruka.dad' },
+    { label: 'github', url: 'https://github.com/hulk510' },
+    { label: 'mail', url: 'mailto:dorian.51069@gmail.com' },
+  ],
+
+  works: [
+    {
+      name: 'mikke',
+      description: '地図に写真を残すSNS',
+      url: 'https://mikke.app',
+      type: 'app',
+      status: 'live',
+      pinned: true,
     },
-    bluesky: {
-      url: '#',
-      label: 'Bluesky',
-      note: 'メイン生息地',
+    {
+      name: 'playground',
+      description: 'モノレポで色々試す場所',
+      url: 'https://github.com/hulk510/playground',
+      type: 'repo',
+      status: 'dev',
+      pinned: true,
     },
-    x: {
-      url: '#',
-      label: 'X',
-      note: 'たまに見る',
+    {
+      name: 'kids portal',
+      description: 'こども向けポータルサイト',
+      url: 'https://kids.haruka.dad',
+      type: 'site',
+      status: 'live',
     },
-    sponsors: {
-      url: '#',
-      label: 'Sponsors',
-      note: '支援ポート',
+    {
+      name: 'kaomoji keyboard',
+      description: '顔文字キーボード',
+      url: 'https://github.com/hulk510/kaomoji-keyboard',
+      type: 'app',
+      status: 'dev',
     },
+  ],
+
+  socials: [
+    { platform: 'x', url: 'https://x.com/kcash510' },
+    {
+      platform: 'bluesky',
+      url: 'https://bsky.app/profile/hulk510.bsky.social',
+    },
+  ],
+
+  theme: {
+    accent: '#9b8fc4',
+    accentLight: '#e8e4f3',
   },
 
-  projects: [
-    {
-      id: 'mikke',
-      name: 'MIKKE',
-      desc: 'Location-based Photo App',
-      status: 'TestFlight',
-      note: '一番育ててるやつ',
-    },
-    {
-      id: 'blog',
-      name: 'haruka.dad',
-      desc: 'Development Notes & Thoughts',
-      status: 'Active',
-      url: 'https://haruka.dad',
-      note: '思考のダンプ先',
-    },
-  ],
-
-  modules: [
-    'React Native',
-    'TypeScript',
-    'Next.js',
-    'PostgreSQL',
-    'Turso',
-    'CloudKit',
-  ],
-
-  contact: {
-    url: '#',
-    responseTime: '~48hrs',
-    note: 'お仕事の相談など',
+  initialVisible: {
+    works: 3,
   },
 }
