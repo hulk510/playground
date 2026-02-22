@@ -51,7 +51,6 @@ export const config: Config = {
   links: [
     { label: 'blog', url: 'https://haruka.dad' },
     { label: 'github', url: 'https://github.com/hulk510' },
-    { label: 'mail', url: 'mailto:dorian.51069@gmail.com' },
   ],
 
   works: [
@@ -64,11 +63,11 @@ export const config: Config = {
       pinned: true,
     },
     {
-      name: 'playground',
-      description: 'モノレポで色々試す場所',
-      url: 'https://github.com/hulk510/playground',
-      type: 'repo',
-      status: 'dev',
+      name: 'ギャルボ',
+      description: 'ギャル文字キーボード',
+      url: 'https://apps.apple.com/jp/app/%E3%82%AE%E3%83%A3%E3%83%AB%E3%83%9C/id6758966594',
+      type: 'app',
+      status: 'live',
       pinned: true,
     },
     {
@@ -78,21 +77,11 @@ export const config: Config = {
       type: 'site',
       status: 'live',
     },
-    {
-      name: 'kaomoji keyboard',
-      description: '顔文字キーボード',
-      url: 'https://github.com/hulk510/kaomoji-keyboard',
-      type: 'app',
-      status: 'dev',
-    },
   ],
 
   socials: [
-    { platform: 'x', url: 'https://x.com/kcash510' },
-    {
-      platform: 'bluesky',
-      url: 'https://bsky.app/profile/hulk510.bsky.social',
-    },
+    { platform: 'instagram', url: 'https://www.instagram.com/haruka.v1' },
+    { platform: 'threads', url: 'https://www.threads.net/@haruka.v1' },
   ],
 
   theme: {
