@@ -1,5 +1,7 @@
 import { Redis } from '@upstash/redis'
 
+export const config = { runtime: 'edge' }
+
 const redis = Redis.fromEnv()
 
 export default async function handler(_req: Request): Promise<Response> {
