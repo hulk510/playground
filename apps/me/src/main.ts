@@ -246,6 +246,10 @@ function render(): void {
     </main>
 
     <footer>
+      <div class="visitor-counter">
+        <span class="counter-digits" id="counter-digits">------</span>
+        <span class="counter-label">人目の訪問者です</span>
+      </div>
       <div class="socials">${renderSocials(config.socials)}</div>
     </footer>
 
@@ -257,6 +261,29 @@ function render(): void {
 
 applyTheme()
 render()
+
+// 訪問者カウンター
+async function fetchVisitorCount(): Promise<void> {
+  const digits = document.getElementById('counter-digits')
+  if (!digits) return
+
+  try {
+    const res = await fetch('/api/counter')
+    const { count } = (await res.json()) as { count: number }
+    const padded = String(count).padStart(6, '0')
+    digits.innerHTML = padded
+      .split('')
+      .map((d) => `<span class="counter-digit">${d}</span>`)
+      .join('')
+  } catch {
+    digits.innerHTML = '------'
+      .split('')
+      .map((d) => `<span class="counter-digit">${d}</span>`)
+      .join('')
+  }
+}
+
+fetchVisitorCount()
 
 // テーマ切り替え
 function setupThemeToggle(): void {
