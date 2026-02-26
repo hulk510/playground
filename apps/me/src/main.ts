@@ -269,6 +269,7 @@ async function fetchVisitorCount(): Promise<void> {
 
   try {
     const res = await fetch('/api/counter')
+    if (!res.ok) throw new Error(`HTTP ${res.status}`)
     const { count } = (await res.json()) as { count: number }
     const padded = String(count).padStart(6, '0')
     digits.innerHTML = padded
