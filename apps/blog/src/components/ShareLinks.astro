@@ -10,17 +10,42 @@ const URL = Astro.url
     <div class="flex flex-none flex-col items-center justify-center gap-1 md:items-start">
       <span class="italic">Share this post on:</span>
       <div class="text-center">
-        {SHARE_LINKS.map(social => (
-          <LinkButton
-            href={`${social.href + URL}`}
-            class="scale-90 p-2 hover:rotate-6 sm:p-1"
-            title={social.linkTitle}
-          >
-            <social.icon class="inline-block size-6 scale-125 fill-transparent stroke-current stroke-2 opacity-90 group-hover:fill-transparent sm:scale-110" />
-            <span class="sr-only">{social.linkTitle}</span>
-          </LinkButton>
-        ))}
+        {SHARE_LINKS.map(social =>
+          social.name === 'Copy' ? (
+            <button
+              id="copy-link-btn"
+              class="group inline-block scale-90 p-2 hover:rotate-6 hover:text-accent sm:p-1"
+              title={social.linkTitle}
+              data-url={URL}
+            >
+              <social.icon class="inline-block size-6 scale-125 opacity-90 sm:scale-110" />
+              <span class="sr-only">{social.linkTitle}</span>
+            </button>
+          ) : (
+            <LinkButton
+              href={`${social.href + URL}`}
+              class="scale-90 p-2 hover:rotate-6 sm:p-1"
+              title={social.linkTitle}
+            >
+              <social.icon class="inline-block size-6 scale-125 opacity-90 sm:scale-110" />
+              <span class="sr-only">{social.linkTitle}</span>
+            </LinkButton>
+          )
+        )}
       </div>
     </div>
   )
 }
+
+<script>
+  const btn = document.getElementById('copy-link-btn')
+  btn?.addEventListener('click', async () => {
+    const url = btn.getAttribute('data-url') ?? window.location.href
+    await navigator.clipboard.writeText(url)
+    const original = btn.getAttribute('title')
+    btn.setAttribute('title', 'コピーしました!')
+    setTimeout(() => {
+      if (original) btn.setAttribute('title', original)
+    }, 2000)
+  })
+</script>

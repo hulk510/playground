@@ -1,12 +1,12 @@
 import type { Props } from 'astro'
 import IconBrandX from '@/assets/icons/IconBrandX.svg'
-import IconFacebook from '@/assets/icons/IconFacebook.svg'
+import IconCopy from '@/assets/icons/IconCopy.svg'
 import IconGitHub from '@/assets/icons/IconGitHub.svg'
-import IconLinkedin from '@/assets/icons/IconLinkedin.svg'
+import IconHatena from '@/assets/icons/IconHatena.svg'
+import IconInstagram from '@/assets/icons/IconInstagram.svg'
+import IconLine from '@/assets/icons/IconLine.svg'
 import IconMail from '@/assets/icons/IconMail.svg'
-import IconPinterest from '@/assets/icons/IconPinterest.svg'
-import IconTelegram from '@/assets/icons/IconTelegram.svg'
-import IconWhatsapp from '@/assets/icons/IconWhatsapp.svg'
+import IconThreads from '@/assets/icons/IconThreads.svg'
 import { SITE } from '@/config'
 
 interface Social {
@@ -24,16 +24,16 @@ export const SOCIALS: Social[] = [
     icon: IconGitHub,
   },
   {
-    name: 'X',
-    href: 'https://x.com/kcash510',
-    linkTitle: `${SITE.title} on X`,
-    icon: IconBrandX,
+    name: 'Threads',
+    href: 'https://www.threads.net/@haruka.v1',
+    linkTitle: `${SITE.title} on Threads`,
+    icon: IconThreads,
   },
   {
-    name: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/hulk510/',
-    linkTitle: `${SITE.title} on LinkedIn`,
-    icon: IconLinkedin,
+    name: 'Instagram',
+    href: 'https://www.instagram.com/haruka.v1',
+    linkTitle: `${SITE.title} on Instagram`,
+    icon: IconInstagram,
   },
   {
     name: 'Mail',
@@ -45,39 +45,33 @@ export const SOCIALS: Social[] = [
 
 export const SHARE_LINKS: Social[] = [
   {
-    name: 'WhatsApp',
-    href: 'https://wa.me/?text=',
-    linkTitle: 'Share this post via WhatsApp',
-    icon: IconWhatsapp,
-  },
-  {
-    name: 'Facebook',
-    href: 'https://www.facebook.com/sharer.php?u=',
-    linkTitle: 'Share this post on Facebook',
-    icon: IconFacebook,
-  },
-  {
     name: 'X',
     href: 'https://x.com/intent/post?url=',
-    linkTitle: 'Share this post on X',
+    linkTitle: 'Xでシェア',
     icon: IconBrandX,
   },
   {
-    name: 'Telegram',
-    href: 'https://t.me/share/url?url=',
-    linkTitle: 'Share this post via Telegram',
-    icon: IconTelegram,
+    name: 'Hatena',
+    href: 'https://b.hatena.ne.jp/entry/',
+    linkTitle: 'はてなブックマークに追加',
+    icon: IconHatena,
   },
   {
-    name: 'Pinterest',
-    href: 'https://pinterest.com/pin/create/button/?url=',
-    linkTitle: 'Share this post on Pinterest',
-    icon: IconPinterest,
+    name: 'LINE',
+    href: 'https://social-plugins.line.me/lineit/share?url=',
+    linkTitle: 'LINEでシェア',
+    icon: IconLine,
+  },
+  {
+    name: 'Copy',
+    href: '#copy',
+    linkTitle: 'リンクをコピー',
+    icon: IconCopy,
   },
   {
     name: 'Mail',
     href: 'mailto:?subject=See%20this%20post&body=',
-    linkTitle: 'Share this post via email',
+    linkTitle: 'メールでシェア',
     icon: IconMail,
   },
 ] as const
