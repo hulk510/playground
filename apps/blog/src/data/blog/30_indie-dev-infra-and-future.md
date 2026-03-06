@@ -3,7 +3,7 @@ pubDatetime: 2026-01-30T20:00:00+09:00
 title: '個人開発のインフラ奮闘記とこれからの働き方'
 featured: false
 slug: indie-dev-infra-and-future
-draft: true
+draft: false
 tags:
   - 個人開発
   - インフラ
