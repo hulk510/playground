@@ -147,7 +147,7 @@ importers:
         version: 19.2.3(@types/react@19.2.7)
       shadcn:
         specifier: latest
-        version: 3.8.5(@types/node@24.10.4)(typescript@5.8.3)
+        version: 4.0.0(@types/node@24.10.4)(typescript@5.8.3)
       tailwindcss:
         specifier: 4.1.18
         version: 4.1.18
@@ -186,8 +186,8 @@ importers:
         specifier: 19.2.3
         version: 19.2.3
       react-datepicker:
-        specifier: 9.0.0
-        version: 9.0.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+        specifier: 9.1.0
+        version: 9.1.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       react-dom:
         specifier: 19.2.3
         version: 19.2.3(react@19.2.3)
@@ -3995,8 +3995,8 @@ packages:
     resolution: {integrity: sha512-y3bGgqKj3QBdxLbLkomlohkvsA8gdAiUQlSBJnBhfn+BPxg4bc62d8TcBW15wavDfgexCgccckhcZvywyQYPOw==}
     hasBin: true
 
-  react-datepicker@9.0.0:
-    resolution: {integrity: sha512-LGzKgBk5NUEcXUeSEJY2ICCCmPusm9UGRkNKRXCPgpUzoMx2CCsa0mOHTyv+itQeW7tR/jgGEpq5q/afZjGEFg==}
+  react-datepicker@9.1.0:
+    resolution: {integrity: sha512-lOp+m5bc+ttgtB5MHEjwiVu4nlp4CvJLS/PG1OiOe5pmg9kV73pEqO8H0Geqvg2E8gjqTaL9eRhSe+ZpeKP3nA==}
     peerDependencies:
       date-fns-tz: ^3.0.0
       react: ^16.9.0 || ^17 || ^18 || ^19 || ^19.0.0-rc
@@ -4208,8 +4208,8 @@ packages:
   setprototypeof@1.2.0:
     resolution: {integrity: sha512-E5LDX7Wrp85Kil5bhZv46j8jOeboKq5JMmYM3gVGdGH8xFpPWXUMsNrlODCrkoxMEeNi/XZIwuRvY4XNwYMJpw==}
 
-  shadcn@3.8.5:
-    resolution: {integrity: sha512-jPRx44e+eyeV7xwY3BLJXcfrks00+M0h5BGB9l6DdcBW4BpAj4x3lVmVy0TXPEs2iHEisxejr62sZAAw6B1EVA==}
+  shadcn@4.0.0:
+    resolution: {integrity: sha512-D3FRsynbtnnIK6P3x0dC1Clez14UoZdOukE46nuuc3R55m0/1awfCm4p1SF14rS+HWVgWOncOWnDyQeZxSW22w==}
     hasBin: true
 
   sharp@0.34.5:
@@ -8887,7 +8887,7 @@ snapshots:
       minimist: 1.2.8
       strip-json-comments: 2.0.1
 
-  react-datepicker@9.0.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3):
+  react-datepicker@9.1.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3):
     dependencies:
       '@floating-ui/react': 0.27.16(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       clsx: 2.1.1
@@ -9180,7 +9180,7 @@ snapshots:
 
   setprototypeof@1.2.0: {}
 
-  shadcn@3.8.5(@types/node@24.10.4)(typescript@5.8.3):
+  shadcn@4.0.0(@types/node@24.10.4)(typescript@5.8.3):
     dependencies:
       '@antfu/ni': 25.0.0
       '@babel/core': 7.28.5
