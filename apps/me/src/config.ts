@@ -8,7 +8,6 @@ export type WorkStatus = 'live' | 'dev' | 'archived'
 
 export interface Work {
   name: string
-  description: string
   url: string
   type: WorkType
   status?: WorkStatus
@@ -56,7 +55,6 @@ export const config: Config = {
   works: [
     {
       name: 'mikke',
-      description: '地図に写真を残すSNS',
       url: 'https://mikke.app',
       type: 'app',
       status: 'live',
@@ -64,15 +62,20 @@ export const config: Config = {
     },
     {
       name: 'ギャルボ',
-      description: 'ギャル文字キーボード',
       url: 'https://apps.apple.com/jp/app/%E3%82%AE%E3%83%A3%E3%83%AB%E3%83%9C/id6758966594',
       type: 'app',
       status: 'live',
       pinned: true,
     },
     {
+      name: 'ぶっちゃKEYO!!',
+      url: 'https://bucchakeyo.com',
+      type: 'site',
+      status: 'live',
+      pinned: true,
+    },
+    {
       name: 'kids portal',
-      description: 'こども向けポータルサイト',
       url: 'https://kids.haruka.dad',
       type: 'site',
       status: 'live',
