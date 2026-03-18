@@ -1,5 +1,5 @@
 ---
-pubDatetime: 2025-11-09T18:15:00+09:00
+pubDatetime: 2025-11-09
 title: 'QUOカードもらったけど使い道に困る問題'
 featured: false
 slug: quo-card-gap

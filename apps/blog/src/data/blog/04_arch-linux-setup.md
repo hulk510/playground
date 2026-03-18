@@ -1,5 +1,5 @@
 ---
-pubDatetime: 2024-05-20T18:59:01.651Z
+pubDatetime: 2024-05-20
 title: ノートPCにSSHできるようにしてみた
 featured: false
 draft: false

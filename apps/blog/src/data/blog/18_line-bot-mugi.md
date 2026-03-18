@@ -1,5 +1,5 @@
 ---
-pubDatetime: 2025-07-21T22:27:00+09:00
+pubDatetime: 2025-07-21
 title: 'LINE Bot × AI：1週間でAIチャットボットを作ってみた振り返り'
 featured: false
 slug: line-bot-mugi

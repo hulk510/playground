@@ -1,6 +1,6 @@
 ---
 title: Shiki Highlight
-pubDatetime: 2024-04-11T11:52:01.651Z
+pubDatetime: 2024-04-11
 featured: false
 draft: true
 slug: shiki-highlight

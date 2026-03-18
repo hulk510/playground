@@ -1,5 +1,5 @@
 ---
-pubDatetime: 2024-06-19T05:40:47.644Z
+pubDatetime: 2024-06-19
 title: shadcnをmonorepoに入れてみた
 featured: false
 draft: false

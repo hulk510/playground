@@ -1,5 +1,5 @@
 ---
-pubDatetime: 2025-02-06T03:24:24.109Z
+pubDatetime: 2025-02-06
 title: リポジトリを綺麗にした
 featured: false
 draft: true

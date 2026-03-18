@@ -1,5 +1,5 @@
 ---
-pubDatetime: 2024-07-16T07:33:08.279Z
+pubDatetime: 2024-07-16
 title: とうとう、私だけのdotfilesできた！
 featured: false
 draft: true

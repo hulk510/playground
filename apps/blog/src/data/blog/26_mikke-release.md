@@ -1,5 +1,5 @@
 ---
-pubDatetime: 2026-01-27T14:27:00+09:00
+pubDatetime: 2026-01-27
 title: 'Mikkeリリースしました🎉'
 featured: true
 slug: mikke-release

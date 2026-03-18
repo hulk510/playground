@@ -1,5 +1,5 @@
 ---
-pubDatetime: 2025-06-25T03:58:05.898Z
+pubDatetime: 2025-06-25
 title: テストに慣れてない自分が考えた、フロントエンドでのテストとの付き合い方
 featured: false
 draft: false

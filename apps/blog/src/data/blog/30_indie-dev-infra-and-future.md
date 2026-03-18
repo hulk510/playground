@@ -1,5 +1,5 @@
 ---
-pubDatetime: 2026-01-30T20:00:00+09:00
+pubDatetime: 2026-01-30
 title: '個人開発のインフラ奮闘記とこれからの働き方'
 featured: false
 slug: indie-dev-infra-and-future

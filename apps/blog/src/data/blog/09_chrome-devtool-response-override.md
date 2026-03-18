@@ -1,5 +1,5 @@
 ---
-pubDatetime: 2024-07-16T08:57:51.484Z
+pubDatetime: 2024-07-16
 title: DevtoolのResponse Header Overrideが便利だった
 featured: false
 draft: false

@@ -1,5 +1,5 @@
 ---
-pubDatetime: 2026-02-05T13:00:00+09:00
+pubDatetime: 2026-02-05
 title: 'パフォーマンスより先にやること'
 featured: false
 slug: testing-dx-and-feedback

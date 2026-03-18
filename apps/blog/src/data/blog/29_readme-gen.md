@@ -1,5 +1,5 @@
 ---
-pubDatetime: 2026-01-30T19:54:00+09:00
+pubDatetime: 2026-01-30
 title: 'readme-genを作ってみた'
 featured: true
 slug: readme-gen
