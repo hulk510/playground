@@ -1,5 +1,5 @@
 ---
-pubDatetime: 2026-01-30T15:10:00+09:00
+pubDatetime: 2026-01-30
 title: 'AIの動画・音楽生成を試してみた'
 featured: true
 slug: ai-video-music-generation

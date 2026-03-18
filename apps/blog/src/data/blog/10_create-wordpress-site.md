@@ -1,5 +1,5 @@
 ---
-pubDatetime: 2024-08-12T13:13:39.874Z
+pubDatetime: 2024-08-12
 title: Wordpressを構築！改めて色々わかった気がする
 featured: false
 draft: false

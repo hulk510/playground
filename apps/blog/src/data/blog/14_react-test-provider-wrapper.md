@@ -1,5 +1,5 @@
 ---
-pubDatetime: 2025-06-26T13:57:51.484Z
+pubDatetime: 2025-06-26
 title: 'React Testing: ProviderWrapperを作ってテスト環境を楽にしてみた'
 featured: false
 draft: false

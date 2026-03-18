@@ -1,5 +1,5 @@
 ---
-pubDatetime: 2024-04-11T11:52:01.651Z
+pubDatetime: 2024-04-11
 title: JavaScript難しい
 featured: false
 draft: false

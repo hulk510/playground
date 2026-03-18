@@ -34,7 +34,7 @@
 
 ```yaml
 ---
-pubDatetime: 2026-01-30T15:10:00+09:00  # ISO 8601 + タイムゾーン
+pubDatetime: 2026-01-30  # YYYY-MM-DD（時間は不要）
 title: '記事タイトル'
 featured: true  # トップに出すかどうか
 slug: kebab-case-slug  # URL用。ファイル名のslug部分と一致させる

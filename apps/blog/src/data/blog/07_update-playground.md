@@ -1,5 +1,5 @@
 ---
-pubDatetime: 2024-06-26T06:59:08.071Z
+pubDatetime: 2024-06-26
 title: PlaygroundにTodoアプリを実装
 featured: false
 draft: false

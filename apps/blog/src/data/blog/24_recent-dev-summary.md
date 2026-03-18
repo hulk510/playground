@@ -1,5 +1,5 @@
 ---
-pubDatetime: 2025-01-01T09:59:00+09:00
+pubDatetime: 2025-01-01
 title: '最近の開発ざっくりまとめ'
 featured: true
 slug: recent-dev-summary

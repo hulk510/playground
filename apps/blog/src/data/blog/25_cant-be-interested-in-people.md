@@ -1,5 +1,5 @@
 ---
-pubDatetime: 2026-01-06T09:52:00+09:00
+pubDatetime: 2026-01-06
 title: '29歳、人に興味が持てなくて辛いという話'
 featured: false
 slug: 29-cant-be-interested-in-people

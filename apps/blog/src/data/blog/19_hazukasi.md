@@ -1,5 +1,5 @@
 ---
-pubDatetime: 2025-07-29T07:52:00+09:00
+pubDatetime: 2025-07-29
 title: '公開しているものが恥ずかしくなる'
 featured: false
 slug: embarrassing-publications

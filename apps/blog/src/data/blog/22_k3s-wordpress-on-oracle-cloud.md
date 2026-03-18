@@ -1,5 +1,5 @@
 ---
-pubDatetime: 2025-11-12T10:45:00+09:00
+pubDatetime: 2025-11-12
 title: 'Oracle CloudでK3s環境構築してWordPressをデプロイした話'
 featured: false
 slug: k3s-wordpress-on-oracle-cloud

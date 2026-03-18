@@ -1,5 +1,5 @@
 ---
-pubDatetime: 2025-07-01T02:30:00+09:00
+pubDatetime: 2025-07-01
 title: 'MCP + Playwrightを使ってみた: 実際の作業をAIエージェントにやらせてみた感想'
 featured: false
 draft: false

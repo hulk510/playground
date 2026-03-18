@@ -1,5 +1,5 @@
 ---
-pubDatetime: 2025-11-15T17:00:00+09:00
+pubDatetime: 2025-11-15
 title: '【悲報】K3sのデータが全部消えた話 - Terraformとboot volumeの落とし穴'
 featured: false
 slug: k3s-data-loss-incident

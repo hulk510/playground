@@ -1,5 +1,5 @@
 ---
-pubDatetime: 2025-10-17T20:08:00+09:00
+pubDatetime: 2025-10-17
 title: 'インフラを学びたい気持ちと「支えることで、世界を形づくる」'
 featured: false
 slug: infrastructure-learning-journey
