@@ -4,6 +4,7 @@ import {
   type Link,
   type Social,
   type Work,
+  type WorkStatus,
   type WorkType,
 } from './config'
 
@@ -61,12 +62,14 @@ const icons: Record<string, string> = {
   blog: `<svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>`,
   github: `<svg class="link-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>`,
   mail: `<svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>`,
+  portfolio: `<svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-3V5a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM9 5h6v2H9V5z"/></svg>`,
   // Socials
   instagram: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>`,
-  threads: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.589 12c.027 3.086.718 5.496 2.057 7.164 1.43 1.783 3.631 2.698 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.31-.71-.873-1.3-1.634-1.75-.192 1.352-.622 2.446-1.284 3.272-.886 1.102-2.14 1.704-3.73 1.79-1.202.065-2.361-.218-3.259-.801-1.063-.689-1.685-1.74-1.752-2.964-.065-1.19.408-2.285 1.33-3.082.88-.76 2.119-1.207 3.583-1.291a13.853 13.853 0 0 1 3.02.142c-.126-.742-.375-1.332-.75-1.757-.513-.586-1.308-.883-2.359-.89h-.029c-.844 0-1.992.232-2.721 1.32L7.734 7.847c.98-1.454 2.568-2.256 4.478-2.256h.044c3.194.02 5.097 1.975 5.287 5.388.108.046.216.094.321.142 1.49.7 2.58 1.761 3.154 3.07.797 1.82.871 4.79-1.548 7.158-1.85 1.81-4.094 2.628-7.277 2.65Zm1.003-11.69c-.242 0-.487.007-.739.021-1.836.103-2.98.946-2.916 2.143.067 1.256 1.452 1.839 2.784 1.767 1.224-.065 2.818-.543 3.086-3.71a10.5 10.5 0 0 0-2.215-.221z"/></svg>`,
+  threads: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.589 12c.027 3.086.718 5.496 2.057 7.164 1.43 1.783 3.631 2.698 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.31-.71-.873-1.3-1.634-1.75-.192 1.352-.622 2.446-1.284 3.272-.886 1.102-2.14 1.704-3.73 1.79-1.202.065-2.361-.218-3.259-.801-1.063-.689-1.685-1.74-1.752-2.964-.065-1.19.408-2.285 1.33-3.082.88-.76 2.119-1.207 3.583-1.291a13.853 13.853 0 0 1 3.02.142c-.126-.742-.375-1.332-.75-1.757-.513-.586-1.308-.883-2.359-.89h-.029c-.844 0-1.992.232-2.717 1.32L7.734 7.847c.98-1.454 2.568-2.256 4.478-2.256h.044c3.194.02 5.097 1.975 5.287 5.388.108.046.216.094.321.142 1.49.7 2.58 1.761 3.154 3.07.797 1.82.871 4.79-1.548 7.158-1.85 1.81-4.094 2.628-7.277 2.65Zm1.003-11.69c-.242 0-.487.007-.739.021-1.836.103-2.98.946-2.916 2.143.067 1.256 1.452 1.839 2.784 1.767 1.224-.065 2.818-.543 3.086-3.71a10.5 10.5 0 0 0-2.215-.221z"/></svg>`,
   // Section icons
-  pin: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 17v5"/><path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z"/></svg>`,
   link: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>`,
+  back: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>`,
+  external: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>`,
   // Work types
   app: `<svg class="work-type-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>`,
   repo: `<svg class="work-type-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>`,
@@ -75,15 +78,12 @@ const icons: Record<string, string> = {
   site: `<svg class="work-type-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>`,
 }
 
-const statusLabels: Record<string, string> = {
+const statusLabels = {
   live: '公開中',
   dev: '開発中',
+  dormant: '放置中',
   archived: 'アーカイブ',
-}
-
-const initialVisible = {
-  works: config.initialVisible?.works ?? 3,
-}
+} satisfies Record<WorkStatus, string>
 
 function applyTheme(): void {
   if (config.theme) {
@@ -134,66 +134,6 @@ function getWorkIcon(type: WorkType): string {
   return icons[type] || icons.site
 }
 
-function renderWorkItem(work: Work, isPinned = false): string {
-  const icon = getWorkIcon(work.type)
-  const statusClass = work.status ? `status-${work.status}` : ''
-  const statusLabel = work.status ? statusLabels[work.status] : ''
-  const pinnedClass = isPinned ? 'is-pinned' : ''
-
-  return `
-    <a href="${work.url}" class="work-item ${statusClass} ${pinnedClass}">
-      ${getCloudSvg()}
-      <div class="work-info">
-        <div class="work-header">
-          <span class="work-type-icon">${icon}</span>
-          <span class="work-name">${work.name}</span>
-        </div>
-        ${statusLabel ? `<span class="work-status">${statusLabel}</span>` : ''}
-      </div>
-    </a>
-  `
-}
-
-function renderWorks(works: Work[]): string {
-  if (works.length === 0) return ''
-
-  const pinned = works.filter((w) => w.pinned)
-  const others = works.filter((w) => !w.pinned)
-
-  const limit = initialVisible.works
-  const hasMore = others.length > limit
-  const visible = others.slice(0, limit)
-  const hidden = others.slice(limit)
-
-  const pinnedSection = pinned.length
-    ? `
-      <div class="works-section">
-        <div class="section-label"><span class="section-label-icon">${icons.pin}</span>pin</div>
-        <div class="works-grid">${pinned.map((w) => renderWorkItem(w, true)).join('')}</div>
-      </div>
-    `
-    : ''
-
-  const othersSection = others.length
-    ? `
-      <div class="works-section">
-        <div class="works-grid">
-          ${visible.map((w) => renderWorkItem(w, false)).join('')}
-          ${hasMore ? `<div class="hidden-items">${hidden.map((w) => renderWorkItem(w, false)).join('')}</div>` : ''}
-        </div>
-        ${hasMore ? `<button class="show-more" data-target="works">+${hidden.length} more</button>` : ''}
-      </div>
-    `
-    : ''
-
-  return `
-    <section class="works" data-section="works">
-      ${pinnedSection}
-      ${othersSection}
-    </section>
-  `
-}
-
 function renderSocials(socials: Social[]): string {
   return socials
     .map((s) => {
@@ -203,27 +143,134 @@ function renderSocials(socials: Social[]): string {
     .join('')
 }
 
-function setupExpandButtons(): void {
-  document.querySelectorAll<HTMLButtonElement>('.show-more').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const target = btn.dataset.target
-      if (!target) return
+function renderPortfolioCard(work: Work): string {
+  const icon = getWorkIcon(work.type)
+  const statusClass = work.status ? `status-${work.status}` : ''
+  const statusLabel = work.status ? statusLabels[work.status] : ''
+  const techTags = work.tech?.length
+    ? `<ul class="pf-tech">${work.tech.map((t) => `<li>${t}</li>`).join('')}</ul>`
+    : ''
+  const description = work.description
+    ? `<p class="pf-desc">${work.description}</p>`
+    : ''
+  const why = work.why
+    ? `<div class="pf-why"><span class="pf-why-label">なぜ作った</span><p>${work.why}</p></div>`
+    : ''
+  const repo = work.repoUrl
+    ? `<a class="pf-link" href="${work.repoUrl}" target="_blank" rel="noopener noreferrer">${icons.repo}<span>repo</span></a>`
+    : ''
+  const visit = `<a class="pf-link" href="${work.url}" target="_blank" rel="noopener noreferrer">${icons.external}<span>visit</span></a>`
 
-      const section = document.querySelector(`[data-section="${target}"]`)
-      const hidden = section?.querySelector('.hidden-items')
-      if (hidden) {
-        hidden.classList.add('visible')
-        btn.remove()
-      }
-    })
-  })
+  return `
+    <article class="pf-card">
+      <header class="pf-card-header">
+        <span class="work-type-icon">${icon}</span>
+        <h2 class="pf-name">${work.name}</h2>
+        ${statusLabel ? `<span class="pf-status ${statusClass}">${statusLabel}</span>` : ''}
+      </header>
+      ${description}
+      ${techTags}
+      ${why}
+      <div class="pf-links">
+        ${visit}
+        ${repo}
+      </div>
+    </article>
+  `
 }
 
-function render(): void {
-  const app = document.querySelector<HTMLDivElement>('#app')
-  if (!app) return
+function renderProductRow(work: Work): string {
+  const icon = getWorkIcon(work.type)
+  const statusClass = work.status ? `status-${work.status}` : ''
+  const statusLabel = work.status ? statusLabels[work.status] : ''
+  const desc = work.description
+    ? `<span class="pf-row-desc">${work.description}</span>`
+    : ''
+  const repo = work.repoUrl
+    ? `<a class="pf-row-link" href="${work.repoUrl}" target="_blank" rel="noopener noreferrer" title="repo">${icons.github}</a>`
+    : ''
+  const visit = `<a class="pf-row-link" href="${work.url}" target="_blank" rel="noopener noreferrer" title="visit">${icons.external}</a>`
 
-  app.innerHTML = `
+  return `
+    <li class="pf-row">
+      <span class="work-type-icon">${icon}</span>
+      <span class="pf-row-name">${work.name}</span>
+      ${statusLabel ? `<span class="pf-status pf-status-sm ${statusClass}">${statusLabel}</span>` : ''}
+      ${desc}
+      <span class="pf-row-links">${visit}${repo}</span>
+    </li>
+  `
+}
+
+function renderRepoRow(work: Work): string {
+  const desc = work.description
+    ? `<span class="pf-row-desc">${work.description}</span>`
+    : ''
+  const lang = work.lang ? `<span class="pf-repo-lang">${work.lang}</span>` : ''
+  const statusClass = work.status ? `status-${work.status}` : ''
+  const statusLabel =
+    work.status && work.status !== 'live' ? statusLabels[work.status] : ''
+
+  return `
+    <li class="pf-row pf-repo-row">
+      <span class="pf-repo-icon">${icons.github}</span>
+      <a class="pf-row-name pf-repo-name" href="${work.url}" target="_blank" rel="noopener noreferrer">${work.name}</a>
+      ${statusLabel ? `<span class="pf-status pf-status-sm ${statusClass}">${statusLabel}</span>` : ''}
+      ${desc}
+      <span class="pf-row-meta">${lang}</span>
+    </li>
+  `
+}
+
+function renderPortfolioPage(): string {
+  const pinned = config.works.filter((w) => w.pinned)
+  const otherProducts = config.works.filter(
+    (w) => !w.pinned && w.type !== 'repo',
+  )
+  const repos = config.works.filter((w) => !w.pinned && w.type === 'repo')
+
+  const cards = pinned.map(renderPortfolioCard).join('')
+  const productRows = otherProducts.map(renderProductRow).join('')
+  const repoRows = repos.map(renderRepoRow).join('')
+
+  const moreSection = otherProducts.length
+    ? `
+      <section class="pf-more">
+        <h2 class="pf-section-title">more products</h2>
+        <ul class="pf-rows">${productRows}</ul>
+      </section>
+    `
+    : ''
+
+  const reposSection = repos.length
+    ? `
+      <section class="pf-repos">
+        <h2 class="pf-section-title">repos</h2>
+        <ul class="pf-rows">${repoRows}</ul>
+      </section>
+    `
+    : ''
+
+  return `
+    ${floatingClouds}
+    <main class="pf-main">
+      <a href="#/" class="pf-back">${icons.back}<span>back</span></a>
+      <header class="pf-header">
+        <h1>portfolio</h1>
+        <p class="pf-lead">これまで作ったやつたち。だいたい自分の困りごとから始まってる。</p>
+      </header>
+      <div class="pf-list">
+        ${cards}
+      </div>
+      ${moreSection}
+      ${reposSection}
+    </main>
+    <img src="/family.png" alt="" class="deco-family" />
+  `
+}
+
+function renderHomePage(): string {
+  return `
     ${floatingClouds}
     <main>
       <header class="hello">
@@ -241,8 +288,6 @@ function render(): void {
       ${renderInto()}
 
       ${renderLinks(config.links)}
-
-      ${renderWorks(config.works)}
     </main>
 
     <footer>
@@ -255,12 +300,38 @@ function render(): void {
 
     <img src="/family.png" alt="" class="deco-family" />
   `
+}
 
-  setupExpandButtons()
+type Route = 'home' | 'portfolio'
+
+function currentRoute(): Route {
+  const hash = window.location.hash
+  if (hash === '#/portfolio') return 'portfolio'
+  return 'home'
+}
+
+function render(): void {
+  const app = document.querySelector<HTMLDivElement>('#app')
+  if (!app) return
+
+  cloudIndex = 0
+  const route = currentRoute()
+  app.innerHTML =
+    route === 'portfolio' ? renderPortfolioPage() : renderHomePage()
+
+  setupThemeToggle()
+
+  if (route === 'home') {
+    fetchVisitorCount()
+  }
+
+  window.scrollTo(0, 0)
 }
 
 applyTheme()
 render()
+
+window.addEventListener('hashchange', render)
 
 // 訪問者カウンター
 async function fetchVisitorCount(): Promise<void> {
@@ -283,8 +354,6 @@ async function fetchVisitorCount(): Promise<void> {
       .join('')
   }
 }
-
-fetchVisitorCount()
 
 // テーマ切り替え
 function setupThemeToggle(): void {
@@ -326,5 +395,3 @@ function setupThemeToggle(): void {
     }
   })
 }
-
-setupThemeToggle()
